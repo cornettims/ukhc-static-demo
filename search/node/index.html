@@ -3,8 +3,8 @@
 <!-- THEME DEBUG -->
 <!-- THEME HOOK: 'html' -->
 <!-- FILE NAME SUGGESTIONS:
-   * html--front.html.twig
-   * html--healthcare-locations.html.twig
+   * html--search--node.html.twig
+   * html--search.html.twig
    x html.html.twig
 -->
 <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/layout/html.html.twig' -->
@@ -19,7 +19,7 @@
 <meta http-equiv="x-ua-compatible" content="ie=edge" />
 <link rel="shortcut icon" href="/core/misc/favicon.ico" type="image/vnd.microsoft.icon" />
 
-    <title>Location Search | UK Healthcare</title>
+    <title>Search | UK Healthcare</title>
     <link rel="stylesheet" media="all" href="/core/modules/system/css/components/ajax-progress.module.css?pyti2h" />
 <link rel="stylesheet" media="all" href="/core/modules/system/css/components/align.module.css?pyti2h" />
 <link rel="stylesheet" media="all" href="/core/modules/system/css/components/autocomplete-loading.module.css?pyti2h" />
@@ -78,6 +78,7 @@
 <link rel="stylesheet" media="all" href="/themes/custom/ukhc/css/bootstrap-select.min.css?pyti2h" />
 <link rel="stylesheet" media="all" href="/themes/custom/ukhc/css/style.css?pyti2h" />
 <link rel="stylesheet" media="all" href="/themes/custom/ukhc/css/colors.css?pyti2h" />
+<link rel="stylesheet" media="all" href="/themes/contrib/bootstrap_barrio/css/components/form.css?pyti2h" />
 <link rel="stylesheet" media="print" href="/themes/contrib/bootstrap_barrio/css/print.css?pyti2h" />
 
     
@@ -86,7 +87,7 @@
 <![endif]-->
 
   </head>
-  <body class="layout-one-sidebar layout-sidebar-first path-frontpage">
+  <body class="layout-one-sidebar layout-sidebar-first path-search">
     <a href="#main-content" class="visually-hidden focusable skip-link">
       Skip to main content
     </a>
@@ -102,8 +103,8 @@
 <!-- THEME DEBUG -->
 <!-- THEME HOOK: 'page' -->
 <!-- FILE NAME SUGGESTIONS:
-   * page--front.html.twig
-   * page--healthcare-locations.html.twig
+   * page--search--node.html.twig
+   * page--search.html.twig
    x page.html.twig
 -->
 <!-- BEGIN OUTPUT from 'themes/custom/ukhc/templates/page.html.twig' -->
@@ -196,189 +197,121 @@
       
 
 <!-- THEME DEBUG -->
-<!-- THEME HOOK: 'two_column_6_6' -->
-<!-- FILE NAME SUGGESTIONS:
-   x two-column-6-6.html.twig
-   x two-column-6-6.html.twig
--->
-<!-- BEGIN OUTPUT from 'themes/custom/ukhc/templates/two-column-6-6.html.twig' -->
-<div class="container-fluid no-padding">
-    <div class="block-region-top-fluid">
+<!-- THEME HOOK: 'form' -->
+<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/form.html.twig' -->
 
-<!-- THEME DEBUG -->
-<!-- THEME HOOK: 'block' -->
-<!-- FILE NAME SUGGESTIONS:
-   * block--searchbar.html.twig
-   * block--ukhc-plugins.html.twig
-   x block.html.twig
--->
-<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/block/block.html.twig' -->
-<div class="block block-ukhc-plugins block-searchbar">
+<form class="search-form" data-drupal-selector="search-form" action="/search/node" method="post" id="search-form" accept-charset="UTF-8">
   
-    
-      <div class="content">
-      
 
 <!-- THEME DEBUG -->
-<!-- THEME HOOK: 'searchbar' -->
-<!-- BEGIN OUTPUT from 'modules/custom/ukhc_plugins/templates/searchbar.html.twig' -->
-<div class="health-search">
-    <h1>Search UK HealthCare Locations</h1>
-    <input type="text" placeholder=""><div class="search-submit">
-        <span class="search-text">Search</span>
-        <div class="search-icon"></div>
-    </div>
-</div>
-<div class="search-filter">
-    <div class="container-fluid">
-        <div class="row justify-content-sm-center">
-            <div class="col col-sm-auto">
-                <div class="filter-tab-label">All Results</div>
-            </div>
-            <div class="col col-sm-auto active">
-                <div class="filter-tab-label">Doctors</div>
-            </div>
-            <div class="col col-sm-auto">
-                <div class="filter-tab-label">Conditions & Treatments</div>
-            </div>
-            <div class="col col-sm-auto">
-                <div class="filter-tab-label">Locations</div>
-            </div>
-            <div class="col col-sm-auto">
-                <div class="filter-tab-label">News & Events</div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="search-filter-mobile container-fluid">
-    <select class="selectpicker">
-        <option data-tokens="relevance" data-content="<span class='placeholder'>All Results</span>">All Results (34)</option>
-        <option data-tokens="doctors">Doctors (16)</option>
-        <option data-tokens="conditions_treatments">Conditions & Treatments (1)</option>
-        <option data-tokens="locations">Locations (2)</option>
-        <option data-tokens="news_and_events">News & Events (15)</option>
-    </select>
-</div>
-
-<!-- END OUTPUT from 'modules/custom/ukhc_plugins/templates/searchbar.html.twig' -->
-
-
-    </div>
-  </div>
-
-<!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/block/block.html.twig' -->
-
-</div>
-</div>
-<div class="container">
-    
-</div>
-<div class="container">
-    <div class="row">
-        <div class="col-12 col-md-6">
-            <div class="block-region-left">
+<!-- THEME HOOK: 'container' -->
+<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/container.html.twig' -->
+<div class="container-inline js-form-wrapper form-group col-auto" data-drupal-selector="edit-basic" id="edit-basic">
 
 <!-- THEME DEBUG -->
-<!-- THEME HOOK: 'block' -->
+<!-- THEME HOOK: 'form_element' -->
+<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/form-element.html.twig' -->
+
+
+
+  <fieldset class="js-form-item js-form-type-search form-type-search js-form-item-keys form-item-keys form-group col-auto">
+          
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'form_element_label' -->
+<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/form-element-label.html.twig' -->
+<label for="edit-keys">Enter your keywords</label>
+<!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/form-element-label.html.twig' -->
+
+
+                
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'input__search' -->
 <!-- FILE NAME SUGGESTIONS:
-   * block--Location Results.html.twig
-   * block--ukhc-plugins.html.twig
-   x block.html.twig
+   * input--search.html.twig
+   x input.html.twig
 -->
-<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/block/block.html.twig' -->
-<div class="block block-ukhc-plugins block-location-results">
-  
-    
-      <div class="content">
-      
+<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/input.html.twig' -->
+<input data-drupal-selector="edit-keys" type="search" id="edit-keys" name="keys" value="" size="30" maxlength="255" class="form-search form-control" />
+
+<!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/input.html.twig' -->
+
+
+                  </fieldset>
+
+<!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/form-element.html.twig' -->
+
+
 
 <!-- THEME DEBUG -->
-<!-- THEME HOOK: 'locationresults' -->
-<!-- BEGIN OUTPUT from 'modules/custom/ukhc_plugins/templates/locationresults.html.twig' -->
-<div class="locations">
-    <div class="accordion">
-        <div class="card">
-            <div class="card-header" id="uk-chandler">
-                <a class="collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                    <div class="location-title">UK Albert B. Chandler Hospital Pavilion A</div>
-                    <div class="location-address">
-                        1000 South Limestone<br/>
-                        Lexington, KY 40536
-                    </div>
-                    <div class="up-angle blue"></div>
-                </a>
-            </div>
-            <div id="collapseOne" class="collapse" aria-labelledby="uk-chandler">
-                <div class="details container-fluid">
-                    <div class="row">
-                        <div class="col col-12 col-sm-6">
-                            <div class="bold">Phone</div>
-                            <a href="tel:18593235000">859-323-5000</a>
-                            <div class="location-hours">
-                                <div class="bold">Hours</div>
-                                <span class="bold">Mon-Fri:</span>
-                                7:30AM - 5:00PM<br/>
-                                <span class="bold">Sat-Sun:</span>
-                                Closed<br/>
-                            </div>
-                        </div>
-                        <div class="location-links col col-12 col-sm-6">
-                            <a>Parking</a><br/>
-                            <a>Dropoff/Pickup</a><br/>
-                            <a>Shuttle Stop</a><br/>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- END OUTPUT from 'modules/custom/ukhc_plugins/templates/locationresults.html.twig' -->
-
-
-    </div>
-  </div>
-
-<!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/block/block.html.twig' -->
-
-</div>
-        </div>
-        <div class="col-12 col-md-6">
-            <div class="block-region-right">
-
-<!-- THEME DEBUG -->
-<!-- THEME HOOK: 'block' -->
+<!-- THEME HOOK: 'input__submit' -->
 <!-- FILE NAME SUGGESTIONS:
-   * block--Location Map.html.twig
-   * block--ukhc-plugins.html.twig
-   x block.html.twig
+   * input--submit.html.twig
+   x input--submit-button.html.twig
+   * input.html.twig
 -->
-<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/block/block.html.twig' -->
-<div class="block block-ukhc-plugins block-location-map">
-  
-    
-      <div class="content">
-      
+<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/input--submit-button.html.twig' -->
+<button data-drupal-selector="edit-submit" type="submit" id="edit-submit" name="op" value="Search" class="button js-form-submit form-submit btn btn-primary">Search</button>
+
+<!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/input--submit-button.html.twig' -->
+
+</div>
+
+<!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/container.html.twig' -->
+
+<a href="/search/node/help" class="search-help-link" data-drupal-selector="edit-help-link" id="edit-help-link">Search help</a>
 
 <!-- THEME DEBUG -->
-<!-- THEME HOOK: 'locationmap' -->
-<!-- BEGIN OUTPUT from 'modules/custom/ukhc_plugins/templates/locationmap.html.twig' -->
-<iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/view?zoom=17&center=38.0316%2C-84.5082&key=AIzaSyBSVpXY9Ck1ApUxBmi43LxgP4pSzsYfuMU" allowfullscreen></iframe>
-<!-- END OUTPUT from 'modules/custom/ukhc_plugins/templates/locationmap.html.twig' -->
+<!-- THEME HOOK: 'input__hidden' -->
+<!-- FILE NAME SUGGESTIONS:
+   * input--hidden.html.twig
+   x input.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/input.html.twig' -->
+<input autocomplete="off" data-drupal-selector="form-07ovoeadk5izsdyd7xfuppl6dkr-1m9izgz5lsvne8k" type="hidden" name="form_build_id" value="form-07OVOeadK5IZSdYD7xfuPPl6Dkr-1M9IZGZ5lsvnE8k" class="form-control" />
+
+<!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/input.html.twig' -->
 
 
-    </div>
-  </div>
 
-<!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/block/block.html.twig' -->
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'input__hidden' -->
+<!-- FILE NAME SUGGESTIONS:
+   * input--hidden.html.twig
+   x input.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/input.html.twig' -->
+<input data-drupal-selector="edit-search-form" type="hidden" name="form_id" value="search_form" class="form-control" />
 
-</div>
-        </div>
-    </div>
-</div>
+<!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/input.html.twig' -->
 
-<!-- END OUTPUT from 'themes/custom/ukhc/templates/two-column-6-6.html.twig' -->
+
+</form>
+
+<!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/form.html.twig' -->
+
+
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'item_list__search_results' -->
+<!-- FILE NAME SUGGESTIONS:
+   x item-list--search-results.html.twig
+   x item-list--search-results.html.twig
+   * item-list.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/dataset/item-list--search-results.html.twig' -->
+
+<h3>Your search yielded no results.</h3>
+<!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/dataset/item-list--search-results.html.twig' -->
+
+
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'pager' -->
+<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/navigation/pager.html.twig' -->
+
+<!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/navigation/pager.html.twig' -->
 
 
     </div>
@@ -456,7 +389,7 @@
 
 
     
-    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"healthcare-locations","currentPathIsAdmin":false,"isFront":true,"currentLanguage":"en"},"pluralDelimiter":"\u0003","user":{"uid":0,"permissionsHash":"89dd9a2ecfaee91cfdbbe3f79991d7386d3977b9679a9d6df9c88d29b14be152"}}</script>
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"search\/node","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","ajaxTrustedUrl":{"form_action_p_pvdeGsVG5zNF_XLGPTvYSKCf43t8qZYSwcfZl2uzM":true},"user":{"uid":0,"permissionsHash":"89dd9a2ecfaee91cfdbbe3f79991d7386d3977b9679a9d6df9c88d29b14be152"}}</script>
 <script src="/core/assets/vendor/domready/ready.min.js?v=1.0.8"></script>
 <script src="/core/assets/vendor/jquery/jquery.min.js?v=3.2.1"></script>
 <script src="/core/assets/vendor/jquery/jquery-extend-3.4.0.js?v=3.2.1"></script>

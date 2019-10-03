@@ -3,8 +3,9 @@
 <!-- THEME DEBUG -->
 <!-- THEME HOOK: 'html' -->
 <!-- FILE NAME SUGGESTIONS:
-   * html--front.html.twig
-   * html--healthcare-locations.html.twig
+   * html--search--node--help.html.twig
+   * html--search--node.html.twig
+   * html--search.html.twig
    x html.html.twig
 -->
 <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/layout/html.html.twig' -->
@@ -19,7 +20,7 @@
 <meta http-equiv="x-ua-compatible" content="ie=edge" />
 <link rel="shortcut icon" href="/core/misc/favicon.ico" type="image/vnd.microsoft.icon" />
 
-    <title>Location Search | UK Healthcare</title>
+    <title>Search help | UK Healthcare</title>
     <link rel="stylesheet" media="all" href="/core/modules/system/css/components/ajax-progress.module.css?pyti2h" />
 <link rel="stylesheet" media="all" href="/core/modules/system/css/components/align.module.css?pyti2h" />
 <link rel="stylesheet" media="all" href="/core/modules/system/css/components/autocomplete-loading.module.css?pyti2h" />
@@ -86,7 +87,7 @@
 <![endif]-->
 
   </head>
-  <body class="layout-one-sidebar layout-sidebar-first path-frontpage">
+  <body class="layout-one-sidebar layout-sidebar-first path-search">
     <a href="#main-content" class="visually-hidden focusable skip-link">
       Skip to main content
     </a>
@@ -102,8 +103,9 @@
 <!-- THEME DEBUG -->
 <!-- THEME HOOK: 'page' -->
 <!-- FILE NAME SUGGESTIONS:
-   * page--front.html.twig
-   * page--healthcare-locations.html.twig
+   * page--search--node--help.html.twig
+   * page--search--node.html.twig
+   * page--search.html.twig
    x page.html.twig
 -->
 <!-- BEGIN OUTPUT from 'themes/custom/ukhc/templates/page.html.twig' -->
@@ -189,196 +191,17 @@
    x block.html.twig
 -->
 <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/block/block.html.twig' -->
-<div id="block-ukhc-content" class="block block-system block-system-main-block">
+<div id="block-ukhc-content--4" class="block block-system block-system-main-block">
   
     
       <div class="content">
       
 
 <!-- THEME DEBUG -->
-<!-- THEME HOOK: 'two_column_6_6' -->
-<!-- FILE NAME SUGGESTIONS:
-   x two-column-6-6.html.twig
-   x two-column-6-6.html.twig
--->
-<!-- BEGIN OUTPUT from 'themes/custom/ukhc/templates/two-column-6-6.html.twig' -->
-<div class="container-fluid no-padding">
-    <div class="block-region-top-fluid">
-
-<!-- THEME DEBUG -->
-<!-- THEME HOOK: 'block' -->
-<!-- FILE NAME SUGGESTIONS:
-   * block--searchbar.html.twig
-   * block--ukhc-plugins.html.twig
-   x block.html.twig
--->
-<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/block/block.html.twig' -->
-<div class="block block-ukhc-plugins block-searchbar">
-  
-    
-      <div class="content">
-      
-
-<!-- THEME DEBUG -->
-<!-- THEME HOOK: 'searchbar' -->
-<!-- BEGIN OUTPUT from 'modules/custom/ukhc_plugins/templates/searchbar.html.twig' -->
-<div class="health-search">
-    <h1>Search UK HealthCare Locations</h1>
-    <input type="text" placeholder=""><div class="search-submit">
-        <span class="search-text">Search</span>
-        <div class="search-icon"></div>
-    </div>
-</div>
-<div class="search-filter">
-    <div class="container-fluid">
-        <div class="row justify-content-sm-center">
-            <div class="col col-sm-auto">
-                <div class="filter-tab-label">All Results</div>
-            </div>
-            <div class="col col-sm-auto active">
-                <div class="filter-tab-label">Doctors</div>
-            </div>
-            <div class="col col-sm-auto">
-                <div class="filter-tab-label">Conditions & Treatments</div>
-            </div>
-            <div class="col col-sm-auto">
-                <div class="filter-tab-label">Locations</div>
-            </div>
-            <div class="col col-sm-auto">
-                <div class="filter-tab-label">News & Events</div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="search-filter-mobile container-fluid">
-    <select class="selectpicker">
-        <option data-tokens="relevance" data-content="<span class='placeholder'>All Results</span>">All Results (34)</option>
-        <option data-tokens="doctors">Doctors (16)</option>
-        <option data-tokens="conditions_treatments">Conditions & Treatments (1)</option>
-        <option data-tokens="locations">Locations (2)</option>
-        <option data-tokens="news_and_events">News & Events (15)</option>
-    </select>
-</div>
-
-<!-- END OUTPUT from 'modules/custom/ukhc_plugins/templates/searchbar.html.twig' -->
-
-
-    </div>
-  </div>
-
-<!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/block/block.html.twig' -->
-
-</div>
-</div>
-<div class="container">
-    
-</div>
-<div class="container">
-    <div class="row">
-        <div class="col-12 col-md-6">
-            <div class="block-region-left">
-
-<!-- THEME DEBUG -->
-<!-- THEME HOOK: 'block' -->
-<!-- FILE NAME SUGGESTIONS:
-   * block--Location Results.html.twig
-   * block--ukhc-plugins.html.twig
-   x block.html.twig
--->
-<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/block/block.html.twig' -->
-<div class="block block-ukhc-plugins block-location-results">
-  
-    
-      <div class="content">
-      
-
-<!-- THEME DEBUG -->
-<!-- THEME HOOK: 'locationresults' -->
-<!-- BEGIN OUTPUT from 'modules/custom/ukhc_plugins/templates/locationresults.html.twig' -->
-<div class="locations">
-    <div class="accordion">
-        <div class="card">
-            <div class="card-header" id="uk-chandler">
-                <a class="collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                    <div class="location-title">UK Albert B. Chandler Hospital Pavilion A</div>
-                    <div class="location-address">
-                        1000 South Limestone<br/>
-                        Lexington, KY 40536
-                    </div>
-                    <div class="up-angle blue"></div>
-                </a>
-            </div>
-            <div id="collapseOne" class="collapse" aria-labelledby="uk-chandler">
-                <div class="details container-fluid">
-                    <div class="row">
-                        <div class="col col-12 col-sm-6">
-                            <div class="bold">Phone</div>
-                            <a href="tel:18593235000">859-323-5000</a>
-                            <div class="location-hours">
-                                <div class="bold">Hours</div>
-                                <span class="bold">Mon-Fri:</span>
-                                7:30AM - 5:00PM<br/>
-                                <span class="bold">Sat-Sun:</span>
-                                Closed<br/>
-                            </div>
-                        </div>
-                        <div class="location-links col col-12 col-sm-6">
-                            <a>Parking</a><br/>
-                            <a>Dropoff/Pickup</a><br/>
-                            <a>Shuttle Stop</a><br/>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- END OUTPUT from 'modules/custom/ukhc_plugins/templates/locationresults.html.twig' -->
-
-
-    </div>
-  </div>
-
-<!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/block/block.html.twig' -->
-
-</div>
-        </div>
-        <div class="col-12 col-md-6">
-            <div class="block-region-right">
-
-<!-- THEME DEBUG -->
-<!-- THEME HOOK: 'block' -->
-<!-- FILE NAME SUGGESTIONS:
-   * block--Location Map.html.twig
-   * block--ukhc-plugins.html.twig
-   x block.html.twig
--->
-<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/block/block.html.twig' -->
-<div class="block block-ukhc-plugins block-location-map">
-  
-    
-      <div class="content">
-      
-
-<!-- THEME DEBUG -->
-<!-- THEME HOOK: 'locationmap' -->
-<!-- BEGIN OUTPUT from 'modules/custom/ukhc_plugins/templates/locationmap.html.twig' -->
-<iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/view?zoom=17&center=38.0316%2C-84.5082&key=AIzaSyBSVpXY9Ck1ApUxBmi43LxgP4pSzsYfuMU" allowfullscreen></iframe>
-<!-- END OUTPUT from 'modules/custom/ukhc_plugins/templates/locationmap.html.twig' -->
-
-
-    </div>
-  </div>
-
-<!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/block/block.html.twig' -->
-
-</div>
-        </div>
-    </div>
-</div>
-
-<!-- END OUTPUT from 'themes/custom/ukhc/templates/two-column-6-6.html.twig' -->
+<!-- THEME HOOK: 'item_list' -->
+<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/dataset/item-list.html.twig' -->
+<div class="item-list"><ul class="list-group"><li class="list-group-item">Search looks for exact, case-insensitive keywords; keywords shorter than a minimum length are ignored.</li><li class="list-group-item">Use upper-case OR to get more results. Example: cat OR dog (content contains either "cat" or "dog").</li><li class="list-group-item">You can use upper-case AND to require all words, but this is the same as the default behavior. Example: cat AND dog (same as cat dog, content must contain both "cat" and "dog").</li><li class="list-group-item">Use quotes to search for a phrase. Example: "the cat eats mice".</li><li class="list-group-item">You can precede keywords by - to exclude them; you must still have at least one "positive" keyword. Example: cat -dog (content must contain cat and cannot contain dog).</li></ul></div>
+<!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/dataset/item-list.html.twig' -->
 
 
     </div>
@@ -456,7 +279,7 @@
 
 
     
-    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"healthcare-locations","currentPathIsAdmin":false,"isFront":true,"currentLanguage":"en"},"pluralDelimiter":"\u0003","user":{"uid":0,"permissionsHash":"89dd9a2ecfaee91cfdbbe3f79991d7386d3977b9679a9d6df9c88d29b14be152"}}</script>
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"search\/node\/help","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","user":{"uid":0,"permissionsHash":"89dd9a2ecfaee91cfdbbe3f79991d7386d3977b9679a9d6df9c88d29b14be152"}}</script>
 <script src="/core/assets/vendor/domready/ready.min.js?v=1.0.8"></script>
 <script src="/core/assets/vendor/jquery/jquery.min.js?v=3.2.1"></script>
 <script src="/core/assets/vendor/jquery/jquery-extend-3.4.0.js?v=3.2.1"></script>

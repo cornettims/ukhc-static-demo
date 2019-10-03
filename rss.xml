@@ -1,0 +1,181 @@
+
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'views_view_rss' -->
+<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/views/views-view-rss.html.twig' -->
+<?xml version="1.0" encoding="utf-8" ?>
+<rss version="2.0" xml:base="http://ukhc.test/rss.xml" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:og="http://ogp.me/ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:schema="http://schema.org/" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <channel>
+    <title>UK Healthcare</title>
+    <link>http://ukhc.test/rss.xml</link>
+    <description></description>
+    <language>en</language>
+    
+    
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'views_view_row_rss' -->
+<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/views/views-view-row-rss.html.twig' -->
+<item>
+  <title>Craig G. Horne, MD, PhD</title>
+  <link>http://ukhc.test/node/1</link>
+  <description>
+
+&lt;!-- THEME DEBUG --&gt;
+&lt;!-- THEME HOOK: &#039;field&#039; --&gt;
+&lt;!-- FILE NAME SUGGESTIONS:
+   * field--default--node--title--doctor.html.twig
+   * field--default--node--doctor.html.twig
+   * field--default--node--title.html.twig
+   * field--default--title--doctor.html.twig
+   * field--default--doctor.html.twig
+   * field--default--title.html.twig
+   * field--default.html.twig
+   * field--theme-ds-field-default.html.twig
+   * field--node--title--doctor.html.twig
+   x field--node--title.html.twig
+   * field--node--doctor.html.twig
+   * field--title.html.twig
+   * field--string.html.twig
+   * field.html.twig
+--&gt;
+&lt;!-- BEGIN OUTPUT from &#039;themes/contrib/bootstrap_barrio/templates/field/field--node--title.html.twig&#039; --&gt;
+&lt;span class=&quot;field field--name-title field--type-string field--label-hidden&quot;&gt;Craig G. Horne, MD, PhD&lt;/span&gt;
+
+&lt;!-- END OUTPUT from &#039;themes/contrib/bootstrap_barrio/templates/field/field--node--title.html.twig&#039; --&gt;
+
+
+
+&lt;!-- THEME DEBUG --&gt;
+&lt;!-- THEME HOOK: &#039;field&#039; --&gt;
+&lt;!-- FILE NAME SUGGESTIONS:
+   * field--default--node--uid--doctor.html.twig
+   * field--default--node--doctor.html.twig
+   * field--default--node--uid.html.twig
+   * field--default--uid--doctor.html.twig
+   * field--default--doctor.html.twig
+   * field--default--uid.html.twig
+   * field--default.html.twig
+   * field--theme-ds-field-default.html.twig
+   * field--node--uid--doctor.html.twig
+   x field--node--uid.html.twig
+   * field--node--doctor.html.twig
+   * field--uid.html.twig
+   * field--entity-reference.html.twig
+   * field.html.twig
+--&gt;
+&lt;!-- BEGIN OUTPUT from &#039;themes/contrib/bootstrap_barrio/templates/field/field--node--uid.html.twig&#039; --&gt;
+&lt;span class=&quot;field field--name-uid field--type-entity-reference field--label-hidden&quot;&gt;
+
+&lt;!-- THEME DEBUG --&gt;
+&lt;!-- THEME HOOK: &#039;username&#039; --&gt;
+&lt;!-- BEGIN OUTPUT from &#039;themes/contrib/bootstrap_barrio/templates/user/username.html.twig&#039; --&gt;
+&lt;span lang=&quot;&quot; about=&quot;/user/1&quot; typeof=&quot;schema:Person&quot; property=&quot;schema:name&quot; datatype=&quot;&quot;&gt;matt&lt;/span&gt;
+&lt;!-- END OUTPUT from &#039;themes/contrib/bootstrap_barrio/templates/user/username.html.twig&#039; --&gt;
+
+&lt;/span&gt;
+
+&lt;!-- END OUTPUT from &#039;themes/contrib/bootstrap_barrio/templates/field/field--node--uid.html.twig&#039; --&gt;
+
+
+
+&lt;!-- THEME DEBUG --&gt;
+&lt;!-- THEME HOOK: &#039;field&#039; --&gt;
+&lt;!-- FILE NAME SUGGESTIONS:
+   * field--default--node--created--doctor.html.twig
+   * field--default--node--doctor.html.twig
+   * field--default--node--created.html.twig
+   * field--default--created--doctor.html.twig
+   * field--default--doctor.html.twig
+   * field--default--created.html.twig
+   * field--default.html.twig
+   * field--theme-ds-field-default.html.twig
+   * field--node--created--doctor.html.twig
+   x field--node--created.html.twig
+   * field--node--doctor.html.twig
+   * field--created.html.twig
+   * field--created.html.twig
+   * field.html.twig
+--&gt;
+&lt;!-- BEGIN OUTPUT from &#039;themes/contrib/bootstrap_barrio/templates/field/field--node--created.html.twig&#039; --&gt;
+&lt;span class=&quot;field field--name-created field--type-created field--label-hidden&quot;&gt;Wed, 09/18/2019 - 15:43&lt;/span&gt;
+
+&lt;!-- END OUTPUT from &#039;themes/contrib/bootstrap_barrio/templates/field/field--node--created.html.twig&#039; --&gt;
+
+
+
+&lt;!-- THEME DEBUG --&gt;
+&lt;!-- THEME HOOK: &#039;links__node&#039; --&gt;
+&lt;!-- FILE NAME SUGGESTIONS:
+   * links--node.html.twig
+   x links--inline.html.twig
+   * links--node.html.twig
+   * links.html.twig
+--&gt;
+&lt;!-- BEGIN OUTPUT from &#039;themes/contrib/bootstrap_barrio/templates/navigation/links--inline.html.twig&#039; --&gt;
+
+
+
+&lt;!-- END OUTPUT from &#039;themes/contrib/bootstrap_barrio/templates/navigation/links--inline.html.twig&#039; --&gt;
+
+
+
+&lt;!-- THEME DEBUG --&gt;
+&lt;!-- THEME HOOK: &#039;field&#039; --&gt;
+&lt;!-- FILE NAME SUGGESTIONS:
+   * field--default--node--field-image--doctor.html.twig
+   * field--default--node--doctor.html.twig
+   * field--default--node--field-image.html.twig
+   * field--default--field-image--doctor.html.twig
+   * field--default--doctor.html.twig
+   * field--default--field-image.html.twig
+   * field--default.html.twig
+   * field--theme-ds-field-default.html.twig
+   * field--node--field-image--doctor.html.twig
+   * field--node--field-image.html.twig
+   * field--node--doctor.html.twig
+   * field--field-image.html.twig
+   * field--image.html.twig
+   x field.html.twig
+--&gt;
+&lt;!-- BEGIN OUTPUT from &#039;themes/contrib/bootstrap_barrio/templates/field/field.html.twig&#039; --&gt;
+
+  &lt;div class=&quot;field field--name-field-image field--type-image field--label-above&quot;&gt;
+    &lt;div class=&quot;field__label&quot;&gt;Image&lt;/div&gt;
+              &lt;div class=&quot;field__item&quot;&gt;
+
+&lt;!-- THEME DEBUG --&gt;
+&lt;!-- THEME HOOK: &#039;image_formatter&#039; --&gt;
+&lt;!-- BEGIN OUTPUT from &#039;themes/contrib/bootstrap_barrio/templates/field/image-formatter.html.twig&#039; --&gt;
+  
+
+&lt;!-- THEME DEBUG --&gt;
+&lt;!-- THEME HOOK: &#039;image&#039; --&gt;
+&lt;!-- BEGIN OUTPUT from &#039;themes/contrib/bootstrap_barrio/templates/field/image.html.twig&#039; --&gt;
+&lt;img src=&quot;/sites/default/files/2019-09/doctor.png&quot; width=&quot;356&quot; height=&quot;355&quot; alt=&quot;Craig G. Horne, MD, PhD&quot; typeof=&quot;foaf:Image&quot; /&gt;
+
+&lt;!-- END OUTPUT from &#039;themes/contrib/bootstrap_barrio/templates/field/image.html.twig&#039; --&gt;
+
+
+
+&lt;!-- END OUTPUT from &#039;themes/contrib/bootstrap_barrio/templates/field/image-formatter.html.twig&#039; --&gt;
+
+&lt;/div&gt;
+          &lt;/div&gt;
+
+&lt;!-- END OUTPUT from &#039;themes/contrib/bootstrap_barrio/templates/field/field.html.twig&#039; --&gt;
+
+</description>
+  <pubDate>Wed, 18 Sep 2019 15:43:47 +0000</pubDate>
+    <dc:creator>matt</dc:creator>
+    <guid isPermaLink="false">1 at http://ukhc.test</guid>
+    </item>
+
+<!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/views/views-view-row-rss.html.twig' -->
+
+
+  </channel>
+</rss>
+
+<!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/views/views-view-rss.html.twig' -->
+
