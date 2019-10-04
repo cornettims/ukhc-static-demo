@@ -1,5 +1,3 @@
-
-
 <!-- THEME DEBUG -->
 <!-- THEME HOOK: 'html' -->
 <!-- FILE NAME SUGGESTIONS:
@@ -9,471 +7,515 @@
 -->
 <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/layout/html.html.twig' -->
 <!DOCTYPE html>
-<html lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skoscore#  xsd: http://www.w3.org/2001/XMLSchema# ">
-  <head>
+<html lang="en" dir="ltr"
+    prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skoscore#  xsd: http://www.w3.org/2001/XMLSchema# ">
+
+<head>
     <meta charset="utf-8" />
-<meta name="Generator" content="Drupal 8 (https://www.drupal.org)" />
-<meta name="MobileOptimized" content="width" />
-<meta name="HandheldFriendly" content="true" />
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-<meta http-equiv="x-ua-compatible" content="ie=edge" />
-<link rel="shortcut icon" href="core/misc/favicon.ico" type="image/vnd.microsoft.icon" />
+    <meta name="Generator" content="Drupal 8 (https://www.drupal.org)" />
+    <meta name="MobileOptimized" content="width" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <link rel="shortcut icon" href="core/misc/favicon.ico" type="image/vnd.microsoft.icon" />
 
     <title>Location Search | UK Healthcare</title>
     <link rel="stylesheet" media="all" href="core/modules/system/css/components/ajax-progress.module.css?pyti2h" />
-<link rel="stylesheet" media="all" href="core/modules/system/css/components/align.module.css?pyti2h" />
-<link rel="stylesheet" media="all" href="core/modules/system/css/components/autocomplete-loading.module.css?pyti2h" />
-<link rel="stylesheet" media="all" href="core/modules/system/css/components/fieldgroup.module.css?pyti2h" />
-<link rel="stylesheet" media="all" href="core/modules/system/css/components/container-inline.module.css?pyti2h" />
-<link rel="stylesheet" media="all" href="core/modules/system/css/components/clearfix.module.css?pyti2h" />
-<link rel="stylesheet" media="all" href="core/modules/system/css/components/details.module.css?pyti2h" />
-<link rel="stylesheet" media="all" href="core/modules/system/css/components/hidden.module.css?pyti2h" />
-<link rel="stylesheet" media="all" href="core/modules/system/css/components/item-list.module.css?pyti2h" />
-<link rel="stylesheet" media="all" href="core/modules/system/css/components/js.module.css?pyti2h" />
-<link rel="stylesheet" media="all" href="core/modules/system/css/components/nowrap.module.css?pyti2h" />
-<link rel="stylesheet" media="all" href="core/modules/system/css/components/position-container.module.css?pyti2h" />
-<link rel="stylesheet" media="all" href="core/modules/system/css/components/progress.module.css?pyti2h" />
-<link rel="stylesheet" media="all" href="core/modules/system/css/components/reset-appearance.module.css?pyti2h" />
-<link rel="stylesheet" media="all" href="core/modules/system/css/components/resize.module.css?pyti2h" />
-<link rel="stylesheet" media="all" href="core/modules/system/css/components/sticky-header.module.css?pyti2h" />
-<link rel="stylesheet" media="all" href="core/modules/system/css/components/system-status-counter.css?pyti2h" />
-<link rel="stylesheet" media="all" href="core/modules/system/css/components/system-status-report-counters.css?pyti2h" />
-<link rel="stylesheet" media="all" href="core/modules/system/css/components/system-status-report-general-info.css?pyti2h" />
-<link rel="stylesheet" media="all" href="core/modules/system/css/components/tabledrag.module.css?pyti2h" />
-<link rel="stylesheet" media="all" href="core/modules/system/css/components/tablesort.module.css?pyti2h" />
-<link rel="stylesheet" media="all" href="core/modules/system/css/components/tree-child.module.css?pyti2h" />
-<link rel="stylesheet" media="all" href="themes/contrib/bootstrap_barrio/css/components/user.css?pyti2h" />
-<link rel="stylesheet" media="all" href="themes/contrib/bootstrap_barrio/css/components/progress.css?pyti2h" />
-<link rel="stylesheet" media="all" href="themes/contrib/bootstrap_barrio/css/components/affix.css?pyti2h" />
-<link rel="stylesheet" media="all" href="themes/contrib/bootstrap_barrio/css/components/alerts.css?pyti2h" />
-<link rel="stylesheet" media="all" href="themes/contrib/bootstrap_barrio/css/components/book.css?pyti2h" />
-<link rel="stylesheet" media="all" href="themes/contrib/bootstrap_barrio/css/components/comments.css?pyti2h" />
-<link rel="stylesheet" media="all" href="themes/contrib/bootstrap_barrio/css/components/contextual.css?pyti2h" />
-<link rel="stylesheet" media="all" href="themes/contrib/bootstrap_barrio/css/components/feed-icon.css?pyti2h" />
-<link rel="stylesheet" media="all" href="themes/contrib/bootstrap_barrio/css/components/field.css?pyti2h" />
-<link rel="stylesheet" media="all" href="themes/contrib/bootstrap_barrio/css/components/header.css?pyti2h" />
-<link rel="stylesheet" media="all" href="themes/contrib/bootstrap_barrio/css/components/help.css?pyti2h" />
-<link rel="stylesheet" media="all" href="themes/contrib/bootstrap_barrio/css/components/icons.css?pyti2h" />
-<link rel="stylesheet" media="all" href="themes/contrib/bootstrap_barrio/css/components/image-button.css?pyti2h" />
-<link rel="stylesheet" media="all" href="themes/contrib/bootstrap_barrio/css/components/item-list.css?pyti2h" />
-<link rel="stylesheet" media="all" href="themes/contrib/bootstrap_barrio/css/components/list-group.css?pyti2h" />
-<link rel="stylesheet" media="all" href="themes/contrib/bootstrap_barrio/css/components/node-preview.css?pyti2h" />
-<link rel="stylesheet" media="all" href="themes/contrib/bootstrap_barrio/css/components/page.css?pyti2h" />
-<link rel="stylesheet" media="all" href="themes/contrib/bootstrap_barrio/css/components/search-form.css?pyti2h" />
-<link rel="stylesheet" media="all" href="themes/contrib/bootstrap_barrio/css/components/shortcut.css?pyti2h" />
-<link rel="stylesheet" media="all" href="themes/contrib/bootstrap_barrio/css/components/sidebar.css?pyti2h" />
-<link rel="stylesheet" media="all" href="themes/contrib/bootstrap_barrio/css/components/site-footer.css?pyti2h" />
-<link rel="stylesheet" media="all" href="themes/contrib/bootstrap_barrio/css/components/skip-link.css?pyti2h" />
-<link rel="stylesheet" media="all" href="themes/contrib/bootstrap_barrio/css/components/table.css?pyti2h" />
-<link rel="stylesheet" media="all" href="themes/contrib/bootstrap_barrio/css/components/tabledrag.css?pyti2h" />
-<link rel="stylesheet" media="all" href="themes/contrib/bootstrap_barrio/css/components/tableselect.css?pyti2h" />
-<link rel="stylesheet" media="all" href="themes/contrib/bootstrap_barrio/css/components/tablesort-indicator.css?pyti2h" />
-<link rel="stylesheet" media="all" href="themes/contrib/bootstrap_barrio/css/components/ui.widget.css?pyti2h" />
-<link rel="stylesheet" media="all" href="themes/contrib/bootstrap_barrio/css/components/tabs.css?pyti2h" />
-<link rel="stylesheet" media="all" href="themes/contrib/bootstrap_barrio/css/components/vertical-tabs.css?pyti2h" />
-<link rel="stylesheet" media="all" href="themes/contrib/bootstrap_barrio/css/components/views.css?pyti2h" />
-<link rel="stylesheet" media="all" href="themes/contrib/bootstrap_barrio/css/components/ui-dialog.css?pyti2h" />
-<link rel="stylesheet" media="all" href="//stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" />
-<link rel="stylesheet" media="all" href="themes/custom/ukhc/css/MyFontsWebfontsKit.css?pyti2h" />
-<link rel="stylesheet" media="all" href="themes/custom/ukhc/css/bootstrap-select.min.css?pyti2h" />
-<link rel="stylesheet" media="all" href="themes/custom/ukhc/css/style.css?pyti2h" />
-<link rel="stylesheet" media="all" href="themes/custom/ukhc/css/colors.css?pyti2h" />
-<link rel="stylesheet" media="print" href="themes/contrib/bootstrap_barrio/css/print.css?pyti2h" />
+    <link rel="stylesheet" media="all" href="core/modules/system/css/components/align.module.css?pyti2h" />
+    <link rel="stylesheet" media="all"
+        href="core/modules/system/css/components/autocomplete-loading.module.css?pyti2h" />
+    <link rel="stylesheet" media="all" href="core/modules/system/css/components/fieldgroup.module.css?pyti2h" />
+    <link rel="stylesheet" media="all" href="core/modules/system/css/components/container-inline.module.css?pyti2h" />
+    <link rel="stylesheet" media="all" href="core/modules/system/css/components/clearfix.module.css?pyti2h" />
+    <link rel="stylesheet" media="all" href="core/modules/system/css/components/details.module.css?pyti2h" />
+    <link rel="stylesheet" media="all" href="core/modules/system/css/components/hidden.module.css?pyti2h" />
+    <link rel="stylesheet" media="all" href="core/modules/system/css/components/item-list.module.css?pyti2h" />
+    <link rel="stylesheet" media="all" href="core/modules/system/css/components/js.module.css?pyti2h" />
+    <link rel="stylesheet" media="all" href="core/modules/system/css/components/nowrap.module.css?pyti2h" />
+    <link rel="stylesheet" media="all" href="core/modules/system/css/components/position-container.module.css?pyti2h" />
+    <link rel="stylesheet" media="all" href="core/modules/system/css/components/progress.module.css?pyti2h" />
+    <link rel="stylesheet" media="all" href="core/modules/system/css/components/reset-appearance.module.css?pyti2h" />
+    <link rel="stylesheet" media="all" href="core/modules/system/css/components/resize.module.css?pyti2h" />
+    <link rel="stylesheet" media="all" href="core/modules/system/css/components/sticky-header.module.css?pyti2h" />
+    <link rel="stylesheet" media="all" href="core/modules/system/css/components/system-status-counter.css?pyti2h" />
+    <link rel="stylesheet" media="all"
+        href="core/modules/system/css/components/system-status-report-counters.css?pyti2h" />
+    <link rel="stylesheet" media="all"
+        href="core/modules/system/css/components/system-status-report-general-info.css?pyti2h" />
+    <link rel="stylesheet" media="all" href="core/modules/system/css/components/tabledrag.module.css?pyti2h" />
+    <link rel="stylesheet" media="all" href="core/modules/system/css/components/tablesort.module.css?pyti2h" />
+    <link rel="stylesheet" media="all" href="core/modules/system/css/components/tree-child.module.css?pyti2h" />
+    <link rel="stylesheet" media="all" href="themes/contrib/bootstrap_barrio/css/components/user.css?pyti2h" />
+    <link rel="stylesheet" media="all" href="themes/contrib/bootstrap_barrio/css/components/progress.css?pyti2h" />
+    <link rel="stylesheet" media="all" href="themes/contrib/bootstrap_barrio/css/components/affix.css?pyti2h" />
+    <link rel="stylesheet" media="all" href="themes/contrib/bootstrap_barrio/css/components/alerts.css?pyti2h" />
+    <link rel="stylesheet" media="all" href="themes/contrib/bootstrap_barrio/css/components/book.css?pyti2h" />
+    <link rel="stylesheet" media="all" href="themes/contrib/bootstrap_barrio/css/components/comments.css?pyti2h" />
+    <link rel="stylesheet" media="all" href="themes/contrib/bootstrap_barrio/css/components/contextual.css?pyti2h" />
+    <link rel="stylesheet" media="all" href="themes/contrib/bootstrap_barrio/css/components/feed-icon.css?pyti2h" />
+    <link rel="stylesheet" media="all" href="themes/contrib/bootstrap_barrio/css/components/field.css?pyti2h" />
+    <link rel="stylesheet" media="all" href="themes/contrib/bootstrap_barrio/css/components/header.css?pyti2h" />
+    <link rel="stylesheet" media="all" href="themes/contrib/bootstrap_barrio/css/components/help.css?pyti2h" />
+    <link rel="stylesheet" media="all" href="themes/contrib/bootstrap_barrio/css/components/icons.css?pyti2h" />
+    <link rel="stylesheet" media="all" href="themes/contrib/bootstrap_barrio/css/components/image-button.css?pyti2h" />
+    <link rel="stylesheet" media="all" href="themes/contrib/bootstrap_barrio/css/components/item-list.css?pyti2h" />
+    <link rel="stylesheet" media="all" href="themes/contrib/bootstrap_barrio/css/components/list-group.css?pyti2h" />
+    <link rel="stylesheet" media="all" href="themes/contrib/bootstrap_barrio/css/components/node-preview.css?pyti2h" />
+    <link rel="stylesheet" media="all" href="themes/contrib/bootstrap_barrio/css/components/page.css?pyti2h" />
+    <link rel="stylesheet" media="all" href="themes/contrib/bootstrap_barrio/css/components/search-form.css?pyti2h" />
+    <link rel="stylesheet" media="all" href="themes/contrib/bootstrap_barrio/css/components/shortcut.css?pyti2h" />
+    <link rel="stylesheet" media="all" href="themes/contrib/bootstrap_barrio/css/components/sidebar.css?pyti2h" />
+    <link rel="stylesheet" media="all" href="themes/contrib/bootstrap_barrio/css/components/site-footer.css?pyti2h" />
+    <link rel="stylesheet" media="all" href="themes/contrib/bootstrap_barrio/css/components/skip-link.css?pyti2h" />
+    <link rel="stylesheet" media="all" href="themes/contrib/bootstrap_barrio/css/components/table.css?pyti2h" />
+    <link rel="stylesheet" media="all" href="themes/contrib/bootstrap_barrio/css/components/tabledrag.css?pyti2h" />
+    <link rel="stylesheet" media="all" href="themes/contrib/bootstrap_barrio/css/components/tableselect.css?pyti2h" />
+    <link rel="stylesheet" media="all"
+        href="themes/contrib/bootstrap_barrio/css/components/tablesort-indicator.css?pyti2h" />
+    <link rel="stylesheet" media="all" href="themes/contrib/bootstrap_barrio/css/components/ui.widget.css?pyti2h" />
+    <link rel="stylesheet" media="all" href="themes/contrib/bootstrap_barrio/css/components/tabs.css?pyti2h" />
+    <link rel="stylesheet" media="all" href="themes/contrib/bootstrap_barrio/css/components/vertical-tabs.css?pyti2h" />
+    <link rel="stylesheet" media="all" href="themes/contrib/bootstrap_barrio/css/components/views.css?pyti2h" />
+    <link rel="stylesheet" media="all" href="themes/contrib/bootstrap_barrio/css/components/ui-dialog.css?pyti2h" />
+    <link rel="stylesheet" media="all" href="//stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" media="all" href="themes/custom/ukhc/css/MyFontsWebfontsKit.css?pyti2h" />
+    <link rel="stylesheet" media="all" href="themes/custom/ukhc/css/bootstrap-select.min.css?pyti2h" />
+    <link rel="stylesheet" media="all" href="themes/custom/ukhc/css/style.css?pyti2h" />
+    <link rel="stylesheet" media="all" href="themes/custom/ukhc/css/colors.css?pyti2h" />
+    <link rel="stylesheet" media="print" href="themes/contrib/bootstrap_barrio/css/print.css?pyti2h" />
 
-    
-<!--[if lte IE 8]>
+
+    <!--[if lte IE 8]>
 <script src="core/assets/vendor/html5shiv/html5shiv.min.js?v=3.7.3"></script>
 <![endif]-->
 
-  </head>
-  <body class="layout-one-sidebar layout-sidebar-first path-frontpage">
+</head>
+
+<body class="layout-one-sidebar layout-sidebar-first path-frontpage">
     <a href="#main-content" class="visually-hidden focusable skip-link">
-      Skip to main content
+        Skip to main content
     </a>
-    
-    
 
-<!-- THEME DEBUG -->
-<!-- THEME HOOK: 'off_canvas_page_wrapper' -->
-<!-- BEGIN OUTPUT from 'core/modules/system/templates/off-canvas-page-wrapper.html.twig' -->
-  <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
-    
 
-<!-- THEME DEBUG -->
-<!-- THEME HOOK: 'page' -->
-<!-- FILE NAME SUGGESTIONS:
+
+    <!-- THEME DEBUG -->
+    <!-- THEME HOOK: 'off_canvas_page_wrapper' -->
+    <!-- BEGIN OUTPUT from 'core/modules/system/templates/off-canvas-page-wrapper.html.twig' -->
+    <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+
+
+        <!-- THEME DEBUG -->
+        <!-- THEME HOOK: 'page' -->
+        <!-- FILE NAME SUGGESTIONS:
    * page--front.html.twig
    * page--healthcare-locations.html.twig
    x page.html.twig
 -->
-<!-- BEGIN OUTPUT from 'themes/custom/ukhc/templates/page.html.twig' -->
+        <!-- BEGIN OUTPUT from 'themes/custom/ukhc/templates/page.html.twig' -->
 
-<div id="page-wrapper">
-    <div class="dark-overlay off"></div>
-    <div id="page">
-    <header id="header" class="header" role="banner" aria-label="Site header">
-    <div class="container-fluid">
-        <div class="row align-items-center">
-            <div class="col-3">
-                <nav class="navbar navbar-expand-lg">
-                    <div class="navbar-button">
-                        <div id="nav-icon">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
+        <div id="page-wrapper">
+            <div class="dark-overlay off"></div>
+            <div id="page">
+                <header id="header" class="header" role="banner" aria-label="Site header">
+                    <div class="container-fluid">
+                        <div class="row align-items-center">
+                            <div class="col-3">
+                                <nav class="navbar navbar-expand-lg">
+                                    <div class="navbar-button">
+                                        <div id="nav-icon">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                    <div class="menu-label d-none d-lg-block">Menu</div>
+                                    <div class="collapse navbar-collapse" id="navbarSupportedContent"> </div>
+                                </nav>
+                            </div>
+                            <div class="col-6 header-logo">
+                                <div class="ukhc-logo"><img src="themes/custom/ukhc/images/ukhc-logo.png" /></div>
+                            </div>
+                            <div class="col-3 patient-tools">
+                                <h4><span class="light">Patient
+                                        <span class="bold">Tools</span>
+                                </h4>
+                            </div>
                         </div>
                     </div>
-                    <div class="menu-label d-none d-lg-block">Menu</div>
-                    <div
-                        class="collapse navbar-collapse" id="navbarSupportedContent">                    </div>
-                </nav>
-            </div>
-            <div class="col-6 header-logo">
-                <div class="ukhc-logo"><img src="themes/custom/ukhc/images/ukhc-logo.png"/></div>
-            </div>
-            <div class="col-3 patient-tools">
-                <h4><span class="light">Patient
-                    <span class="bold">Tools</span>
-                                    </h4>
-            </div>
-        </div>
-    </div>
-    <div class="side-menu primary">
-        <div class="ukhc-logo"><img src="themes/custom/ukhc/images/ukhc-logo.png"/></div>
-        <ul class="side-menu__items">
-            <li nav="find_care" class="side-menu__items--item expand">Find Care<div class="right-angle"></div>
-            </li>
-            <li nav="patient_resources" class="side-menu__items--item expand">
-                <a>Patient Resources<div class="right-angle"></div>
-                </a>
-            </li>
-            <li nav="visitor_resources" class="side-menu__items--item expand">Visitor Resources<div class="right-angle"></div>
-            </li>
-            <li nav="locations" class="side-menu__items--item last">Locations</li>
-            <li nav="research" class="side-menu__items--item expand">Research<div class="right-angle"></div>
-            </li>
-            <li nav="about" class="side-menu__items--item expand">About<div class="right-angle"></div>
-            </li>
-            <li nav="contact" class="side-menu__items--item last">Contact</li>
-            <li nav="give_now" class="side-menu__items--item last">Give Now</li>
-            <div class="scroll-more"/>
-        </ul>
-    </div>
-    <div class="side-menu secondary"></div>
-    <div class="side-menu tertiary"></div>
-</header>
-                        <div id="main-wrapper" class="layout-main-wrapper clearfix">
-                            <div id="main" class="container-fluid px-0">
-                                                            <div class="row main-content row-offcanvas row-offcanvas-left clearfix">
-                        <main class="main-content col" id="content" role="main">
-                            <section class="section">
-                                                                
+                    <div class="side-menu primary">
+                        <div class="ukhc-logo"><img src="themes/custom/ukhc/images/ukhc-logo.png" /></div>
+                        <ul class="side-menu__items">
+                            <li nav="find_care" class="side-menu__items--item expand">Find Care<div class="right-angle">
+                                </div>
+                            </li>
+                            <li nav="patient_resources" class="side-menu__items--item expand">
+                                Patient Resources<div class="right-angle"></div>
 
-<!-- THEME DEBUG -->
-<!-- THEME HOOK: 'region' -->
-<!-- FILE NAME SUGGESTIONS:
+                            </li>
+                            <li nav="visitor_resources" class="side-menu__items--item expand">Visitor Resources<div
+                                    class="right-angle"></div>
+                            </li>
+                            <li nav="locations" class="side-menu__items--item last">Locations</li>
+                            <li nav="research" class="side-menu__items--item expand">Research<div class="right-angle">
+                                </div>
+                            </li>
+                            <li nav="about" class="side-menu__items--item expand">About<div class="right-angle"></div>
+                            </li>
+                            <li nav="contact" class="side-menu__items--item last">Contact</li>
+                            <li nav="give_now" class="side-menu__items--item last">Give Now</li>
+                            <div class="scroll-more" />
+                        </ul>
+                    </div>
+                    <div class="side-menu secondary"></div>
+                    <div class="side-menu tertiary"></div>
+                </header>
+                <div id="main-wrapper" class="layout-main-wrapper clearfix">
+                    <div id="main" class="container-fluid px-0">
+                        <div class="row main-content row-offcanvas row-offcanvas-left clearfix">
+                            <main class="main-content col" id="content" role="main">
+                                <section class="section">
+
+
+                                    <!-- THEME DEBUG -->
+                                    <!-- THEME HOOK: 'region' -->
+                                    <!-- FILE NAME SUGGESTIONS:
    x region--nowrap.html.twig
    * region--content.html.twig
    * region.html.twig
 -->
-<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/layout/region--nowrap.html.twig' -->
-  
+                                    <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/layout/region--nowrap.html.twig' -->
 
-<!-- THEME DEBUG -->
-<!-- THEME HOOK: 'block' -->
-<!-- FILE NAME SUGGESTIONS:
+
+                                    <!-- THEME DEBUG -->
+                                    <!-- THEME HOOK: 'block' -->
+                                    <!-- FILE NAME SUGGESTIONS:
    * block--ukhc-content.html.twig
    * block--system-main-block.html.twig
    * block--system.html.twig
    x block.html.twig
 -->
-<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/block/block.html.twig' -->
-<div id="block-ukhc-content" class="block block-system block-system-main-block">
-  
-    
-      <div class="content">
-      
+                                    <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/block/block.html.twig' -->
+                                    <div id="block-ukhc-content" class="block block-system block-system-main-block">
 
-<!-- THEME DEBUG -->
-<!-- THEME HOOK: 'two_column_6_6' -->
-<!-- FILE NAME SUGGESTIONS:
+
+                                        <div class="content">
+
+
+                                            <!-- THEME DEBUG -->
+                                            <!-- THEME HOOK: 'two_column_6_6' -->
+                                            <!-- FILE NAME SUGGESTIONS:
    x two-column-6-6.html.twig
    x two-column-6-6.html.twig
 -->
-<!-- BEGIN OUTPUT from 'themes/custom/ukhc/templates/two-column-6-6.html.twig' -->
-<div class="container-fluid no-padding">
-    <div class="block-region-top-fluid">
+                                            <!-- BEGIN OUTPUT from 'themes/custom/ukhc/templates/two-column-6-6.html.twig' -->
+                                            <div class="container-fluid no-padding">
+                                                <div class="block-region-top-fluid">
 
-<!-- THEME DEBUG -->
-<!-- THEME HOOK: 'block' -->
-<!-- FILE NAME SUGGESTIONS:
+                                                    <!-- THEME DEBUG -->
+                                                    <!-- THEME HOOK: 'block' -->
+                                                    <!-- FILE NAME SUGGESTIONS:
    * block--searchbar.html.twig
    * block--ukhc-plugins.html.twig
    x block.html.twig
 -->
-<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/block/block.html.twig' -->
-<div class="block block-ukhc-plugins block-searchbar">
-  
-    
-      <div class="content">
-      
-
-<!-- THEME DEBUG -->
-<!-- THEME HOOK: 'searchbar' -->
-<!-- BEGIN OUTPUT from 'modules/custom/ukhc_plugins/templates/searchbar.html.twig' -->
-<div class="health-search">
-    <h1>Search UK HealthCare Locations</h1>
-    <input type="text" placeholder=""><div class="search-submit">
-        <span class="search-text">Search</span>
-        <div class="search-icon"></div>
-    </div>
-</div>
-<div class="search-filter">
-    <div class="container-fluid">
-        <div class="row justify-content-sm-center">
-            <div class="col col-sm-auto">
-                <div class="filter-tab-label">All Results</div>
-            </div>
-            <div class="col col-sm-auto active">
-                <div class="filter-tab-label">Doctors</div>
-            </div>
-            <div class="col col-sm-auto">
-                <div class="filter-tab-label">Conditions & Treatments</div>
-            </div>
-            <div class="col col-sm-auto">
-                <div class="filter-tab-label">Locations</div>
-            </div>
-            <div class="col col-sm-auto">
-                <div class="filter-tab-label">News & Events</div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="search-filter-mobile container-fluid">
-    <select class="selectpicker">
-        <option data-tokens="relevance" data-content="<span class='placeholder'>All Results</span>">All Results (34)</option>
-        <option data-tokens="doctors">Doctors (16)</option>
-        <option data-tokens="conditions_treatments">Conditions & Treatments (1)</option>
-        <option data-tokens="locations">Locations (2)</option>
-        <option data-tokens="news_and_events">News & Events (15)</option>
-    </select>
-</div>
-
-<!-- END OUTPUT from 'modules/custom/ukhc_plugins/templates/searchbar.html.twig' -->
+                                                    <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/block/block.html.twig' -->
+                                                    <div class="block block-ukhc-plugins block-searchbar">
 
 
-    </div>
-  </div>
+                                                        <div class="content">
 
-<!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/block/block.html.twig' -->
 
-</div>
-</div>
-<div class="container">
-    
-</div>
-<div class="container">
-    <div class="row">
-        <div class="col-12 col-md-6">
-            <div class="block-region-left">
+                                                            <!-- THEME DEBUG -->
+                                                            <!-- THEME HOOK: 'searchbar' -->
+                                                            <!-- BEGIN OUTPUT from 'modules/custom/ukhc_plugins/templates/searchbar.html.twig' -->
+                                                            <div class="health-search">
+                                                                <h1>Search UK HealthCare Locations</h1>
+                                                                <input type="text" placeholder="">
+                                                                <div class="search-submit">
+                                                                    <span class="search-text">Search</span>
+                                                                    <div class="search-icon"></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="search-filter">
+                                                                <div class="container-fluid">
+                                                                    <div class="row justify-content-sm-center">
+                                                                        <div class="col col-sm-auto">
+                                                                            <div class="filter-tab-label">All Results
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col col-sm-auto active">
+                                                                            <div class="filter-tab-label">Doctors</div>
+                                                                        </div>
+                                                                        <div class="col col-sm-auto">
+                                                                            <div class="filter-tab-label">Conditions &
+                                                                                Treatments</div>
+                                                                        </div>
+                                                                        <div class="col col-sm-auto">
+                                                                            <div class="filter-tab-label">Locations
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col col-sm-auto">
+                                                                            <div class="filter-tab-label">News & Events
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="search-filter-mobile container-fluid">
+                                                                <select class="selectpicker">
+                                                                    <option data-tokens="relevance"
+                                                                        data-content="<span class='placeholder'>All Results</span>">
+                                                                        All Results (34)</option>
+                                                                    <option data-tokens="doctors">Doctors (16)</option>
+                                                                    <option data-tokens="conditions_treatments">
+                                                                        Conditions & Treatments (1)</option>
+                                                                    <option data-tokens="locations">Locations (2)
+                                                                    </option>
+                                                                    <option data-tokens="news_and_events">News & Events
+                                                                        (15)</option>
+                                                                </select>
+                                                            </div>
 
-<!-- THEME DEBUG -->
-<!-- THEME HOOK: 'block' -->
-<!-- FILE NAME SUGGESTIONS:
+                                                            <!-- END OUTPUT from 'modules/custom/ukhc_plugins/templates/searchbar.html.twig' -->
+
+
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/block/block.html.twig' -->
+
+                                                </div>
+                                            </div>
+                                            <div class="container">
+
+                                            </div>
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-12 col-md-6">
+                                                        <div class="block-region-left">
+
+                                                            <!-- THEME DEBUG -->
+                                                            <!-- THEME HOOK: 'block' -->
+                                                            <!-- FILE NAME SUGGESTIONS:
    * block--Location Results.html.twig
    * block--ukhc-plugins.html.twig
    x block.html.twig
 -->
-<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/block/block.html.twig' -->
-<div class="block block-ukhc-plugins block-location-results">
-  
-    
-      <div class="content">
-      
-
-<!-- THEME DEBUG -->
-<!-- THEME HOOK: 'locationresults' -->
-<!-- BEGIN OUTPUT from 'modules/custom/ukhc_plugins/templates/locationresults.html.twig' -->
-<div class="locations">
-    <div class="accordion">
-        <div class="card">
-            <div class="card-header" id="uk-chandler">
-                <a class="collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                    <div class="location-title">UK Albert B. Chandler Hospital Pavilion A</div>
-                    <div class="location-address">
-                        1000 South Limestone<br/>
-                        Lexington, KY 40536
-                    </div>
-                    <div class="up-angle blue"></div>
-                </a>
-            </div>
-            <div id="collapseOne" class="collapse" aria-labelledby="uk-chandler">
-                <div class="details container-fluid">
-                    <div class="row">
-                        <div class="col col-12 col-sm-6">
-                            <div class="bold">Phone</div>
-                            <a href="tel:18593235000">859-323-5000</a>
-                            <div class="location-hours">
-                                <div class="bold">Hours</div>
-                                <span class="bold">Mon-Fri:</span>
-                                7:30AM - 5:00PM<br/>
-                                <span class="bold">Sat-Sun:</span>
-                                Closed<br/>
-                            </div>
-                        </div>
-                        <div class="location-links col col-12 col-sm-6">
-                            <a>Parking</a><br/>
-                            <a>Dropoff/Pickup</a><br/>
-                            <a>Shuttle Stop</a><br/>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- END OUTPUT from 'modules/custom/ukhc_plugins/templates/locationresults.html.twig' -->
+                                                            <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/block/block.html.twig' -->
+                                                            <div
+                                                                class="block block-ukhc-plugins block-location-results">
 
 
-    </div>
-  </div>
+                                                                <div class="content">
 
-<!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/block/block.html.twig' -->
 
-</div>
-        </div>
-        <div class="col-12 col-md-6">
-            <div class="block-region-right">
+                                                                    <!-- THEME DEBUG -->
+                                                                    <!-- THEME HOOK: 'locationresults' -->
+                                                                    <!-- BEGIN OUTPUT from 'modules/custom/ukhc_plugins/templates/locationresults.html.twig' -->
+                                                                    <div class="locations">
+                                                                        <div class="accordion">
+                                                                            <div class="card">
+                                                                                <div class="card-header"
+                                                                                    id="uk-chandler">
+                                                                                    <a class="collapsed" type="button"
+                                                                                        data-toggle="collapse"
+                                                                                        data-target="#collapseOne"
+                                                                                        aria-expanded="false"
+                                                                                        aria-controls="collapseOne">
+                                                                                        <div class="location-title">UK
+                                                                                            Albert B. Chandler Hospital
+                                                                                            Pavilion A</div>
+                                                                                        <div class="location-address">
+                                                                                            1000 South Limestone<br />
+                                                                                            Lexington, KY 40536
+                                                                                        </div>
+                                                                                        <div class="up-angle blue">
+                                                                                        </div>
+                                                                                    </a>
+                                                                                </div>
+                                                                                <div id="collapseOne" class="collapse"
+                                                                                    aria-labelledby="uk-chandler">
+                                                                                    <div
+                                                                                        class="details container-fluid">
+                                                                                        <div class="row">
+                                                                                            <div
+                                                                                                class="col col-12 col-sm-6">
+                                                                                                <div class="bold">Phone
+                                                                                                </div>
+                                                                                                <a
+                                                                                                    href="tel:18593235000">859-323-5000</a>
+                                                                                                <div
+                                                                                                    class="location-hours">
+                                                                                                    <div class="bold">
+                                                                                                        Hours</div>
+                                                                                                    <span
+                                                                                                        class="bold">Mon-Fri:</span>
+                                                                                                    7:30AM -
+                                                                                                    5:00PM<br />
+                                                                                                    <span
+                                                                                                        class="bold">Sat-Sun:</span>
+                                                                                                    Closed<br />
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div
+                                                                                                class="location-links col col-12 col-sm-6">
+                                                                                                <a>Parking</a><br />
+                                                                                                <a>Dropoff/Pickup</a><br />
+                                                                                                <a>Shuttle
+                                                                                                    Stop</a><br />
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
 
-<!-- THEME DEBUG -->
-<!-- THEME HOOK: 'block' -->
-<!-- FILE NAME SUGGESTIONS:
+                                                                    <!-- END OUTPUT from 'modules/custom/ukhc_plugins/templates/locationresults.html.twig' -->
+
+
+                                                                </div>
+                                                            </div>
+
+                                                            <!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/block/block.html.twig' -->
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-md-6">
+                                                        <div class="block-region-right">
+
+                                                            <!-- THEME DEBUG -->
+                                                            <!-- THEME HOOK: 'block' -->
+                                                            <!-- FILE NAME SUGGESTIONS:
    * block--Location Map.html.twig
    * block--ukhc-plugins.html.twig
    x block.html.twig
 -->
-<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/block/block.html.twig' -->
-<div class="block block-ukhc-plugins block-location-map">
-  
-    
-      <div class="content">
-      
-
-<!-- THEME DEBUG -->
-<!-- THEME HOOK: 'locationmap' -->
-<!-- BEGIN OUTPUT from 'modules/custom/ukhc_plugins/templates/locationmap.html.twig' -->
-<iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/view?zoom=17&center=38.0316%2C-84.5082&key=" allowfullscreen></iframe>
-<!-- END OUTPUT from 'modules/custom/ukhc_plugins/templates/locationmap.html.twig' -->
+                                                            <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/block/block.html.twig' -->
+                                                            <div class="block block-ukhc-plugins block-location-map">
 
 
-    </div>
-  </div>
-
-<!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/block/block.html.twig' -->
-
-</div>
-        </div>
-    </div>
-</div>
-
-<!-- END OUTPUT from 'themes/custom/ukhc/templates/two-column-6-6.html.twig' -->
+                                                                <div class="content">
 
 
-    </div>
-  </div>
+                                                                    <!-- THEME DEBUG -->
+                                                                    <!-- THEME HOOK: 'locationmap' -->
+                                                                    <!-- BEGIN OUTPUT from 'modules/custom/ukhc_plugins/templates/locationmap.html.twig' -->
+                                                                    <iframe width="600" height="450" frameborder="0"
+                                                                        style="border:0"
+                                                                        src="https://www.google.com/maps/embed/v1/view?zoom=17&center=38.0316%2C-84.5082&key="
+                                                                        allowfullscreen></iframe>
+                                                                    <!-- END OUTPUT from 'modules/custom/ukhc_plugins/templates/locationmap.html.twig' -->
 
-<!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/block/block.html.twig' -->
 
+                                                                </div>
+                                                            </div>
 
+                                                            <!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/block/block.html.twig' -->
 
-<!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/layout/region--nowrap.html.twig' -->
-
-
-                                                            </section>
-                        </main>
-                        
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
-                </div>
+
+                                            <!-- END OUTPUT from 'themes/custom/ukhc/templates/two-column-6-6.html.twig' -->
+
+
+                                        </div>
+                                    </div>
+
+                                    <!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/block/block.html.twig' -->
+
+
+
+                                    <!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/layout/region--nowrap.html.twig' -->
+
+
+                                </section>
+                            </main>
+
+                        </div>
                     </div>
-                <footer>
-        <div class="footer">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <h5>Patients & Visitors</h5>
-                <ul>
-                    <li>Appointment</li>
-                    <li>General Information</li>
-                    <li>New Patients</li>
-                    <li>Privacy Policy</li>
-                    <li>Your Visit</li>
-                </ul>
-                <h5>For the Community</h5>
-                <ul>
-                    <li>Arts in Healthcare</li>
-                    <li>Employment</li>
-                    <li>For the Media</li>
-                    <li>Volunteer or Observe</li>
-                    <li>Wellness & Community</li>
-                </ul>
-            </div>
-            <div class="col-md-4">
-                <h5>About UK Healthcare</h5>
-                <ul>
-                    <li>Equal Opportunity University</li>
-                    <li>Interpreter Services</li>
-                    <li>Notice of Non-Discrimination</li>
-                    <li>Update or Correct This Page</li>
-                    <li>Drupal Login</li>
-                </ul>
-            </div>
-            <div class="col-md-4">
-                <h5>Contact Us</h5>
-                <div class="contact">
-                <p>1000 S. Limestone</p>
-                <p>University of Kentucky</p>
-                <p>Lexington, KY 40536</p>
                 </div>
-                <p>
-                    859-257-1000 or<br/>800-333-8874 (toll free)
-                </p>
+                <footer>
+                    <div class="footer">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <h5>Patients & Visitors</h5>
+                                    <ul>
+                                        <li>Appointment</li>
+                                        <li>General Information</li>
+                                        <li>New Patients</li>
+                                        <li>Privacy Policy</li>
+                                        <li>Your Visit</li>
+                                    </ul>
+                                    <h5>For the Community</h5>
+                                    <ul>
+                                        <li>Arts in Healthcare</li>
+                                        <li>Employment</li>
+                                        <li>For the Media</li>
+                                        <li>Volunteer or Observe</li>
+                                        <li>Wellness & Community</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <h5>About UK Healthcare</h5>
+                                    <ul>
+                                        <li>Equal Opportunity University</li>
+                                        <li>Interpreter Services</li>
+                                        <li>Notice of Non-Discrimination</li>
+                                        <li>Update or Correct This Page</li>
+                                        <li>Drupal Login</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <h5>Contact Us</h5>
+                                    <div class="contact">
+                                        <p>1000 S. Limestone</p>
+                                        <p>University of Kentucky</p>
+                                        <p>Lexington, KY 40536</p>
+                                    </div>
+                                    <p>
+                                        859-257-1000 or<br />800-333-8874 (toll free)
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
             </div>
         </div>
+
+        <!-- END OUTPUT from 'themes/custom/ukhc/templates/page.html.twig' -->
+
+
     </div>
-</div>
-                    </footer>
-    </div>
-</div>
 
-<!-- END OUTPUT from 'themes/custom/ukhc/templates/page.html.twig' -->
+    <!-- END OUTPUT from 'core/modules/system/templates/off-canvas-page-wrapper.html.twig' -->
 
 
-  </div>
 
-<!-- END OUTPUT from 'core/modules/system/templates/off-canvas-page-wrapper.html.twig' -->
+    <script type="application/json"
+        data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"healthcare-locations","currentPathIsAdmin":false,"isFront":true,"currentLanguage":"en"},"pluralDelimiter":"\u0003","user":{"uid":0,"permissionsHash":"89dd9a2ecfaee91cfdbbe3f79991d7386d3977b9679a9d6df9c88d29b14be152"}}</script>
+    <script src="core/assets/vendor/domready/ready.min.js?v=1.0.8"></script>
+    <script src="core/assets/vendor/jquery/jquery.min.js?v=3.2.1"></script>
+    <script src="core/assets/vendor/jquery/jquery-extend-3.4.0.js?v=3.2.1"></script>
+    <script src="core/assets/vendor/jquery-once/jquery.once.min.js?v=2.2.0"></script>
+    <script src="core/misc/drupalSettingsLoader.js?v=8.7.7"></script>
+    <script src="core/misc/drupal.js?v=8.7.7"></script>
+    <script src="core/misc/drupal.init.js?v=8.7.7"></script>
+    <script src="themes/contrib/bootstrap_barrio/js/global.js?v=8.7.7"></script>
+    <script src="themes/contrib/bootstrap_barrio/js/affix.js?v=8.7.7"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="//stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="themes/custom/ukhc/js/global.js?v=8.7.7"></script>
+    <script src="themes/custom/ukhc/js/bootstrap-select.min.js?v=8.7.7"></script>
+    <script src="themes/custom/ukhc/js/page.js?v=8.7.7"></script>
 
+</body>
 
-    
-    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"healthcare-locations","currentPathIsAdmin":false,"isFront":true,"currentLanguage":"en"},"pluralDelimiter":"\u0003","user":{"uid":0,"permissionsHash":"89dd9a2ecfaee91cfdbbe3f79991d7386d3977b9679a9d6df9c88d29b14be152"}}</script>
-<script src="core/assets/vendor/domready/ready.min.js?v=1.0.8"></script>
-<script src="core/assets/vendor/jquery/jquery.min.js?v=3.2.1"></script>
-<script src="core/assets/vendor/jquery/jquery-extend-3.4.0.js?v=3.2.1"></script>
-<script src="core/assets/vendor/jquery-once/jquery.once.min.js?v=2.2.0"></script>
-<script src="core/misc/drupalSettingsLoader.js?v=8.7.7"></script>
-<script src="core/misc/drupal.js?v=8.7.7"></script>
-<script src="core/misc/drupal.init.js?v=8.7.7"></script>
-<script src="themes/contrib/bootstrap_barrio/js/global.js?v=8.7.7"></script>
-<script src="themes/contrib/bootstrap_barrio/js/affix.js?v=8.7.7"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-<script src="//stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-<script src="themes/custom/ukhc/js/global.js?v=8.7.7"></script>
-<script src="themes/custom/ukhc/js/bootstrap-select.min.js?v=8.7.7"></script>
-<script src="themes/custom/ukhc/js/page.js?v=8.7.7"></script>
-
-  </body>
 </html>
 
 <!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/layout/html.html.twig' -->
-
