@@ -14,7 +14,7 @@ Description: Bootstrap 4 with Sass
  */
 
  .search-submit{
-   
+
    /* This isn't meant to be here
    Something about github pages is making a gap between the submit button
    and the text input */
@@ -22,6 +22,7 @@ Description: Bootstrap 4 with Sass
    right:4px;
    position:relative;
  }
+ 
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -10471,7 +10472,7 @@ footer {
   overflow-y: auto;
   position: fixed;
   top: 0;
-  padding: 150px 0 0;
+  padding: 75px 0 0;
   -ms-overflow-style: none;
   scrollbar-width: none;
   height: 100vh;
