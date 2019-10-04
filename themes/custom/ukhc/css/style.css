@@ -12,6 +12,16 @@ Description: Bootstrap 4 with Sass
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+
+ .search-submit{
+   
+   /* This isn't meant to be here
+   Something about github pages is making a gap between the submit button
+   and the text input */
+
+   right:4px;
+   position:relative;
+ }
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
