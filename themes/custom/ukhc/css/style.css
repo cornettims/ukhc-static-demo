@@ -10692,7 +10692,7 @@ footer {
               flex-grow: 1;
       position: relative; }
       .doctor-results .doctor .doctor-card .doctor-info .info-bottom {
-        bottom: 0;
+        bottom: 10px;
         position: absolute; }
       .doctor-results .doctor .doctor-card .doctor-info .doctor-name {
         font-size: 18px;
