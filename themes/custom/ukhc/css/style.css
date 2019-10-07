@@ -11248,8 +11248,11 @@ body {
     background: url(../images/caret-right.svg);
     float: none;
     display: inline-block;
-    height: 15px;
-    width: 9px; }
+    height: 12px;
+    /* width: 13px; */
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
 
 .main-content {
   margin: 0;
