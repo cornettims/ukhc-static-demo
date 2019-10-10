@@ -10511,7 +10511,7 @@ footer {
   overflow-y: auto;
   position: fixed;
   top: 0;
-  padding: 150px 0 0;
+  padding: 50px 0 0;
   -ms-overflow-style: none;
   scrollbar-width: none;
   height: 100vh;
