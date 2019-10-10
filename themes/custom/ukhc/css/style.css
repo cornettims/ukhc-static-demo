@@ -10954,7 +10954,7 @@ footer {
     width: 196px;
     border: 1px solid #65666a; }
     .sort-dropdown button .filter-option .placeholder {
-      color: #b7b7b7; }
+      color: #71738c; }
     .sort-dropdown button.dropdown-toggle.btn-light {
       background-color: white;
       height: 40px;
@@ -11001,7 +11001,7 @@ button {
         max-width: 350px !important;
         min-width: 0 !important; } }
     .search-dropdowns .search-dropdown button .filter-option .placeholder {
-      color: #b7b7b7; }
+      color: #71738c; }
     .search-dropdowns .search-dropdown button.dropdown-toggle.btn-light {
       background-color: white; }
 
