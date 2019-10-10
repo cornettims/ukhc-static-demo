@@ -10504,6 +10504,7 @@ footer {
 
 .menu-label {
   color: #fff;
+  text-transform: uppercase;
   margin-left: 20px;
   z-index: 8; }
 
