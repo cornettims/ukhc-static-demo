@@ -4,10 +4,10 @@
 <!-- THEME HOOK: 'views_view_rss' -->
 <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/views/views-view-rss.html.twig' -->
 <?xml version="1.0" encoding="utf-8" ?>
-<rss version="2.0" xml:base="http://ukhc.test/rss.xml" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:og="http://ogp.me/ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:schema="http://schema.org/" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+<rss version="2.0" xml:base="https://cornettims.github.io/rss.xml" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:og="http://ogp.me/ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:schema="http://schema.org/" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
   <channel>
     <title>UK Healthcare</title>
-    <link>http://ukhc.test/rss.xml</link>
+    <link>https://cornettims.github.io/rss.xml</link>
     <description></description>
     <language>en</language>
     
@@ -18,7 +18,7 @@
 <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/views/views-view-row-rss.html.twig' -->
 <item>
   <title>Craig G. Horne, MD, PhD</title>
-  <link>http://ukhc.test/node/1</link>
+  <link>https://cornettims.github.io/node/1</link>
   <description>
 
 &lt;!-- THEME DEBUG --&gt;
@@ -168,7 +168,7 @@
 </description>
   <pubDate>Wed, 18 Sep 2019 15:43:47 +0000</pubDate>
     <dc:creator>matt</dc:creator>
-    <guid isPermaLink="false">1 at http://ukhc.test</guid>
+    <guid isPermaLink="false">1 at https://cornettims.github.io</guid>
     </item>
 
 <!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/views/views-view-row-rss.html.twig' -->

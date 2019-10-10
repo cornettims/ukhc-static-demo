@@ -1,10 +1,23 @@
 jQuery(document).ready(function ($) {
+    $('.patient-tools').click(function () {
+        $('.patient-tools-dropdown').toggleClass('open');
+    });
     $('.card-header').click(function () {
         $(this).toggleClass('open');
         $(this).parent().toggleClass('open');
-        $('.card-header').not(this).removeClass('open');      
-          
+        $('.card-header').not(this).removeClass('open');
     });
+    $('.page-number').click(function () {
+        $('.page-number').removeClass('active');
+        $(this).addClass('active');
+        $('html,body').animate({
+            scrollTop: $('#condition').offset().top
+        },'slow');
+        $('.general-result').fadeOut("slow",function(){
+            $(this).next().fadeIn("slow");
+        });
+    });
+
     $('.counter').each(function () {
         var $this = $(this),
             countTo = $this.attr('data-count');
@@ -13,7 +26,7 @@ jQuery(document).ready(function ($) {
             countNum: countTo
         },
             {
-                duration: 1000,
+                duration: Math.floor(Math.random() * 3000),
                 easing: 'swing',
                 step: function () {
                     $this.text(Math.floor(this.countNum));
@@ -34,9 +47,9 @@ jQuery(document).ready(function ($) {
         $(this).toggleClass('active');
     });
     $('.load-more').click(function () {
-        $('.doctor-results').append('<div class="row"> <div class="doctor col col-12 col-lg-6"> <div class="doctor-card"> <div class="doctor-image"> <img src="../themes/custom/ukhc/images/doctors/kudrimoti-mahesh.jpg"> </div> <div class="doctor-info"> <div class="doctor-name">Mahesh R. Kudrimoti, MD</div> <div class="doctor-title">Vice-Chair of Clinical Operations<br><br> </div> <div class="rating row"> <div class="star-ratings-css"> <div class="top" style="width: 80%"> <span>★</span> <span>★</span> <span>★</span> <span>★</span> <span>★</span> </div> <div class="bottom"> <span>★</span> <span>★</span> <span>★</span> <span>★</span> <span>★</span> </div> </div> <div class="rating-number">4 out of 5</div> </div> <div class="profile-link"> <a href="">View Profile</a> <div class="right-angle blue"></div> </div> </div> </div> </div> <div class="doctor col col-12 col-lg-6"> <div class="doctor-card"> <div class="doctor-image"> <img src="../themes/custom/ukhc/images/doctors/szabunio-margaret.jpg"> </div> <div class="doctor-info"> <div class="doctor-name">Margaret M. Szabunio, MD</div> <div class="doctor-title">Chief, Division of Women\'s Radiology<br>Associate Medical Director,<br>Comprehensive Breast Care Center</div> <div class="rating row"> <div class="star-ratings-css"> <div class="top" style="width: 97%"> <span>★</span> <span>★</span> <span>★</span> <span>★</span> <span>★</span> </div> <div class="bottom"> <span>★</span> <span>★</span> <span>★</span> <span>★</span> <span>★</span> </div> </div> <div class="rating-number">4.88 out of 5</div> </div> <div class="profile-link"> <a href="">View Profile</a> <div class="right-angle blue"></div> </div> </div> </div> </div> </div>');
+        $('.doctor-results > .row').append('<div class="doctor col col-12 col-lg-6"> <div class="doctor-card"> <div class="doctor-image"><img src="../themes/custom/ukhc/images/doctors/kudrimoti-mahesh.jpg"></div> <div class="doctor-info"> <div class="doctor-name">Mahesh R. Kudrimoti, MD</div> <div class="doctor-title"> <p class="light mb-0">Vice-Chair of Clinical Operations</p> </div> <div class="info-bottom"> <div class="rating row"> <div class="star-ratings-css"> <div class="top" style="width: 80%"> <span>★</span> <span>★</span> <span>★</span> <span>★</span> <span>★</span> </div> <div class="bottom"> <span>★</span> <span>★</span> <span>★</span> <span>★</span> <span>★</span> </div> </div> <div class="rating-number">4 out of 5</div> </div> </div> </div> </div> </div> <div class="doctor col col-12 col-lg-6"> <div class="doctor-card"> <div class="doctor-image"><img src="../themes/custom/ukhc/images/doctors/szabunio-margaret.jpg"></div> <div class="doctor-info"> <div class="doctor-name">Margaret M. Szabunio, MD</div> <div class="doctor-title"> <p class="light mb-0">Chief, Division of Women\'s Radiology</p> <p class="light mb-0">Associate Medical Director, Comprehensive Breast Care Center</p> </div> <div class="info-bottom"> <div class="rating row"> <div class="star-ratings-css"> <div class="top" style="width: 97.6%"> <span>★</span> <span>★</span> <span>★</span> <span>★</span> <span>★</span> </div> <div class="bottom"> <span>★</span> <span>★</span> <span>★</span> <span>★</span> <span>★</span> </div> </div> <div class="rating-number">4.88 out of 5</div> </div> </div> </div> </div> </div>');
     });
-    $('.navbar-button,.menu-label').click(function () {
+    $('.navbar-button,.menu-label,.dark-overlay').click(function () {
         $('.side-menu').removeClass('covered');
         $("#nav-icon").toggleClass('open');
         $(".dark-overlay").toggleClass('off');
@@ -45,6 +58,20 @@ jQuery(document).ready(function ($) {
         $(".side-menu.secondary,.side-menu.tertiary").removeClass("open");
         $('.side-menu li').removeClass("hovered");
         $('.menu-label').html(jQuery('.menu-label').html() == 'Menu' ? 'Close' : 'Menu');
+    });
+    $(document).keyup(function (e) {
+        if (e.keyCode === 27) {
+            if ($('#nav-icon').hasClass('open')) {
+                $('.side-menu').removeClass('covered');
+                $("#nav-icon").toggleClass('open');
+                $(".dark-overlay").toggleClass('off');
+                $("body").toggleClass('no-scroll');
+                $('.side-menu.primary').toggleClass('open');
+                $(".side-menu.secondary,.side-menu.tertiary").removeClass("open");
+                $('.side-menu li').removeClass("hovered");
+                $('.menu-label').html(jQuery('.menu-label').html() == 'Menu' ? 'Close' : 'Menu');
+            }
+        }
     });
     if ($(window).width() > 768) {
         $('.side-menu.primary li').hover(function () {
@@ -295,7 +322,7 @@ var menu = {
                     'id': 'schedule_appointment',
                     'parent': 'find_care',
                     'url': '#',
-                    'label': 'Schedule and Appointment'
+                    'label': 'Schedule an Appointment'
                 },
                 {
                     'id': 'ukhealthcare_portal',
