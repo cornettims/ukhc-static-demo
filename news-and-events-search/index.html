@@ -3,7 +3,7 @@
 <!-- THEME DEBUG -->
 <!-- THEME HOOK: 'html' -->
 <!-- FILE NAME SUGGESTIONS:
-   * html--doctor-search.html.twig
+   * html--news-and-events-search.html.twig
    x html.html.twig
 -->
 <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/layout/html.html.twig' -->
@@ -18,7 +18,7 @@
 <meta http-equiv="x-ua-compatible" content="ie=edge" />
 <link rel="shortcut icon" href="/core/misc/favicon.ico" type="image/vnd.microsoft.icon" />
 
-    <title>Doctor Search | UK Healthcare</title>
+    <title>News and Events Search | UK Healthcare</title>
     <link rel="stylesheet" media="all" href="../sites/default/files/css/css_87GMcmxT1ib8ziQiU2KUAnTDFtZQV6iP-KGslA9LigM.css?q0gb88" />
 <link rel="stylesheet" media="all" href="../sites/default/files/css/css_dTw1AaF9J6sOKy4CMQtcw4o_PvP-4BpIIv8jrgQho-8.css?q0gb88" />
 <link rel="stylesheet" media="all" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" />
@@ -31,7 +31,7 @@
 <![endif]-->
 
   </head>
-  <body class="layout-one-sidebar layout-sidebar-first path-doctor-search">
+  <body class="layout-one-sidebar layout-sidebar-first path-news-and-events-search">
     <a href="#main-content" class="visually-hidden focusable skip-link">
       Skip to main content
     </a>
@@ -47,7 +47,7 @@
 <!-- THEME DEBUG -->
 <!-- THEME HOOK: 'page' -->
 <!-- FILE NAME SUGGESTIONS:
-   * page--doctor-search.html.twig
+   * page--news-and-events-search.html.twig
    x page.html.twig
 -->
 <!-- BEGIN OUTPUT from 'themes/custom/ukhc/templates/page.html.twig' -->
@@ -139,21 +139,21 @@
    x block.html.twig
 -->
 <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/block/block.html.twig' -->
-<div id="block-ukhc-content--2" class="block block-system block-system-main-block">
+<div id="block-ukhc-content" class="block block-system block-system-main-block">
   
     
       <div class="content">
       
 
 <!-- THEME DEBUG -->
-<!-- THEME HOOK: 'one_column' -->
+<!-- THEME HOOK: 'two_column_9_3' -->
 <!-- FILE NAME SUGGESTIONS:
-   x one-column.html.twig
-   x one-column.html.twig
+   x two-column-9-3.html.twig
+   x two-column-9-3.html.twig
 -->
-<!-- BEGIN OUTPUT from 'themes/custom/ukhc/templates/one-column.html.twig' -->
-<div class="one-col-top">
-    <div class="block-region-top">
+<!-- BEGIN OUTPUT from 'themes/custom/ukhc/templates/two-column-9-3.html.twig' -->
+<div class="container-fluid p-0">
+    <div class="block-region-top-fluid">
 
 <!-- THEME DEBUG -->
 <!-- THEME HOOK: 'block' -->
@@ -173,9 +173,9 @@
 <!-- THEME HOOK: 'searchbar' -->
 <!-- BEGIN OUTPUT from 'modules/custom/ukhc_plugins/templates/searchbar.html.twig' -->
 <div class="health-search p-5 mb-4 mb-lg-0">
-    <h1>Find a UK HealthCare Doctor or Provider</h1>
+    <h1>Search UK HealthCare News &amp; Events</h1>
     <div class="search-input-container">
-        <input type="text" placeholder="Mahesh Kudrimoti">
+        <input type="text" placeholder="Search News &amp; Events">
 
         <div class="search-submit">
             <span class="search-text">Search</span>
@@ -207,7 +207,7 @@
                             <div class="col col-sm-auto px-lg-2 py-lg-4 d-flex flex-column justify-content-center">
                     <div class="filter-tab-label h5 m-0">All Results</div>
                 </div>
-                <div class="col col-sm-auto px-lg-2 py-lg-4 active d-flex flex-column justify-content-center">
+                <div class="col col-sm-auto px-lg-2 py-lg-4 d-flex flex-column justify-content-center">
                     <div class="filter-tab-label h5 m-0">Doctors</div>
                 </div>
                 <div class="col col-sm-auto px-lg-2 py-lg-4 d-flex flex-column justify-content-center">
@@ -216,7 +216,7 @@
                 <div class="col col-sm-auto px-lg-2 py-lg-4 d-flex flex-column justify-content-center">
                     <div class="filter-tab-label h5 m-0">Locations</div>
                 </div>
-                <div class="col col-sm-auto px-lg-2 py-lg-4 d-flex flex-column justify-content-center">
+                <div class="col col-sm-auto px-lg-2 py-lg-4 d-flex active flex-column justify-content-center">
                     <div class="filter-tab-label h5 m-0">News & Events</div>
                 </div>
                     </div>
@@ -237,38 +237,29 @@
 <!-- THEME DEBUG -->
 <!-- THEME HOOK: 'block' -->
 <!-- FILE NAME SUGGESTIONS:
-   * block--Doctor Search.html.twig
+   * block--News Search.html.twig
    * block--ukhc-plugins.html.twig
    x block.html.twig
 -->
 <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/block/block.html.twig' -->
-<div class="block block-ukhc-plugins block-doctor-search">
+<div class="block block-ukhc-plugins block-news-search">
   
     
       <div class="content">
       
 
 <!-- THEME DEBUG -->
-<!-- THEME HOOK: 'doctor_search' -->
-<!-- BEGIN OUTPUT from 'modules/custom/ukhc_plugins/templates/doctor-search.html.twig' -->
-<div class="doctorsearch container">
-    <div class="h2 search-result-count">
-        <span class="counter" data-count="34">15</span>
-        Results for "UK Doctor"</div>
-    <div class="switch switch-blue mb-3">
-        <input type="radio" class="switch-input" name="view2" value="adult" id="adult" checked>
-        <label for="adult" class="switch-label switch-label-off">Adult</label>
-        <input type="radio" class="switch-input" name="view2" value="pediatric" id="pediatric">
-        <label for="pediatric" class="switch-label switch-label-on">Pediatric</label>
-        <span class="switch-selection"></span>
+<!-- THEME HOOK: 'news_searchbar' -->
+<!-- BEGIN OUTPUT from 'modules/custom/ukhc_plugins/templates/news-searchbar.html.twig' -->
+<div class="news-search mt-3 mb-1 search-dropdowns locations-results container">
+<div class="row page-count mt-3 mb-3">
+    <div class="col p-md-0 h4 ml-3">77 Results for "Neurology"</div>
     </div>
-    <div class="search-dropdowns">
-        <div class="row">
-            <div class="col col-md-4 col-12 search-dropdown mb-3 mb-lg-0">
-                <div class="search-dropdown-label">Specialty</div>
-                <select class="selectpicker" data-live-search="true">
-                    <option data-tokens="none" class="placeholder" data-content="<span class='placeholder'>All Specialties and Practice Areas</span>">All Specialties and Practice Areas</option>
-                    <option value="/doctors?f%5B0%5D=practice_area%3A25886">Acupuncture
+    <div class="row">
+        <div class="col col-12 col-md-3 search-dropdown mb-3">
+            <select class="selectpicker" data-live-search="true">
+                <option data-tokens="none" class="placeholder" data-content="<span class='placeholder'>Filter by Topic</span>">Filter by Topic</option>
+                <option value="/doctors?f%5B0%5D=practice_area%3A25886">Acupuncture
 </option>
 <option value="/doctors?f%5B0%5D=practice_area%3A2108">Acute Care Surgery, Trauma and Surgical Critical Care
 </option>
@@ -754,390 +745,18 @@
 </option>
 <option value="/doctors?f%5B0%5D=practice_area%3A2104">Young Parents Program
 </option>
-                </select>
-            </div>
-            <div class="col col-md-4 col-12 search-dropdown mb-3 mb-lg-0">
-                <div class="search-dropdown-label">Location</div>
-                <select class="selectpicker" data-live-search="true">
-                    <option data-tokens="none" data-content="<span class='placeholder'>All Locations</span>">All Locations</option>
-                    <option value="/doctors">
-                        Huffman &amp; Huffman - Somerset
-                    </option>
-                    <option value="/doctors?f%5B0%5D=location%3AHuffman%20%26%20Huffman%20-%20Somerset&amp;f%5B1%5D=location%3AHuffman%20%26%20Huffman%20Ophthalmology%20-%20London">Huffman &amp; Huffman Ophthalmology - London
-                    </option>
-                    <option value="/doctors?f%5B0%5D=location%3AHuffman%20%26%20Huffman%20-%20Somerset&amp;f%5B1%5D=location%3AKentucky%20Eye%20Institute%20-%20Corbin">Kentucky Eye Institute - Corbin
-                    </option>
-                    <option value="/doctors?f%5B0%5D=location%3AHuffman%20%26%20Huffman%20-%20Somerset&amp;f%5B1%5D=location%3AKentucky%20Eye%20Institute%20-%20Lexington">Kentucky Eye Institute - Lexington
-                    </option>
-                    <option value="/doctors?f%5B0%5D=location%3AHuffman%20%26%20Huffman%20-%20Somerset&amp;f%5B1%5D=location%3AKentucky%20Eye%20Institute%20-%20Morehead">Kentucky Eye Institute - Morehead
-                    </option>
-                    <option value="/doctors?f%5B0%5D=location%3AHuffman%20%26%20Huffman%20-%20Somerset&amp;f%5B1%5D=location%3AMackey%20Vision%20Center">Mackey Vision Center
-                    </option>
-                    <option value="/doctors?f%5B0%5D=location%3AHuffman%20%26%20Huffman%20-%20Somerset&amp;f%5B1%5D=location%3AMaysville%20Clinic%20and%20Surgery%20Clinic">Maysville Clinic and Surgery Clinic
-                    </option>
-                    <option value="/doctors?f%5B0%5D=location%3AHuffman%20%26%20Huffman%20-%20Somerset&amp;f%5B1%5D=location%3ARinne%2C%20J.R.%2C%20MD">Rinne, J.R., MD
-                    </option>
-                    <option value="/doctors?f%5B0%5D=location%3AHuffman%20%26%20Huffman%20-%20Somerset&amp;f%5B1%5D=location%3AShriners%20Hospitals%20for%20Children%20Medical%20Center%20%E2%80%94%20Lexington">Shriners Hospitals for Children Medical Center — Lexington
-                    </option>
-                    <option value="/doctors?f%5B0%5D=location%3AHuffman%20%26%20Huffman%20-%20Somerset&amp;f%5B1%5D=location%3AUK%20Manchester%20Eye%20Care">UK Manchester Eye Care
-                    </option>
-                    <option value="/doctors?f%5B0%5D=location%3AHuffman%20%26%20Huffman%20-%20Somerset&amp;f%5B1%5D=location%3AVeterans%20Affairs%20Medical%20Center">Veterans Affairs Medical Center
-                    </option>
-                </select>
-            </div>
-
-            <div class="col col-md-4 col-12 search-dropdown mb-4">
-                <div class="search-dropdown-label">Provider Type</div>
-                <select class="selectpicker">
-                    <option data-tokens="none" data-content="<span class='placeholder'>All Providers</span>">All Providers</option>
-                    <option data-tokens="provider_1">Physician</option>
-                    <option data-tokens="provider_2">Advanced Practice Providers</option>
-                    <option data-tokens="provider_3">Additional Providers</option>
-                </select>
-            </div>
-        </div>
-    </div>
-    <div class="reset-link mb-3">
-        <a href="#" class="reset">Reset Filters</a>
-    </div>
-</div>
-<div class="sort-dropdown container">
-    <div class="row">
-        <div class="col-12 col-md-3 mb-3">
-            <div class="sort-dropdown-label">Sort by:</div>
-            <select class="selectpicker">
-                <option data-tokens="relevance" data-content="<span class='placeholder'>Relevance</span>">Relevance</option>
-                <option data-tokens="name">Name A-Z</option>
-                <option data-tokens="name">Name Z-A</option>
             </select>
         </div>
-        <div class="col-12 col-md-8 ml-0 ml-md-5 ml-lg-0 gender-search">
-
-            <p>Gender:</p>
-            <label for="opt1" class="radio">
-                <input type="radio" name="rdo" id="opt1" class="hidden"/>
-                <span class="label"></span>All
-            </label>
-
-            <label for="opt2" class="radio">
-                <input type="radio" name="rdo" id="opt2" class="hidden"/>
-                <span class="label"></span>Female
-            </label>
-
-            <label for="opt3" class="radio">
-                <input type="radio" name="rdo" id="opt3" class="hidden"/>
-                <span class="label"></span>Male
-            </label>
-
-            <label for="opt4" class="radio">
-                <input type="radio" name="rdo" id="opt4" class="hidden"/>
-                <span class="label"></span>Unspecified
-            </label>
+        <div class="col col-12 col-md-3 search-dropdown sort-type mb-3">
+            <select class="selectpicker">
+                <option data-tokens="relevant" data-content="<span class='placeholder'>Most Relevant</span>">Most Relevant</option>
+                <option data-tokens="recent">Most Recent</option>
+            </select>
         </div>
     </div>
 </div>
 
-<!-- END OUTPUT from 'modules/custom/ukhc_plugins/templates/doctor-search.html.twig' -->
-
-
-    </div>
-  </div>
-
-<!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/block/block.html.twig' -->
-
-
-
-<!-- THEME DEBUG -->
-<!-- THEME HOOK: 'block' -->
-<!-- FILE NAME SUGGESTIONS:
-   * block--Doctor Results.html.twig
-   * block--ukhc-plugins.html.twig
-   x block.html.twig
--->
-<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/block/block.html.twig' -->
-<div class="block block-ukhc-plugins block-doctor-results">
-  
-    
-      <div class="content">
-      
-
-<!-- THEME DEBUG -->
-<!-- THEME HOOK: 'doctor_results' -->
-<!-- BEGIN OUTPUT from 'modules/custom/ukhc_plugins/templates/doctor-results.html.twig' -->
-<div class="doctor-results mb-5 search-results container">
-    <div class="row">
-                                <div class="doctor pl-0 col col-12 col-md-9 col-lg-6 px-0 pl-md-3">
-                <div class="doctor-card mb-3">
-                    <div class="doctor-image">
-                        <img src="../themes/custom/ukhc/images/doctors/kudrimoti-mahesh.jpg"/>
-                                            </div>
-                    <div class="doctor-info p-3">
-                        <div class="doctor-name">
-                            Mahesh R. Kudrimoti, MD</div>
-                        <div class="doctor-title">
-                                                            <p class="light mb-0">Vice-Chair of Clinical Operations</p>
-                                                    </div>
-                        <div class="info-bottom">
-                            <div class="rating row">
-                                <div
-                                    class="star-ratings-css">
-                                                                        <div class="top" style="width: 80%">
-                                        <span>★</span>
-                                        <span>★</span>
-                                        <span>★</span>
-                                        <span>★</span>
-                                        <span>★</span>
-                                    </div>
-                                    <div class="bottom">
-                                        <span>★</span>
-                                        <span>★</span>
-                                        <span>★</span>
-                                        <span>★</span>
-                                        <span>★</span>
-                                    </div>
-                                </div>
-                                <div class="rating-number">4
-                                    out of 5</div>
-                            </div>
-                            <div class="profile-link"><a href="#">View Profile</a></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-                                <div class="doctor pl-0 col col-12 col-md-9 col-lg-6 px-0 pl-md-3">
-                <div class="doctor-card mb-3">
-                    <div class="doctor-image">
-                        <img src="../themes/custom/ukhc/images/doctors/szabunio-margaret.jpg"/>
-                                            </div>
-                    <div class="doctor-info p-3">
-                        <div class="doctor-name">
-                            Margaret M. Szabunio, MD</div>
-                        <div class="doctor-title">
-                                                            <p class="light mb-0">Chief, Division of Women&#039;s Radiology</p>
-                                                            <p class="light mb-0">Associate Medical Director, Comprehensive Breast Care Center</p>
-                                                    </div>
-                        <div class="info-bottom">
-                            <div class="rating row">
-                                <div
-                                    class="star-ratings-css">
-                                                                        <div class="top" style="width: 97.6%">
-                                        <span>★</span>
-                                        <span>★</span>
-                                        <span>★</span>
-                                        <span>★</span>
-                                        <span>★</span>
-                                    </div>
-                                    <div class="bottom">
-                                        <span>★</span>
-                                        <span>★</span>
-                                        <span>★</span>
-                                        <span>★</span>
-                                        <span>★</span>
-                                    </div>
-                                </div>
-                                <div class="rating-number">4.88
-                                    out of 5</div>
-                            </div>
-                            <div class="profile-link"><a href="#">View Profile</a></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-                                    <!-- Modal -->
-                <div class="modal fade doctor-modal" id="doctor-modal-craig_van_horne" tabindex="-1" role="dialog" aria-labelledby="doctor-modal-craig_van_horne" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-body">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                                <div class="embed-responsive embed-responsive-16by9">
-                                    <iframe class="embed-responsive-item" src="" id="video" allowscriptaccess="always" allow="autoplay"></iframe>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                        <div class="doctor pl-0 col col-12 col-md-9 col-lg-6 px-0 pl-md-3">
-                <div class="doctor-card mb-3">
-                    <div class="doctor-image doctor-with-video video-btn">
-                        <img src="../themes/custom/ukhc/images/doctors/van-horne-craig.jpg"/>
-                        <img class="video-icon"  data-toggle="modal" data-src="https://www.youtube.com/embed/yhYsqWxkwGE" data-target="#doctor-modal-craig_van_horne"  src="https://cornettims.github.io/ukhc-static-demo/themes/custom/ukhc/images/playbtntrans.svg">
-                                            </div>
-                    <div class="doctor-info p-3">
-                        <div class="doctor-name">
-                            Craig G. van Horne, MD, PhD</div>
-                        <div class="doctor-title">
-                                                            <p class="light mb-0">Vice Chairman, Department of Neurosurgery</p>
-                                                            <p class="light mb-0">Co-director, Brain Restoration Center</p>
-                                                            <p class="light mb-0">Virginia T. Barrow Endowed Chair</p>
-                                                    </div>
-                        <div class="info-bottom">
-                            <div class="rating row">
-                                <div
-                                    class="star-ratings-css">
-                                                                        <div class="top" style="width: 95%">
-                                        <span>★</span>
-                                        <span>★</span>
-                                        <span>★</span>
-                                        <span>★</span>
-                                        <span>★</span>
-                                    </div>
-                                    <div class="bottom">
-                                        <span>★</span>
-                                        <span>★</span>
-                                        <span>★</span>
-                                        <span>★</span>
-                                        <span>★</span>
-                                    </div>
-                                </div>
-                                <div class="rating-number">4.75
-                                    out of 5</div>
-                            </div>
-                            <div class="profile-link"><a href="#">View Profile</a></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-                                <div class="doctor pl-0 col col-12 col-md-9 col-lg-6 px-0 pl-md-3">
-                <div class="doctor-card mb-3">
-                    <div class="doctor-image">
-                        <img src="../themes/custom/ukhc/images/doctors/aneja-arun.jpg"/>
-                                            </div>
-                    <div class="doctor-info p-3">
-                        <div class="doctor-name">
-                            Arun Aneja, MD</div>
-                        <div class="doctor-title">
-                                                            <p class="light mb-0">Orthopaedic Surgery</p>
-                                                            <p class="light mb-0">Orthopaedic Trauma</p>
-                                                    </div>
-                        <div class="info-bottom">
-                            <div class="rating row">
-                                <div
-                                    class="star-ratings-css">
-                                                                        <div class="top" style="width: 84%">
-                                        <span>★</span>
-                                        <span>★</span>
-                                        <span>★</span>
-                                        <span>★</span>
-                                        <span>★</span>
-                                    </div>
-                                    <div class="bottom">
-                                        <span>★</span>
-                                        <span>★</span>
-                                        <span>★</span>
-                                        <span>★</span>
-                                        <span>★</span>
-                                    </div>
-                                </div>
-                                <div class="rating-number">4.2
-                                    out of 5</div>
-                            </div>
-                            <div class="profile-link"><a href="#">View Profile</a></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-                                    <!-- Modal -->
-                <div class="modal fade doctor-modal" id="doctor-modal-donita_lightner" tabindex="-1" role="dialog" aria-labelledby="doctor-modal-donita_lightner" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-body">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                                <div class="embed-responsive embed-responsive-16by9">
-                                    <iframe class="embed-responsive-item" src="" id="video" allowscriptaccess="always" allow="autoplay"></iframe>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                        <div class="doctor pl-0 col col-12 col-md-9 col-lg-6 px-0 pl-md-3">
-                <div class="doctor-card mb-3">
-                    <div class="doctor-image doctor-with-video video-btn">
-                        <img src="../themes/custom/ukhc/images/doctors/lightner-donita.jpg"/>
-                        <img class="video-icon"  data-toggle="modal" data-src="https://www.youtube.com/embed/MPmjzJNzKXo" data-target="#doctor-modal-donita_lightner"  src="https://cornettims.github.io/ukhc-static-demo/themes/custom/ukhc/images/playbtntrans.svg">
-                                            </div>
-                    <div class="doctor-info p-3">
-                        <div class="doctor-name">
-                            Donita D. Lightner, MD</div>
-                        <div class="doctor-title">
-                                                            <p class="light mb-0">Brain Cancer Team</p>
-                                                    </div>
-                        <div class="info-bottom">
-                            <div class="rating row">
-                                <div
-                                    class="star-ratings-css">
-                                                                        <div class="top" style="width: 88.6%">
-                                        <span>★</span>
-                                        <span>★</span>
-                                        <span>★</span>
-                                        <span>★</span>
-                                        <span>★</span>
-                                    </div>
-                                    <div class="bottom">
-                                        <span>★</span>
-                                        <span>★</span>
-                                        <span>★</span>
-                                        <span>★</span>
-                                        <span>★</span>
-                                    </div>
-                                </div>
-                                <div class="rating-number">4.43
-                                    out of 5</div>
-                            </div>
-                            <div class="profile-link"><a href="#">View Profile</a></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-                                <div class="doctor pl-0 col col-12 col-md-9 col-lg-6 px-0 pl-md-3">
-                <div class="doctor-card mb-3">
-                    <div class="doctor-image">
-                        <img src="../themes/custom/ukhc/images/doctors/anstead-michael.gif"/>
-                                            </div>
-                    <div class="doctor-info p-3">
-                        <div class="doctor-name">
-                            Michael I. Anstead, MD, FCCP</div>
-                        <div class="doctor-title">
-                                                            <p class="light mb-0">Medical Director, Center for Lung Transplant</p>
-                                                            <p class="light mb-0">Director, Adult Cystic Fibrosis Center</p>
-                                                    </div>
-                        <div class="info-bottom">
-                            <div class="rating row">
-                                <div
-                                    class="star-ratings-css">
-                                                                        <div class="top" style="width: 84.6%">
-                                        <span>★</span>
-                                        <span>★</span>
-                                        <span>★</span>
-                                        <span>★</span>
-                                        <span>★</span>
-                                    </div>
-                                    <div class="bottom">
-                                        <span>★</span>
-                                        <span>★</span>
-                                        <span>★</span>
-                                        <span>★</span>
-                                        <span>★</span>
-                                    </div>
-                                </div>
-                                <div class="rating-number">4.23
-                                    out of 5</div>
-                            </div>
-                            <div class="profile-link"><a href="#">View Profile</a></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            </div>
-</div>
-
-
-<div class="load-more">Load More</div><br/><br/>
-
-<!-- END OUTPUT from 'modules/custom/ukhc_plugins/templates/doctor-results.html.twig' -->
+<!-- END OUTPUT from 'modules/custom/ukhc_plugins/templates/news-searchbar.html.twig' -->
 
 
     </div>
@@ -1149,16 +768,175 @@
 </div>
 <div class="container">
     <div class="row">
-        <div class="col-sm-12">
-            
+        <div class="col-sm-12 col-md-9">
+            <div class="block-region-main">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'block' -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--News Results.html.twig
+   * block--ukhc-plugins.html.twig
+   x block.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/block/block.html.twig' -->
+<div class="block block-ukhc-plugins block-news-results">
+  
+    
+      <div class="content">
+      
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'news_results' -->
+<!-- BEGIN OUTPUT from 'modules/custom/ukhc_plugins/templates/news-results.html.twig' -->
+
+<div class="news-results">
+    <h1>News</h1>
+    <div class="news-first-post d-none d-md-block">
+        <img
+        class="mw-100" src="../themes/custom/ukhc/images/news/doctor-patient-look-at-mri.jpg"/>
+                <div class="container news-first-post-text d-none d-md-block p-4 light-gray-bg mb-4">
+                            <small class=" light uppercase">neurology</small>
+                        <h2 class="mb-0">Do MRIs do more harm than good for MS patients? Our neurologist explains.</h2>
+            <small class="light uppercase">By
+                Jay Avasarala, MD, PhD</small>
+            <div class="news-result-text mt-3">There is no definitive test that can identify multiple sclerosis (MS), which is why imaging of the brain/spinal cord or the use of MRIs is &quot;mandatory.&quot; The role of MRI in the diagnosis of MS has become more important over the past few decades, and physicians use MRIs to sort out MS from MS-like diseases.
+            </div>
+            <div class="more-link uppercase py-3">
+                <a href="">
+                    <u>MORE</u>
+                </a>
+            </div>
+        </div>
+            </div>
+    <div class="row row-eq-height">
+                    <div class="col-12 col-md-6 mb-4 text-center d-flex flex-colum d-block d-md-none">
+                <div class="news-card">
+                    <div class="news-card-image pb-2"><img class="mw-100" src="../themes/custom/ukhc/images/news/doctor-patient-look-at-mri.jpg"/></div>
+                                            <small class="pt-3 light uppercase">neurology</small>
+                                        <h4 class="mb-0 px-4 py-1">
+                        Do MRIs do more harm than good for MS patients? Our neurologist explains.
+                    </h4>
+                    <small class="light uppercase">By
+                        Jay Avasarala, MD, PhD</small>
+                    <div class="more-link uppercase py-3">
+                        <a href="">
+                            <u>MORE</u>
+                        </a>
+                    </div>
+                </div>
+            </div>
+                    <div class="col-12 col-md-6 mb-4 text-center d-flex flex-colum ">
+                <div class="news-card">
+                    <div class="news-card-image pb-2"><img class="mw-100" src="../themes/custom/ukhc/images/news/hao.png"/></div>
+                                            <small class="pt-3 light uppercase">neurology</small>
+                                        <h4 class="mb-0 px-4 py-1">
+                        A doctor and researcher, Dr. Zhonglin Hao uses latest advances to make an impact
+                    </h4>
+                    <small class="light uppercase">By
+                        Jay Avasarala, MD, PhD</small>
+                    <div class="more-link uppercase py-3">
+                        <a href="">
+                            <u>MORE</u>
+                        </a>
+                    </div>
+                </div>
+            </div>
+                    <div class="col-12 col-md-6 mb-4 text-center d-flex flex-colum ">
+                <div class="news-card">
+                    <div class="news-card-image pb-2"><img class="mw-100" src="../themes/custom/ukhc/images/news/seatbelt.png"/></div>
+                                            <small class="pt-3 light uppercase">neurology</small>
+                                        <h4 class="mb-0 px-4 py-1">
+                        6 ways to make car rides safer
+                    </h4>
+                    <small class="light uppercase">By
+                        Jay Avasarala, MD, PhD</small>
+                    <div class="more-link uppercase py-3">
+                        <a href="">
+                            <u>MORE</u>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            </div>
+    <div class="load-more my-5">Load More</div>
+
+</div>
+
+<!-- END OUTPUT from 'modules/custom/ukhc_plugins/templates/news-results.html.twig' -->
+
+
+    </div>
+  </div>
+
+<!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/block/block.html.twig' -->
+
+</div>
+        </div>
+        <div class="col-sm-12 col-md-3">
+            <div class="block-region-sidebar">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'block' -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--Event Results.html.twig
+   * block--ukhc-plugins.html.twig
+   x block.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/block/block.html.twig' -->
+<div class="block block-ukhc-plugins block-event-results">
+  
+    
+      <div class="content">
+      
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'event_results' -->
+<!-- BEGIN OUTPUT from 'modules/custom/ukhc_plugins/templates/event-results.html.twig' -->
+<div class="event-results">
+    <h1>Events</h1>
+    <div class="row ml-0 ml-md-1 row-eq-height">
+                <div class="event-card-image  p-0 col-12 mb-3">
+        <img class="mw-100" src="../themes/custom/ukhc/images/events/karpf.jpg"/>
+        <div class="event-date px-2 pt-1">
+        <div class="event-day ml-1">5</div>
+        <div class="event-month light ml-1">Oct</div>
+        </div>
+        <div class="event-title w-100 p-2">Neuroscience Clinical-Translational Research Symposium</div>
+        </div>
+                <div class="event-card-image  p-0 col-12 mb-3">
+        <img class="mw-100" src="../themes/custom/ukhc/images/events/young.jpg"/>
+        <div class="event-date px-2 pt-1">
+        <div class="event-day ml-1">8</div>
+        <div class="event-month light ml-1">Oct</div>
+        </div>
+        <div class="event-title w-100 p-2">ABCs of dementia</div>
+        </div>
+                <div class="event-card-image  p-0 col-12 mb-3">
+        <img class="mw-100" src="../themes/custom/ukhc/images/events/karpf.jpg"/>
+        <div class="event-date px-2 pt-1">
+        <div class="event-day ml-1">23</div>
+        <div class="event-month light ml-1">Oct</div>
+        </div>
+        <div class="event-title w-100 p-2">Post-acute care expo</div>
+        </div>
+                <div class="load-more my-5">Load More</div>
+    </div>
+</div>
+
+<!-- END OUTPUT from 'modules/custom/ukhc_plugins/templates/event-results.html.twig' -->
+
+
+    </div>
+  </div>
+
+<!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/block/block.html.twig' -->
+
+</div>
         </div>
     </div>
 </div>
-<div class="one-col-bottom">
-    
-</div>
 
-<!-- END OUTPUT from 'themes/custom/ukhc/templates/one-column.html.twig' -->
+<!-- END OUTPUT from 'themes/custom/ukhc/templates/two-column-9-3.html.twig' -->
 
 
     </div>
@@ -1260,7 +1038,7 @@
 
 
     
-    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"doctor-search","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","user":{"uid":0,"permissionsHash":"89dd9a2ecfaee91cfdbbe3f79991d7386d3977b9679a9d6df9c88d29b14be152"}}</script>
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"news-and-events-search","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","user":{"uid":0,"permissionsHash":"89dd9a2ecfaee91cfdbbe3f79991d7386d3977b9679a9d6df9c88d29b14be152"}}</script>
 <script src="../sites/default/files/js/js_LJMFatyly59rv7tyEARCIdIRkVlv344f7lkNGaBxTSo.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>

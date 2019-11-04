@@ -3,7 +3,7 @@
 <!-- THEME DEBUG -->
 <!-- THEME HOOK: 'html' -->
 <!-- FILE NAME SUGGESTIONS:
-   * html--doctor-search.html.twig
+   * html--location-search.html.twig
    x html.html.twig
 -->
 <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/layout/html.html.twig' -->
@@ -18,7 +18,7 @@
 <meta http-equiv="x-ua-compatible" content="ie=edge" />
 <link rel="shortcut icon" href="/core/misc/favicon.ico" type="image/vnd.microsoft.icon" />
 
-    <title>Doctor Search | UK Healthcare</title>
+    <title>Location Search | UK Healthcare</title>
     <link rel="stylesheet" media="all" href="../sites/default/files/css/css_87GMcmxT1ib8ziQiU2KUAnTDFtZQV6iP-KGslA9LigM.css?q0gb88" />
 <link rel="stylesheet" media="all" href="../sites/default/files/css/css_dTw1AaF9J6sOKy4CMQtcw4o_PvP-4BpIIv8jrgQho-8.css?q0gb88" />
 <link rel="stylesheet" media="all" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" />
@@ -31,7 +31,7 @@
 <![endif]-->
 
   </head>
-  <body class="layout-one-sidebar layout-sidebar-first path-doctor-search">
+  <body class="layout-one-sidebar layout-sidebar-first path-location-search">
     <a href="#main-content" class="visually-hidden focusable skip-link">
       Skip to main content
     </a>
@@ -47,7 +47,7 @@
 <!-- THEME DEBUG -->
 <!-- THEME HOOK: 'page' -->
 <!-- FILE NAME SUGGESTIONS:
-   * page--doctor-search.html.twig
+   * page--location-search.html.twig
    x page.html.twig
 -->
 <!-- BEGIN OUTPUT from 'themes/custom/ukhc/templates/page.html.twig' -->
@@ -139,21 +139,21 @@
    x block.html.twig
 -->
 <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/block/block.html.twig' -->
-<div id="block-ukhc-content--2" class="block block-system block-system-main-block">
+<div id="block-ukhc-content--5" class="block block-system block-system-main-block">
   
     
       <div class="content">
       
 
 <!-- THEME DEBUG -->
-<!-- THEME HOOK: 'one_column' -->
+<!-- THEME HOOK: 'two_column_6_6' -->
 <!-- FILE NAME SUGGESTIONS:
-   x one-column.html.twig
-   x one-column.html.twig
+   x two-column-6-6.html.twig
+   x two-column-6-6.html.twig
 -->
-<!-- BEGIN OUTPUT from 'themes/custom/ukhc/templates/one-column.html.twig' -->
-<div class="one-col-top">
-    <div class="block-region-top">
+<!-- BEGIN OUTPUT from 'themes/custom/ukhc/templates/two-column-6-6.html.twig' -->
+<div class="container-fluid p-0">
+    <div class="block-region-top-fluid">
 
 <!-- THEME DEBUG -->
 <!-- THEME HOOK: 'block' -->
@@ -173,9 +173,9 @@
 <!-- THEME HOOK: 'searchbar' -->
 <!-- BEGIN OUTPUT from 'modules/custom/ukhc_plugins/templates/searchbar.html.twig' -->
 <div class="health-search p-5 mb-4 mb-lg-0">
-    <h1>Find a UK HealthCare Doctor or Provider</h1>
+    <h1>Search UK HealthCare Locations</h1>
     <div class="search-input-container">
-        <input type="text" placeholder="Mahesh Kudrimoti">
+        <input type="text" placeholder="">
 
         <div class="search-submit">
             <span class="search-text">Search</span>
@@ -207,13 +207,13 @@
                             <div class="col col-sm-auto px-lg-2 py-lg-4 d-flex flex-column justify-content-center">
                     <div class="filter-tab-label h5 m-0">All Results</div>
                 </div>
-                <div class="col col-sm-auto px-lg-2 py-lg-4 active d-flex flex-column justify-content-center">
+                <div class="col col-sm-auto px-lg-2 py-lg-4 d-flex flex-column justify-content-center">
                     <div class="filter-tab-label h5 m-0">Doctors</div>
                 </div>
                 <div class="col col-sm-auto px-lg-2 py-lg-4 d-flex flex-column justify-content-center">
                     <div class="filter-tab-label h5 m-0">Conditions & Treatments</div>
                 </div>
-                <div class="col col-sm-auto px-lg-2 py-lg-4 d-flex flex-column justify-content-center">
+                <div class="col col-sm-auto active px-lg-2 py-lg-4 d-flex flex-column justify-content-center">
                     <div class="filter-tab-label h5 m-0">Locations</div>
                 </div>
                 <div class="col col-sm-auto px-lg-2 py-lg-4 d-flex flex-column justify-content-center">
@@ -232,43 +232,38 @@
 
 <!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/block/block.html.twig' -->
 
-
+</div>
+</div>
+<div class="container">
+    <div class="block-region-top">
 
 <!-- THEME DEBUG -->
 <!-- THEME HOOK: 'block' -->
 <!-- FILE NAME SUGGESTIONS:
-   * block--Doctor Search.html.twig
+   * block--location-search.html.twig
    * block--ukhc-plugins.html.twig
    x block.html.twig
 -->
 <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/block/block.html.twig' -->
-<div class="block block-ukhc-plugins block-doctor-search">
+<div class="block block-ukhc-plugins block-location-search">
   
     
       <div class="content">
       
 
 <!-- THEME DEBUG -->
-<!-- THEME HOOK: 'doctor_search' -->
-<!-- BEGIN OUTPUT from 'modules/custom/ukhc_plugins/templates/doctor-search.html.twig' -->
-<div class="doctorsearch container">
-    <div class="h2 search-result-count">
-        <span class="counter" data-count="34">15</span>
-        Results for "UK Doctor"</div>
-    <div class="switch switch-blue mb-3">
-        <input type="radio" class="switch-input" name="view2" value="adult" id="adult" checked>
-        <label for="adult" class="switch-label switch-label-off">Adult</label>
-        <input type="radio" class="switch-input" name="view2" value="pediatric" id="pediatric">
-        <label for="pediatric" class="switch-label switch-label-on">Pediatric</label>
-        <span class="switch-selection"></span>
-    </div>
-    <div class="search-dropdowns">
-        <div class="row">
-            <div class="col col-md-4 col-12 search-dropdown mb-3 mb-lg-0">
-                <div class="search-dropdown-label">Specialty</div>
-                <select class="selectpicker" data-live-search="true">
-                    <option data-tokens="none" class="placeholder" data-content="<span class='placeholder'>All Specialties and Practice Areas</span>">All Specialties and Practice Areas</option>
-                    <option value="/doctors?f%5B0%5D=practice_area%3A25886">Acupuncture
+<!-- THEME HOOK: 'location_searchbar' -->
+<!-- BEGIN OUTPUT from 'modules/custom/ukhc_plugins/templates/location-searchbar.html.twig' -->
+<div class="doctorsearch mt-3 search-dropdowns locations-results container">
+    <div class="search-result-count h2">
+        <span class="counter" data-count="8">2</span>
+        Results for "Back Pain"</div>
+    <div class="row">
+        <div class="col col-12 col-md-4 search-dropdown mb-3">
+            <div class="search-dropdown-label">Specialty</div>
+            <select class="selectpicker" data-live-search="true">
+                <option data-tokens="none" class="placeholder" data-content="<span class='placeholder'>All Specialties</span>">All Specialties</option>
+                <option value="/doctors?f%5B0%5D=practice_area%3A25886">Acupuncture
 </option>
 <option value="/doctors?f%5B0%5D=practice_area%3A2108">Acute Care Surgery, Trauma and Surgical Critical Care
 </option>
@@ -754,390 +749,28 @@
 </option>
 <option value="/doctors?f%5B0%5D=practice_area%3A2104">Young Parents Program
 </option>
-                </select>
-            </div>
-            <div class="col col-md-4 col-12 search-dropdown mb-3 mb-lg-0">
-                <div class="search-dropdown-label">Location</div>
-                <select class="selectpicker" data-live-search="true">
-                    <option data-tokens="none" data-content="<span class='placeholder'>All Locations</span>">All Locations</option>
-                    <option value="/doctors">
-                        Huffman &amp; Huffman - Somerset
-                    </option>
-                    <option value="/doctors?f%5B0%5D=location%3AHuffman%20%26%20Huffman%20-%20Somerset&amp;f%5B1%5D=location%3AHuffman%20%26%20Huffman%20Ophthalmology%20-%20London">Huffman &amp; Huffman Ophthalmology - London
-                    </option>
-                    <option value="/doctors?f%5B0%5D=location%3AHuffman%20%26%20Huffman%20-%20Somerset&amp;f%5B1%5D=location%3AKentucky%20Eye%20Institute%20-%20Corbin">Kentucky Eye Institute - Corbin
-                    </option>
-                    <option value="/doctors?f%5B0%5D=location%3AHuffman%20%26%20Huffman%20-%20Somerset&amp;f%5B1%5D=location%3AKentucky%20Eye%20Institute%20-%20Lexington">Kentucky Eye Institute - Lexington
-                    </option>
-                    <option value="/doctors?f%5B0%5D=location%3AHuffman%20%26%20Huffman%20-%20Somerset&amp;f%5B1%5D=location%3AKentucky%20Eye%20Institute%20-%20Morehead">Kentucky Eye Institute - Morehead
-                    </option>
-                    <option value="/doctors?f%5B0%5D=location%3AHuffman%20%26%20Huffman%20-%20Somerset&amp;f%5B1%5D=location%3AMackey%20Vision%20Center">Mackey Vision Center
-                    </option>
-                    <option value="/doctors?f%5B0%5D=location%3AHuffman%20%26%20Huffman%20-%20Somerset&amp;f%5B1%5D=location%3AMaysville%20Clinic%20and%20Surgery%20Clinic">Maysville Clinic and Surgery Clinic
-                    </option>
-                    <option value="/doctors?f%5B0%5D=location%3AHuffman%20%26%20Huffman%20-%20Somerset&amp;f%5B1%5D=location%3ARinne%2C%20J.R.%2C%20MD">Rinne, J.R., MD
-                    </option>
-                    <option value="/doctors?f%5B0%5D=location%3AHuffman%20%26%20Huffman%20-%20Somerset&amp;f%5B1%5D=location%3AShriners%20Hospitals%20for%20Children%20Medical%20Center%20%E2%80%94%20Lexington">Shriners Hospitals for Children Medical Center — Lexington
-                    </option>
-                    <option value="/doctors?f%5B0%5D=location%3AHuffman%20%26%20Huffman%20-%20Somerset&amp;f%5B1%5D=location%3AUK%20Manchester%20Eye%20Care">UK Manchester Eye Care
-                    </option>
-                    <option value="/doctors?f%5B0%5D=location%3AHuffman%20%26%20Huffman%20-%20Somerset&amp;f%5B1%5D=location%3AVeterans%20Affairs%20Medical%20Center">Veterans Affairs Medical Center
-                    </option>
-                </select>
-            </div>
-
-            <div class="col col-md-4 col-12 search-dropdown mb-4">
-                <div class="search-dropdown-label">Provider Type</div>
-                <select class="selectpicker">
-                    <option data-tokens="none" data-content="<span class='placeholder'>All Providers</span>">All Providers</option>
-                    <option data-tokens="provider_1">Physician</option>
-                    <option data-tokens="provider_2">Advanced Practice Providers</option>
-                    <option data-tokens="provider_3">Additional Providers</option>
-                </select>
-            </div>
+            </select>
+        </div>
+        <div class="col col-12 col-md-4 search-dropdown mb-3">
+            <div class="search-dropdown-label">Located Near</div>
+            <input type="text" class="round full" placeholder="Enter City or Zip Code">
+        </div>
+        <div class="col col-12 col-md-4 search-dropdown mb-3">
+            <div class="search-dropdown-label">Facility Type</div>
+            <select class="selectpicker">
+                <option data-tokens="none" data-content="<span class='placeholder'>All Facility Types</span>">Filter</option>
+                <option data-tokens="provider_1">Type 1</option>
+                <option data-tokens="provider_2">Type 2</option>
+                <option data-tokens="provider_3">Type 3</option>
+            </select>
         </div>
     </div>
-    <div class="reset-link mb-3">
+    <div class="reset-link text-center center mb-3">
         <a href="#" class="reset">Reset Filters</a>
     </div>
 </div>
-<div class="sort-dropdown container">
-    <div class="row">
-        <div class="col-12 col-md-3 mb-3">
-            <div class="sort-dropdown-label">Sort by:</div>
-            <select class="selectpicker">
-                <option data-tokens="relevance" data-content="<span class='placeholder'>Relevance</span>">Relevance</option>
-                <option data-tokens="name">Name A-Z</option>
-                <option data-tokens="name">Name Z-A</option>
-            </select>
-        </div>
-        <div class="col-12 col-md-8 ml-0 ml-md-5 ml-lg-0 gender-search">
 
-            <p>Gender:</p>
-            <label for="opt1" class="radio">
-                <input type="radio" name="rdo" id="opt1" class="hidden"/>
-                <span class="label"></span>All
-            </label>
-
-            <label for="opt2" class="radio">
-                <input type="radio" name="rdo" id="opt2" class="hidden"/>
-                <span class="label"></span>Female
-            </label>
-
-            <label for="opt3" class="radio">
-                <input type="radio" name="rdo" id="opt3" class="hidden"/>
-                <span class="label"></span>Male
-            </label>
-
-            <label for="opt4" class="radio">
-                <input type="radio" name="rdo" id="opt4" class="hidden"/>
-                <span class="label"></span>Unspecified
-            </label>
-        </div>
-    </div>
-</div>
-
-<!-- END OUTPUT from 'modules/custom/ukhc_plugins/templates/doctor-search.html.twig' -->
-
-
-    </div>
-  </div>
-
-<!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/block/block.html.twig' -->
-
-
-
-<!-- THEME DEBUG -->
-<!-- THEME HOOK: 'block' -->
-<!-- FILE NAME SUGGESTIONS:
-   * block--Doctor Results.html.twig
-   * block--ukhc-plugins.html.twig
-   x block.html.twig
--->
-<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/block/block.html.twig' -->
-<div class="block block-ukhc-plugins block-doctor-results">
-  
-    
-      <div class="content">
-      
-
-<!-- THEME DEBUG -->
-<!-- THEME HOOK: 'doctor_results' -->
-<!-- BEGIN OUTPUT from 'modules/custom/ukhc_plugins/templates/doctor-results.html.twig' -->
-<div class="doctor-results mb-5 search-results container">
-    <div class="row">
-                                <div class="doctor pl-0 col col-12 col-md-9 col-lg-6 px-0 pl-md-3">
-                <div class="doctor-card mb-3">
-                    <div class="doctor-image">
-                        <img src="../themes/custom/ukhc/images/doctors/kudrimoti-mahesh.jpg"/>
-                                            </div>
-                    <div class="doctor-info p-3">
-                        <div class="doctor-name">
-                            Mahesh R. Kudrimoti, MD</div>
-                        <div class="doctor-title">
-                                                            <p class="light mb-0">Vice-Chair of Clinical Operations</p>
-                                                    </div>
-                        <div class="info-bottom">
-                            <div class="rating row">
-                                <div
-                                    class="star-ratings-css">
-                                                                        <div class="top" style="width: 80%">
-                                        <span>★</span>
-                                        <span>★</span>
-                                        <span>★</span>
-                                        <span>★</span>
-                                        <span>★</span>
-                                    </div>
-                                    <div class="bottom">
-                                        <span>★</span>
-                                        <span>★</span>
-                                        <span>★</span>
-                                        <span>★</span>
-                                        <span>★</span>
-                                    </div>
-                                </div>
-                                <div class="rating-number">4
-                                    out of 5</div>
-                            </div>
-                            <div class="profile-link"><a href="#">View Profile</a></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-                                <div class="doctor pl-0 col col-12 col-md-9 col-lg-6 px-0 pl-md-3">
-                <div class="doctor-card mb-3">
-                    <div class="doctor-image">
-                        <img src="../themes/custom/ukhc/images/doctors/szabunio-margaret.jpg"/>
-                                            </div>
-                    <div class="doctor-info p-3">
-                        <div class="doctor-name">
-                            Margaret M. Szabunio, MD</div>
-                        <div class="doctor-title">
-                                                            <p class="light mb-0">Chief, Division of Women&#039;s Radiology</p>
-                                                            <p class="light mb-0">Associate Medical Director, Comprehensive Breast Care Center</p>
-                                                    </div>
-                        <div class="info-bottom">
-                            <div class="rating row">
-                                <div
-                                    class="star-ratings-css">
-                                                                        <div class="top" style="width: 97.6%">
-                                        <span>★</span>
-                                        <span>★</span>
-                                        <span>★</span>
-                                        <span>★</span>
-                                        <span>★</span>
-                                    </div>
-                                    <div class="bottom">
-                                        <span>★</span>
-                                        <span>★</span>
-                                        <span>★</span>
-                                        <span>★</span>
-                                        <span>★</span>
-                                    </div>
-                                </div>
-                                <div class="rating-number">4.88
-                                    out of 5</div>
-                            </div>
-                            <div class="profile-link"><a href="#">View Profile</a></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-                                    <!-- Modal -->
-                <div class="modal fade doctor-modal" id="doctor-modal-craig_van_horne" tabindex="-1" role="dialog" aria-labelledby="doctor-modal-craig_van_horne" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-body">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                                <div class="embed-responsive embed-responsive-16by9">
-                                    <iframe class="embed-responsive-item" src="" id="video" allowscriptaccess="always" allow="autoplay"></iframe>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                        <div class="doctor pl-0 col col-12 col-md-9 col-lg-6 px-0 pl-md-3">
-                <div class="doctor-card mb-3">
-                    <div class="doctor-image doctor-with-video video-btn">
-                        <img src="../themes/custom/ukhc/images/doctors/van-horne-craig.jpg"/>
-                        <img class="video-icon"  data-toggle="modal" data-src="https://www.youtube.com/embed/yhYsqWxkwGE" data-target="#doctor-modal-craig_van_horne"  src="https://cornettims.github.io/ukhc-static-demo/themes/custom/ukhc/images/playbtntrans.svg">
-                                            </div>
-                    <div class="doctor-info p-3">
-                        <div class="doctor-name">
-                            Craig G. van Horne, MD, PhD</div>
-                        <div class="doctor-title">
-                                                            <p class="light mb-0">Vice Chairman, Department of Neurosurgery</p>
-                                                            <p class="light mb-0">Co-director, Brain Restoration Center</p>
-                                                            <p class="light mb-0">Virginia T. Barrow Endowed Chair</p>
-                                                    </div>
-                        <div class="info-bottom">
-                            <div class="rating row">
-                                <div
-                                    class="star-ratings-css">
-                                                                        <div class="top" style="width: 95%">
-                                        <span>★</span>
-                                        <span>★</span>
-                                        <span>★</span>
-                                        <span>★</span>
-                                        <span>★</span>
-                                    </div>
-                                    <div class="bottom">
-                                        <span>★</span>
-                                        <span>★</span>
-                                        <span>★</span>
-                                        <span>★</span>
-                                        <span>★</span>
-                                    </div>
-                                </div>
-                                <div class="rating-number">4.75
-                                    out of 5</div>
-                            </div>
-                            <div class="profile-link"><a href="#">View Profile</a></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-                                <div class="doctor pl-0 col col-12 col-md-9 col-lg-6 px-0 pl-md-3">
-                <div class="doctor-card mb-3">
-                    <div class="doctor-image">
-                        <img src="../themes/custom/ukhc/images/doctors/aneja-arun.jpg"/>
-                                            </div>
-                    <div class="doctor-info p-3">
-                        <div class="doctor-name">
-                            Arun Aneja, MD</div>
-                        <div class="doctor-title">
-                                                            <p class="light mb-0">Orthopaedic Surgery</p>
-                                                            <p class="light mb-0">Orthopaedic Trauma</p>
-                                                    </div>
-                        <div class="info-bottom">
-                            <div class="rating row">
-                                <div
-                                    class="star-ratings-css">
-                                                                        <div class="top" style="width: 84%">
-                                        <span>★</span>
-                                        <span>★</span>
-                                        <span>★</span>
-                                        <span>★</span>
-                                        <span>★</span>
-                                    </div>
-                                    <div class="bottom">
-                                        <span>★</span>
-                                        <span>★</span>
-                                        <span>★</span>
-                                        <span>★</span>
-                                        <span>★</span>
-                                    </div>
-                                </div>
-                                <div class="rating-number">4.2
-                                    out of 5</div>
-                            </div>
-                            <div class="profile-link"><a href="#">View Profile</a></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-                                    <!-- Modal -->
-                <div class="modal fade doctor-modal" id="doctor-modal-donita_lightner" tabindex="-1" role="dialog" aria-labelledby="doctor-modal-donita_lightner" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-body">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                                <div class="embed-responsive embed-responsive-16by9">
-                                    <iframe class="embed-responsive-item" src="" id="video" allowscriptaccess="always" allow="autoplay"></iframe>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                        <div class="doctor pl-0 col col-12 col-md-9 col-lg-6 px-0 pl-md-3">
-                <div class="doctor-card mb-3">
-                    <div class="doctor-image doctor-with-video video-btn">
-                        <img src="../themes/custom/ukhc/images/doctors/lightner-donita.jpg"/>
-                        <img class="video-icon"  data-toggle="modal" data-src="https://www.youtube.com/embed/MPmjzJNzKXo" data-target="#doctor-modal-donita_lightner"  src="https://cornettims.github.io/ukhc-static-demo/themes/custom/ukhc/images/playbtntrans.svg">
-                                            </div>
-                    <div class="doctor-info p-3">
-                        <div class="doctor-name">
-                            Donita D. Lightner, MD</div>
-                        <div class="doctor-title">
-                                                            <p class="light mb-0">Brain Cancer Team</p>
-                                                    </div>
-                        <div class="info-bottom">
-                            <div class="rating row">
-                                <div
-                                    class="star-ratings-css">
-                                                                        <div class="top" style="width: 88.6%">
-                                        <span>★</span>
-                                        <span>★</span>
-                                        <span>★</span>
-                                        <span>★</span>
-                                        <span>★</span>
-                                    </div>
-                                    <div class="bottom">
-                                        <span>★</span>
-                                        <span>★</span>
-                                        <span>★</span>
-                                        <span>★</span>
-                                        <span>★</span>
-                                    </div>
-                                </div>
-                                <div class="rating-number">4.43
-                                    out of 5</div>
-                            </div>
-                            <div class="profile-link"><a href="#">View Profile</a></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-                                <div class="doctor pl-0 col col-12 col-md-9 col-lg-6 px-0 pl-md-3">
-                <div class="doctor-card mb-3">
-                    <div class="doctor-image">
-                        <img src="../themes/custom/ukhc/images/doctors/anstead-michael.gif"/>
-                                            </div>
-                    <div class="doctor-info p-3">
-                        <div class="doctor-name">
-                            Michael I. Anstead, MD, FCCP</div>
-                        <div class="doctor-title">
-                                                            <p class="light mb-0">Medical Director, Center for Lung Transplant</p>
-                                                            <p class="light mb-0">Director, Adult Cystic Fibrosis Center</p>
-                                                    </div>
-                        <div class="info-bottom">
-                            <div class="rating row">
-                                <div
-                                    class="star-ratings-css">
-                                                                        <div class="top" style="width: 84.6%">
-                                        <span>★</span>
-                                        <span>★</span>
-                                        <span>★</span>
-                                        <span>★</span>
-                                        <span>★</span>
-                                    </div>
-                                    <div class="bottom">
-                                        <span>★</span>
-                                        <span>★</span>
-                                        <span>★</span>
-                                        <span>★</span>
-                                        <span>★</span>
-                                    </div>
-                                </div>
-                                <div class="rating-number">4.23
-                                    out of 5</div>
-                            </div>
-                            <div class="profile-link"><a href="#">View Profile</a></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            </div>
-</div>
-
-
-<div class="load-more">Load More</div><br/><br/>
-
-<!-- END OUTPUT from 'modules/custom/ukhc_plugins/templates/doctor-results.html.twig' -->
+<!-- END OUTPUT from 'modules/custom/ukhc_plugins/templates/location-searchbar.html.twig' -->
 
 
     </div>
@@ -1149,16 +782,493 @@
 </div>
 <div class="container">
     <div class="row">
-        <div class="col-sm-12">
-            
+        <div class="col-12 col-md-6">
+            <div class="block-region-left">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'block' -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--Location Results.html.twig
+   * block--ukhc-plugins.html.twig
+   x block.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/block/block.html.twig' -->
+<div class="block block-ukhc-plugins block-location-results">
+  
+    
+      <div class="content">
+      
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'location_results' -->
+<!-- BEGIN OUTPUT from 'modules/custom/ukhc_plugins/templates/location-results.html.twig' -->
+<div class="locations pb-5">
+    <div id="location-accordion" class="accordion scrollbar">
+        <div class="spinner-border" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+                    <div class="card">
+                <div class="card-header p-3 collapsed" id="chandler_a"  data-toggle="collapse" data-target="#collapse-chandler_a" aria-expanded="false" aria-controls="collapse-chandler_a">
+                    <a>
+                        <div class="location-details">
+                            <div class="location-title pb-3">UK Albert B. Chandler Hospital Pavilion A</div>
+                            <div class="location-address light">
+                                1000 South Limestone<br/>
+                                Lexington, KY 40536
+                            </div>
+                        </div>
+                        <div class="up-angle blue"></div>
+                    </a>
+                </div>
+                <div id="collapse-chandler_a" class="collapse" aria-labelledby="chandler_a" data-parent="#location-accordion">
+                    <div class="details container-fluid">
+                        <div class="row">
+                            <div class="col col-12 col-sm-6">
+                                <div class="detail-label">Phone</div>
+                                <a href="tel:859-323-5000">859-323-5000</a>
+                                <div
+                                    class="location-hours py-3">
+                                                                        <div class="detail-label">Hours</div>
+                                    <span class="detail-label">Mon-Fri:</span>
+                                    <span class="light">7:30 AM - 5:00PM</span><br/>
+                                    <span class="detail-label">Sat-Sun:</span>
+                                    <span class="light">Closed</span><br/>
+                                </div>
+                            </div>
+                            <div class="location-links col col-12 col-sm-6">
+                                <a href="">Parking</a><br/>
+                                <a href="">Dropoff/Pickup</a><br/>
+                                <a href="">Shuttle Stop</a><br/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="links">
+                        <a class="location-details-link btn button white border-gray" href="">Location Details</a>
+                        <a class="directions-link btn button tertiary-1" href="">Get Directions</a>
+                    </div>
+                </div>
+            </div>
+                    <div class="card">
+                <div class="card-header p-3 collapsed" id="good_samaritan"  data-toggle="collapse" data-target="#collapse-good_samaritan" aria-expanded="false" aria-controls="collapse-good_samaritan">
+                    <a>
+                        <div class="location-details">
+                            <div class="location-title pb-3">UK Good Samaritan Emergency Department</div>
+                            <div class="location-address light">
+                                1000 South Limestone<br/>
+                                Lexington, KY 40536
+                            </div>
+                        </div>
+                        <div class="up-angle blue"></div>
+                    </a>
+                </div>
+                <div id="collapse-good_samaritan" class="collapse" aria-labelledby="good_samaritan" data-parent="#location-accordion">
+                    <div class="details container-fluid">
+                        <div class="row">
+                            <div class="col col-12 col-sm-6">
+                                <div class="detail-label">Phone</div>
+                                <a href="tel:859-323-5000">859-323-5000</a>
+                                <div
+                                    class="location-hours py-3">
+                                                                        <div class="detail-label">Hours</div>
+                                    <span class="detail-label">Mon-Fri:</span>
+                                    <span class="light">7:30 AM - 5:00PM</span><br/>
+                                    <span class="detail-label">Sat-Sun:</span>
+                                    <span class="light">Closed</span><br/>
+                                </div>
+                            </div>
+                            <div class="location-links col col-12 col-sm-6">
+                                <a href="">Parking</a><br/>
+                                <a href="">Dropoff/Pickup</a><br/>
+                                <a href="">Shuttle Stop</a><br/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="links">
+                        <a class="location-details-link btn button white border-gray" href="">Location Details</a>
+                        <a class="directions-link btn button tertiary-1" href="">Get Directions</a>
+                    </div>
+                </div>
+            </div>
+                    <div class="card">
+                <div class="card-header p-3 collapsed" id="chandler_a_2"  data-toggle="collapse" data-target="#collapse-chandler_a_2" aria-expanded="false" aria-controls="collapse-chandler_a_2">
+                    <a>
+                        <div class="location-details">
+                            <div class="location-title pb-3">UK Albert B. Chandler Hospital Pavilion A</div>
+                            <div class="location-address light">
+                                1000 South Limestone<br/>
+                                Lexington, KY 40536
+                            </div>
+                        </div>
+                        <div class="up-angle blue"></div>
+                    </a>
+                </div>
+                <div id="collapse-chandler_a_2" class="collapse" aria-labelledby="chandler_a_2" data-parent="#location-accordion">
+                    <div class="details container-fluid">
+                        <div class="row">
+                            <div class="col col-12 col-sm-6">
+                                <div class="detail-label">Phone</div>
+                                <a href="tel:859-323-5000">859-323-5000</a>
+                                <div
+                                    class="location-hours py-3">
+                                                                        <div class="detail-label">Hours</div>
+                                    <span class="detail-label">Mon-Fri:</span>
+                                    <span class="light">7:30 AM - 5:00PM</span><br/>
+                                    <span class="detail-label">Sat-Sun:</span>
+                                    <span class="light">Closed</span><br/>
+                                </div>
+                            </div>
+                            <div class="location-links col col-12 col-sm-6">
+                                <a href="">Parking</a><br/>
+                                <a href="">Dropoff/Pickup</a><br/>
+                                <a href="">Shuttle Stop</a><br/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="links">
+                        <a class="location-details-link btn button white border-gray" href="">Location Details</a>
+                        <a class="directions-link btn button tertiary-1" href="">Get Directions</a>
+                    </div>
+                </div>
+            </div>
+                    <div class="card">
+                <div class="card-header p-3 collapsed" id="good_samaritan_2"  data-toggle="collapse" data-target="#collapse-good_samaritan_2" aria-expanded="false" aria-controls="collapse-good_samaritan_2">
+                    <a>
+                        <div class="location-details">
+                            <div class="location-title pb-3">UK Good Samaritan Emergency Department</div>
+                            <div class="location-address light">
+                                1000 South Limestone<br/>
+                                Lexington, KY 40536
+                            </div>
+                        </div>
+                        <div class="up-angle blue"></div>
+                    </a>
+                </div>
+                <div id="collapse-good_samaritan_2" class="collapse" aria-labelledby="good_samaritan_2" data-parent="#location-accordion">
+                    <div class="details container-fluid">
+                        <div class="row">
+                            <div class="col col-12 col-sm-6">
+                                <div class="detail-label">Phone</div>
+                                <a href="tel:859-323-5000">859-323-5000</a>
+                                <div
+                                    class="location-hours py-3">
+                                                                        <div class="detail-label">Hours</div>
+                                    <span class="detail-label">Mon-Fri:</span>
+                                    <span class="light">7:30 AM - 5:00PM</span><br/>
+                                    <span class="detail-label">Sat-Sun:</span>
+                                    <span class="light">Closed</span><br/>
+                                </div>
+                            </div>
+                            <div class="location-links col col-12 col-sm-6">
+                                <a href="">Parking</a><br/>
+                                <a href="">Dropoff/Pickup</a><br/>
+                                <a href="">Shuttle Stop</a><br/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="links">
+                        <a class="location-details-link btn button white border-gray" href="">Location Details</a>
+                        <a class="directions-link btn button tertiary-1" href="">Get Directions</a>
+                    </div>
+                </div>
+            </div>
+                    <div class="card">
+                <div class="card-header p-3 collapsed" id="chandler_a_3"  data-toggle="collapse" data-target="#collapse-chandler_a_3" aria-expanded="false" aria-controls="collapse-chandler_a_3">
+                    <a>
+                        <div class="location-details">
+                            <div class="location-title pb-3">UK Albert B. Chandler Hospital Pavilion A</div>
+                            <div class="location-address light">
+                                1000 South Limestone<br/>
+                                Lexington, KY 40536
+                            </div>
+                        </div>
+                        <div class="up-angle blue"></div>
+                    </a>
+                </div>
+                <div id="collapse-chandler_a_3" class="collapse" aria-labelledby="chandler_a_3" data-parent="#location-accordion">
+                    <div class="details container-fluid">
+                        <div class="row">
+                            <div class="col col-12 col-sm-6">
+                                <div class="detail-label">Phone</div>
+                                <a href="tel:859-323-5000">859-323-5000</a>
+                                <div
+                                    class="location-hours py-3">
+                                                                        <div class="detail-label">Hours</div>
+                                    <span class="detail-label">Mon-Fri:</span>
+                                    <span class="light">7:30 AM - 5:00PM</span><br/>
+                                    <span class="detail-label">Sat-Sun:</span>
+                                    <span class="light">Closed</span><br/>
+                                </div>
+                            </div>
+                            <div class="location-links col col-12 col-sm-6">
+                                <a href="">Parking</a><br/>
+                                <a href="">Dropoff/Pickup</a><br/>
+                                <a href="">Shuttle Stop</a><br/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="links">
+                        <a class="location-details-link btn button white border-gray" href="">Location Details</a>
+                        <a class="directions-link btn button tertiary-1" href="">Get Directions</a>
+                    </div>
+                </div>
+            </div>
+                    <div class="card">
+                <div class="card-header p-3 collapsed" id="good_samaritan_3"  data-toggle="collapse" data-target="#collapse-good_samaritan_3" aria-expanded="false" aria-controls="collapse-good_samaritan_3">
+                    <a>
+                        <div class="location-details">
+                            <div class="location-title pb-3">UK Good Samaritan Emergency Department</div>
+                            <div class="location-address light">
+                                1000 South Limestone<br/>
+                                Lexington, KY 40536
+                            </div>
+                        </div>
+                        <div class="up-angle blue"></div>
+                    </a>
+                </div>
+                <div id="collapse-good_samaritan_3" class="collapse" aria-labelledby="good_samaritan_3" data-parent="#location-accordion">
+                    <div class="details container-fluid">
+                        <div class="row">
+                            <div class="col col-12 col-sm-6">
+                                <div class="detail-label">Phone</div>
+                                <a href="tel:859-323-5000">859-323-5000</a>
+                                <div
+                                    class="location-hours py-3">
+                                                                        <div class="detail-label">Hours</div>
+                                    <span class="detail-label">Mon-Fri:</span>
+                                    <span class="light">7:30 AM - 5:00PM</span><br/>
+                                    <span class="detail-label">Sat-Sun:</span>
+                                    <span class="light">Closed</span><br/>
+                                </div>
+                            </div>
+                            <div class="location-links col col-12 col-sm-6">
+                                <a href="">Parking</a><br/>
+                                <a href="">Dropoff/Pickup</a><br/>
+                                <a href="">Shuttle Stop</a><br/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="links">
+                        <a class="location-details-link btn button white border-gray" href="">Location Details</a>
+                        <a class="directions-link btn button tertiary-1" href="">Get Directions</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+</div>
+
+<!-- END OUTPUT from 'modules/custom/ukhc_plugins/templates/location-results.html.twig' -->
+
+
+    </div>
+  </div>
+
+<!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/block/block.html.twig' -->
+
+</div>
+        </div>
+        <div class="col-12 col-md-6">
+            <div class="block-region-right">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'block' -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--Location Map.html.twig
+   * block--ukhc-plugins.html.twig
+   x block.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/block/block.html.twig' -->
+<div class="block block-ukhc-plugins block-location-map">
+  
+    
+      <div class="content">
+      
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'location_map' -->
+<!-- BEGIN OUTPUT from 'modules/custom/ukhc_plugins/templates/location-map.html.twig' -->
+<div class="pb-5"><div id="map"></div></div>
+<script>
+    function initMap() { // Styles a map in night mode.
+        var map = new google.maps.Map(document.getElementById('map'), {
+            center: {
+                lat: 38.031360,
+                lng: -84.507377
+            },
+            zoom: 17,
+            styles: [
+                {
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "color": "#f5f5f5"
+                        }
+                    ]
+                },
+                {
+                    "elementType": "labels.icon",
+                    "stylers": [
+                        {
+                            "visibility": "off"
+                        }
+                    ]
+                },
+                {
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                        {
+                            "color": "#616161"
+                        }
+                    ]
+                },
+                {
+                    "elementType": "labels.text.stroke",
+                    "stylers": [
+                        {
+                            "color": "#f5f5f5"
+                        }
+                    ]
+                }, {
+                    "featureType": "administrative.land_parcel",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                        {
+                            "color": "#bdbdbd"
+                        }
+                    ]
+                }, {
+                    "featureType": "poi",
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "color": "#eeeeee"
+                        }
+                    ]
+                }, {
+                    "featureType": "poi",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                        {
+                            "color": "#757575"
+                        }
+                    ]
+                }, {
+                    "featureType": "poi.park",
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "color": "#e5e5e5"
+                        }
+                    ]
+                }, {
+                    "featureType": "poi.park",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                        {
+                            "color": "#9e9e9e"
+                        }
+                    ]
+                }, {
+                    "featureType": "road",
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "color": "#ffffff"
+                        }
+                    ]
+                }, {
+                    "featureType": "road.arterial",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                        {
+                            "color": "#757575"
+                        }
+                    ]
+                }, {
+                    "featureType": "road.highway",
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "color": "#dadada"
+                        }
+                    ]
+                }, {
+                    "featureType": "road.highway",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                        {
+                            "color": "#616161"
+                        }
+                    ]
+                }, {
+                    "featureType": "road.local",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                        {
+                            "color": "#9e9e9e"
+                        }
+                    ]
+                }, {
+                    "featureType": "transit.line",
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "color": "#e5e5e5"
+                        }
+                    ]
+                }, {
+                    "featureType": "transit.station",
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "color": "#eeeeee"
+                        }
+                    ]
+                }, {
+                    "featureType": "water",
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "color": "#c9c9c9"
+                        }
+                    ]
+                }, {
+                    "featureType": "water",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                        {
+                            "color": "#9e9e9e"
+                        }
+                    ]
+                }
+            ]
+        });
+        var hospitalPosition = {
+            lat: 38.031360,
+            lng: -84.507377
+        };
+        var marker = new google.maps.Marker({
+            position: hospitalPosition, 
+            map: map, 
+            icon: "../themes/custom/ukhc/images/map-marker.png",
+            title: 'UK Chandler Hospital'});
+    }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDB2dcnV9V1pS__PQJJT7I5eXuVImbMA5U&callback=initMap" async defer></script>
+
+<!-- END OUTPUT from 'modules/custom/ukhc_plugins/templates/location-map.html.twig' -->
+
+
+    </div>
+  </div>
+
+<!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/block/block.html.twig' -->
+
+</div>
         </div>
     </div>
 </div>
-<div class="one-col-bottom">
-    
-</div>
 
-<!-- END OUTPUT from 'themes/custom/ukhc/templates/one-column.html.twig' -->
+<!-- END OUTPUT from 'themes/custom/ukhc/templates/two-column-6-6.html.twig' -->
 
 
     </div>
@@ -1260,7 +1370,7 @@
 
 
     
-    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"doctor-search","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","user":{"uid":0,"permissionsHash":"89dd9a2ecfaee91cfdbbe3f79991d7386d3977b9679a9d6df9c88d29b14be152"}}</script>
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"location-search","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","user":{"uid":0,"permissionsHash":"89dd9a2ecfaee91cfdbbe3f79991d7386d3977b9679a9d6df9c88d29b14be152"}}</script>
 <script src="../sites/default/files/js/js_LJMFatyly59rv7tyEARCIdIRkVlv344f7lkNGaBxTSo.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>

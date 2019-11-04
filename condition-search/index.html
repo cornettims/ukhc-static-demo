@@ -19,17 +19,17 @@
 <link rel="shortcut icon" href="/core/misc/favicon.ico" type="image/vnd.microsoft.icon" />
 
     <title>Condition Search | UK Healthcare</title>
-    <link rel="stylesheet" media="all" href="../sites/default/files/css/css_87GMcmxT1ib8ziQiU2KUAnTDFtZQV6iP-KGslA9LigM.css?q03eff" />
-<link rel="stylesheet" media="all" href="../sites/default/files/css/css_dTw1AaF9J6sOKy4CMQtcw4o_PvP-4BpIIv8jrgQho-8.css?q03eff" />
+    <link rel="stylesheet" media="all" href="../sites/default/files/css/css_87GMcmxT1ib8ziQiU2KUAnTDFtZQV6iP-KGslA9LigM.css?q0gb88" />
+<link rel="stylesheet" media="all" href="../sites/default/files/css/css_dTw1AaF9J6sOKy4CMQtcw4o_PvP-4BpIIv8jrgQho-8.css?q0gb88" />
 <link rel="stylesheet" media="all" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" />
-<link rel="stylesheet" media="all" href="../sites/default/files/css/css_4HlmFsaWtkeVmPk_iVWb6EEV7eCLv0UnXSQJ6v_6xEE.css?q03eff" />
-<link rel="stylesheet" media="print" href="../sites/default/files/css/css_Z5jMg7P_bjcW9iUzujI7oaechMyxQTUqZhHJ_aYSq04.css?q03eff" />
+<link rel="stylesheet" media="all" href="../sites/default/files/css/css_h7Tm7Bj6Xtcl3_gplwxok440_xqqG0gdX3PViM_SGu8.css?q0gb88" />
+<link rel="stylesheet" media="print" href="../sites/default/files/css/css_Z5jMg7P_bjcW9iUzujI7oaechMyxQTUqZhHJ_aYSq04.css?q0gb88" />
 
     
 <!--[if lte IE 8]>
 <script src="../sites/default/files/js/js_VtafjXmRvoUgAzqzYTA3Wrjkx9wcWhjP0G4ZnnqRamA.js"></script>
 <![endif]-->
-<style>.mobile-filter-item{ transition: .2s all; }</style>
+
   </head>
   <body class="layout-one-sidebar layout-sidebar-first path-condition-search">
     <a href="#main-content" class="visually-hidden focusable skip-link">
@@ -196,7 +196,8 @@
 
 
                             </div>
-            </div>
+                
+    </div>
 </div>
 
 
@@ -209,10 +210,10 @@
                 <div class="col col-sm-auto px-lg-2 py-lg-4 d-flex flex-column justify-content-center">
                     <div class="filter-tab-label h5 m-0">Doctors</div>
                 </div>
-                <div class="col col-sm-auto px-lg-2 py-lg-4 d-flex flex-column justify-content-center">
+                <div class="col col-sm-auto px-lg-2 py-lg-4 d-flex active flex-column justify-content-center">
                     <div class="filter-tab-label h5 m-0">Conditions & Treatments</div>
                 </div>
-                <div class="col col-sm-auto active px-lg-2 py-lg-4 d-flex flex-column justify-content-center">
+                <div class="col col-sm-auto px-lg-2 py-lg-4 d-flex flex-column justify-content-center">
                     <div class="filter-tab-label h5 m-0">Locations</div>
                 </div>
                 <div class="col col-sm-auto px-lg-2 py-lg-4 d-flex flex-column justify-content-center">
@@ -221,6 +222,7 @@
                     </div>
     </div>
 </div>
+<div class="spacer my-4 d-block d-lg-none"></div>
 
 <!-- END OUTPUT from 'modules/custom/ukhc_plugins/templates/searchbar.html.twig' -->
 
@@ -267,14 +269,22 @@
     </div>
 </div>
 <div class="condition-filter-mobile container d-block d-lg-none">
-<div class="row">
-    <div class="col-6 px-0"><div class="text-center mobile-filter-item p-3 mb-2">All (377)</div></div>
-    <div class="col-6 pr-0"><div class="text-center mobile-filter-item active p-3 mb-2">Conditions (125)</div></div>
-</div>
-<div class="row">
-    <div class="col-6 px-0"><div class="text-center mobile-filter-item p-3 mb-2">Treatments (377)</div></div>
-    <div class="col-6 pr-0"><div class="text-center mobile-filter-item p-3 mb-2">Tests (77)</div></div>
-</div>
+    <div class="row mt-5">
+        <div class="col-6 px-0 mb-2">
+            <div class="text-center mobile-filter-item py-3 px-0 mb-2">All (377)</div>
+        </div>
+        <div class="col-6 pr-0 mb-2">
+            <div class="text-center mobile-filter-item active py-3 px-0 mb-2">Conditions (125)</div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6 px-0 mb-2">
+            <div class="text-center mobile-filter-item py-3 px-0 mb-2">Treatments (377)</div>
+        </div>
+        <div class="col-6 pr-0 mb-2">
+            <div class="text-center mobile-filter-item py-3 px-0 mb-2">Tests (77)</div>
+        </div>
+    </div>
 </div>
 <div class="condition-filter container d-none d-lg-block">
     <div class="row justify-content-sm-center">
@@ -299,7 +309,7 @@
                 <div class="h1 light mb-0">
                     <span class="counter light" data-count="74">51</span>
                 </div>
-                <div class="text-left item2 pl-3 pb-0 mb-0 ">reatments</div>
+                <div class="text-left item2 pl-3 pb-0 mb-0 ">Treatments</div>
             </div>
         </div>
         <div class="col search-filter-item py-3 col-3">
@@ -519,18 +529,22 @@
                     </div>
                             </div>
         </div>
+        <div class="pagination">
         <div class="row container pt-4">
-                    <div class="page-number-box mb-2 p-3 mr-2 active">1</div>
-                    <div class="page-number-box mb-2 p-3 mr-2 ">2</div>
-                    <div class="page-number-box mb-2 p-3 mr-2 ">3</div>
-                    <div class="page-number-box mb-2 p-3 mr-2 ">4</div>
-                    <div class="page-number-box mb-2 p-3 mr-2 ">5</div>
-                    <div class="page-number-box mb-2 p-3 mr-2 ">6</div>
-                    <div class="page-number-box mb-2 p-3 mr-2 ">7</div>
-                    <div class="page-number-box mb-2 p-3 mr-2 ">8</div>
-                <div class="page-number-box p-3 mr-2"><div class="right-angle dark"></div></div>
-        <div class="ellipses pt-3 h4 mr-2">...</div>
-        <div class="page-number-box p-3 last">Last</div>
+                            <div class="page-number-box mb-2 p-3 mr-2 active">1</div>
+                            <div class="page-number-box mb-2 p-3 mr-2 ">2</div>
+                            <div class="page-number-box mb-2 p-3 mr-2 ">3</div>
+                            <div class="page-number-box mb-2 p-3 mr-2 ">4</div>
+                            <div class="page-number-box mb-2 p-3 mr-2 ">5</div>
+                            <div class="page-number-box mb-2 p-3 mr-2 ">6</div>
+                            <div class="page-number-box mb-2 p-3 mr-2 ">7</div>
+                            <div class="page-number-box mb-2 p-3 mr-2 ">8</div>
+                        <div class="page-number-box p-3 mr-2">
+                <div class="right-angle dark"></div>
+            </div>
+            <div class="ellipses pt-3 h4 mr-2">...</div>
+            <div class="page-number-box p-3 last">Last</div>
+        </div>
     </div>
 </div>
 
@@ -570,46 +584,71 @@
                     </div>
                 <footer>
             <div class="footer pt-5">
+    <div class="ukhc-logo text-center pb-5"><img src="https://cornettims.github.io/ukhc-static-demo/themes/custom/ukhc/images/ukhc-logo.png"/></div>
     <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <h5 class="mb-4 uppercase">Patients & Visitors</h5>
+        <div class="row mb-4">
+            <div class="col-md-3 offset-md-1 mb-3">
+                <div class="mb-3 uppercase light text-white">Patients & Visitors</div>
                 <ul class="p-0">
-                    <li>Appointment</li>
-                    <li>General Information</li>
-                    <li>New Patients</li>
-                    <li>Privacy Policy</li>
-                    <li>Your Visit</li>
-                </ul>
-                <h5 class="mb-4 uppercase">For the Community</h5>
-                <ul class="p-0">
-                    <li>Arts in Healthcare</li>
-                    <li>Employment</li>
-                    <li>For the Media</li>
-                    <li>Volunteer or Observe</li>
-                    <li>Wellness & Community</li>
-                </ul>
-            </div>
-            <div class="col-md-4">
-                <h5 class="mb-4 uppercase">About UK Healthcare</h5>
-                <ul class="p-0">
-                    <li>Equal Opportunity University</li>
-                    <li>Interpreter Services</li>
-                    <li>Notice of Non-Discrimination</li>
-                    <li>Update or Correct This Page</li>
-                    <li>Drupal Login</li>
+                    <li>
+                        <a class="light" href="">Appointment</a>
+                    </li>
+                    <li>
+                        <a class="light" href="">General Information</a>
+                    </li>
+                    <li>
+                        <a class="light" href="">New Patients</a>
+                    </li>
+                    <li>
+                        <a class="light" href="">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a class="light" href="">Your Visit</a>
+                    </li>
                 </ul>
             </div>
-            <div class="col-md-4">
-                <h5 class="mb-4 uppercase">Contact Us</h5>
+            <div class="col-md-3 offset-md-1 mb-3">
+                <div class="mb-3 uppercase light text-white">For the Community</div>
+                <ul class="p-0 light">
+                    <li>
+                        <a href="" class="light">Arts in Healthcare</a>
+                    </li>
+                    <li>
+                        <a class="light" href="">Employment</a>
+                    </li>
+                    <li>
+                        <a class="light" href="">For the Media</a>
+                    </li>
+                    <li>
+                        <a class="light" href="">Volunteer or Observe</a>
+                    </li>
+                    <li>
+                        <a class="light" href="">Wellness & Community</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3 offset-md-1 mb-3">
+                <div class="mb-3 uppercase light text-white">Contact Us</div>
                 <div class="contact mb-4">
-                <p>1000 S. Limestone</p>
-                <p>University of Kentucky</p>
-                <p>Lexington, KY 40536</p>
+                    <p class="light">1000 S. Limestone</p>
+                    <p class="light">University of Kentucky</p>
+                    <p class="light">Lexington, KY 40536</p>
                 </div>
-                <p>
-                    859-257-1000 or<br/>800-333-8874 (toll free)
+                <p class="light">or<br/>
+                    <a class="light tel" href="tel:8003338874">800-333-8874</a>
+                    (toll free)
                 </p>
+                <div class="mb-3 uppercase light text-white">Follow us</div>
+                <div class="social">
+                    <img class="facebook pr-3" src="https://cornettims.github.io/ukhc-static-demo/themes/custom/ukhc/images/social/facebook.svg"/>
+                    <img class="twitter pr-3" src="https://cornettims.github.io/ukhc-static-demo/themes/custom/ukhc/images/social/twitter.svg"/>
+                    <img class="youtube" src="https://cornettims.github.io/ukhc-static-demo/themes/custom/ukhc/images/social/youtube.svg"/>
+                </div>
+            </div>
+        </div>
+        <div class="row pb-4">
+            <div class="sub-footer col-11">
+                <p class="text-center light">© University of Kentucky, Lexington, Kentucky, USA | An Equal Opportunity University | Interpreter Services | Notice of Non-Discrimination | Update or Correct This Page</p>
             </div>
         </div>
     </div>
@@ -631,7 +670,7 @@
 <script src="../sites/default/files/js/js_LJMFatyly59rv7tyEARCIdIRkVlv344f7lkNGaBxTSo.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-<script src="../sites/default/files/js/js_aGycwNEhKJxMr3bj8guULNeTK1cAhMaA0NKLC2wjT2g.js"></script>
+<script src="../sites/default/files/js/js___XmlWXZtJXTzqztN6mD3zO0WmeoTKINnlxPkjBXpTg.js"></script>
 
   </body>
 </html>
