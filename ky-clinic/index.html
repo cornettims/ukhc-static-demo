@@ -19,11 +19,11 @@
 <link rel="shortcut icon" href="/core/misc/favicon.ico" type="image/vnd.microsoft.icon" />
 
     <title>Kentucky Clinic | UK Healthcare</title>
-    <link rel="stylesheet" media="all" href="/sites/default/files/css/css_87GMcmxT1ib8ziQiU2KUAnTDFtZQV6iP-KGslA9LigM.css?q0tf7x" />
-<link rel="stylesheet" media="all" href="/sites/default/files/css/css_dTw1AaF9J6sOKy4CMQtcw4o_PvP-4BpIIv8jrgQho-8.css?q0tf7x" />
-<link rel="stylesheet" media="all" href="//stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" />
-<link rel="stylesheet" media="all" href="/sites/default/files/css/css_XwBuBLzdooy7tTjurghMoXUWw9Sp7KHojLuJUFa4wR8.css?q0tf7x" />
-<link rel="stylesheet" media="print" href="/sites/default/files/css/css_Z5jMg7P_bjcW9iUzujI7oaechMyxQTUqZhHJ_aYSq04.css?q0tf7x" />
+    <link rel="stylesheet" media="all" href="../sites/default/files/css/css_87GMcmxT1ib8ziQiU2KUAnTDFtZQV6iP-KGslA9LigM.css?q16emn" />
+<link rel="stylesheet" media="all" href="../sites/default/files/css/css_dTw1AaF9J6sOKy4CMQtcw4o_PvP-4BpIIv8jrgQho-8.css?q16emn" />
+<link rel="stylesheet" media="all" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" />
+<link rel="stylesheet" media="all" href="../sites/default/files/css/css_mddTRShTVmzmyMw2M4SzZR2X4MCRPQ1MSZ7P1p7GJok.css?q16emn" />
+<link rel="stylesheet" media="print" href="../sites/default/files/css/css_Z5jMg7P_bjcW9iUzujI7oaechMyxQTUqZhHJ_aYSq04.css?q16emn" />
 
     
 <!--[if lte IE 8]>
@@ -74,7 +74,7 @@
                 </nav>
             </div>
             <div class="col-6 header-logo">
-                <div class="ukhc-logo"><img src="https://cornettims.github.io/themes/custom/ukhc/images/ukhc-logo.png"/></div>
+                <div class="ukhc-logo"><img src="https://cornettims.github.io/ukhc-static-demo/themes/custom/ukhc/images/ukhc-logo.png"/></div>
             </div>
             <div class="col-3 patient-tools d-none d-md-block">
                 <h4>
@@ -95,7 +95,8 @@
                 <div class="d-none d-md-none close-button"></div>
                 <div class="d-none d-md-none light text-uppercase close-text">Close</div>
             </div>
-            <div class="ukhc-logo"><img src="https://cornettims.github.io/themes/custom/ukhc/images/ukhc-logo.png"/></div>
+            <div class="ukhc-logo"><img src="https://cornettims.github.io/ukhc-static-demo/themes/custom/ukhc/images/ukhc-logo.png"/>
+            </div>
             <ul class="side-menu__items">
                 <li nav="find_care" class="side-menu__items--item expand">Find Care<div class="right-angle"></div>
                 </li>
@@ -182,12 +183,12 @@
 <!-- THEME DEBUG -->
 <!-- THEME HOOK: 'location_navbar' -->
 <!-- BEGIN OUTPUT from 'modules/custom/ukhc_plugins/templates/location-navbar.html.twig' -->
-<div class="container-fluid location-navbar">
+<div class="container-fluid location-navbar p-2 px-5 pt-3">
     <div class="row">
-    <div class="col">
-    <h2 class="uppercase">Kentucky Clinic</h2>
+    <div class="d-none d-md-block col-4">
+    <h5 class="light uppercase">Kentucky Clinic</h5>
     </div>
-    <div class="col text-right light"><a href="#">At This Location</a><a href="#">Map & Parking</a><a href="#">FAQ</a></div>
+    <div class="col-12 col-md-8 text-center text-md-right light mb-1"><a class="p-3 light" href="#">At This Location</a><a class="p-3 light" href="#">Map & Parking</a><a class="p-3 light" href="#">FAQ</a></div>
     </div>
 </div>
 
@@ -220,46 +221,51 @@
 <!-- BEGIN OUTPUT from 'modules/custom/ukhc_plugins/templates/location-carousel.html.twig' -->
 <div class="container-fluid">
     <div class="row">
-        <div class="col-12 col-lg-5 col-xl-4 py-2 py-md-3 py-xl-4 location-sidebar pl-5">
+        <div class="col-12 col-lg-5 col-xl-5 py-5 py-xl-5 location-sidebar px-5 order-12 order-lg-1">
             <h1 class="pb-2 pb-xl-4">Kentucky Clinic</h1>
-            <div class="line mb-3 mb-lg-4 mb-xl-5"></div>
+            <div class="line mb-2 mb-lg-3 mb-xl-4"></div>
+            <p class="light mb-5">Kentucky Clinic is the primary UK HealthCare outpatient clinic. Designed to provide total health care service within one location, more than 400 physicians and dentists in more than two dozen specialties are available, offering a wide range of primary and specialty care. It is located next to UK Albert B. Chandler Hospital and contains a multitude of clinics, X-ray facilities, clinical laboratories and a pharmacy.</p>
             <div class="h5">Address</div>
-            <div class="light mb-3 mb-lg-4 mb-xl-5">
+            <div class="light mb-2 mb-lg-3 mb-xl-4">
                 1000 S. Limestone<br/>
                 Lexington KY<br/>
-                40536
+                40536<br/>
+                (859) 257-8562
             </div>
             <div class="h5">Hours</div>
-            <div class="light mb-1 mb-xl-5">
+            <div class="light mb-1">
                 24/7, 365 days a year
             </div>
-            <div class="h5">Get Directions<div class="right-angle"></div></div>
+            <a href="#" class="text-light-blue">Get Directions<div class="directions-arrow"></div></a>
         </div>
-        <div class="col-12 col-lg-7 col-xl-8 px-0">
-            <div id="carousel-indicator" class="carousel slide" data-ride="carousel">
+        <div class="col-12 col-lg-7 col-xl-7 px-0 order-1 order-lg-12">
+            <div id="carousel-indicator" data-interval="999999999" class="location-carousel carousel slide h-100" data-ride="carousel">
                 <ol class="carousel-indicators">
-                    <li data-target="#carousel-indicator" data-slide-to="0" class="active"></li>
-                    <li data-target="#carousel-indicator" data-slide-to="1"></li>
-                    <li data-target="#carousel-indicator" data-slide-to="2"></li>
+                    <li data-target="#carousel-indicator" data-slide-to="0" class="active mx-2"></li>
+                    <li data-target="#carousel-indicator" data-slide-to="1" class="mx-2"></li>
+                    <li data-target="#carousel-indicator" data-slide-to="2" class="mx-2"></li>
                 </ol>
-                <div class="carousel-inner">
-                                            <div class="carousel-item active">
-                            <img class="d-block w-100" src="/themes/custom/ukhc/images/kyclinic/kyclinic-1.png">
+                <div class="carousel-inner h-100">
+                                            <div class="carousel-item h-100 active">
+                        <div class="background h-100" style="background-image:url(/themes/custom/ukhc/images/kyclinic/kyclinic-1.png)"></div>
+                            <img class="d-block w-100 h-100" src="/themes/custom/ukhc/images/kyclinic/kyclinic-1.png">
                         </div>
-                                            <div class="carousel-item ">
-                            <img class="d-block w-100" src="/themes/custom/ukhc/images/kyclinic/kyclinic-2.png">
+                                            <div class="carousel-item h-100 ">
+                        <div class="background h-100" style="background-image:url(/themes/custom/ukhc/images/kyclinic/kyclinic-2.png)"></div>
+                            <img class="d-block w-100 h-100" src="/themes/custom/ukhc/images/kyclinic/kyclinic-2.png">
                         </div>
-                                            <div class="carousel-item ">
-                            <img class="d-block w-100" src="/themes/custom/ukhc/images/kyclinic/kyclinic-3.png">
+                                            <div class="carousel-item h-100 ">
+                        <div class="background h-100" style="background-image:url(/themes/custom/ukhc/images/kyclinic/kyclinic-3.png)"></div>
+                            <img class="d-block w-100 h-100" src="/themes/custom/ukhc/images/kyclinic/kyclinic-3.png">
                         </div>
                                     </div>
                 <a class="carousel-control-prev" href="#carousel-indicator" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
+            <img src="https://cornettims.github.io/ukhc-static-demo/themes/custom/ukhc/images/arrow-left-slider.svg"/>
+
                 </a>
                 <a class="carousel-control-next" href="#carousel-indicator" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
+            <img src="https://cornettims.github.io/ukhc-static-demo/themes/custom/ukhc/images/arrow-right-slider.svg"/>
+
                 </a>
             </div>
         </div>
@@ -267,6 +273,425 @@
 </div>
 
 <!-- END OUTPUT from 'modules/custom/ukhc_plugins/templates/location-carousel.html.twig' -->
+
+
+    </div>
+  </div>
+
+<!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/block/block.html.twig' -->
+
+
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'block' -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--atthislocation.html.twig
+   * block--ukhc-plugins.html.twig
+   x block.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/block/block.html.twig' -->
+<div class="block block-ukhc-plugins block-atthislocation">
+  
+    
+      <div class="content">
+      
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'at_this_location' -->
+<!-- BEGIN OUTPUT from 'modules/custom/ukhc_plugins/templates/at-this-location.html.twig' -->
+<div class="container my-4">
+	<div class="h6 py-2 mt-5 mb-0 at-location-tabs">
+		<div class="at-location-tab active d-inline px-4 px-md-5" data-remove-class-secondary="hidden" data-add-class-secondary="hidden" data-target-remove-class-secondary="#services" data-target-add-class-secondary="#amenities,#providers" data-target-class-toggler="#loc-underline" data-target-remove-class="second-tab,third-tab" data-target-add-class="first-tab">Services</div>
+		<div data-remove-class-secondary="hidden" data-add-class-secondary="hidden" data-target-remove-class-secondary="#amenities" data-target-add-class-secondary="#services,#providers" data-target-remove-class="first-tab,third-tab" data-target-add-class="second-tab" data-target-class-toggler="#loc-underline" class="at-location-tab d-inline px-4 px-md-5">Amenities</div>
+		<div data-remove-class-secondary="hidden" data-add-class-secondary="hidden" data-target-remove-class-secondary="#providers" data-target-add-class-secondary="#amenities,#services" data-target-class-toggler="#loc-underline" data-target-remove-class="second-tab,first-tab" data-target-add-class="third-tab" class="at-location-tab d-inline px-4 px-md-5">Providers</div>
+	</div>
+	<div id="loc-underline" class="at-location-tabs-underline"></div>
+	<div class="at-location-items row my-4 container">
+		<div id="services" class="row">
+							<div class="col-12 col-md-4">
+					<p class="light">Adult Congenital Heart Disease (ACHD)</p>
+				</div>
+							<div class="col-12 col-md-4">
+					<p class="light">Adult Heart Rhythm Program</p>
+				</div>
+							<div class="col-12 col-md-4">
+					<p class="light">Anesthesia - Pediatric</p>
+				</div>
+							<div class="col-12 col-md-4">
+					<p class="light">Anesthesiology</p>
+				</div>
+							<div class="col-12 col-md-4">
+					<p class="light">Birthing Center</p>
+				</div>
+							<div class="col-12 col-md-4">
+					<p class="light">Blood Cancer</p>
+				</div>
+							<div class="col-12 col-md-4">
+					<p class="light">Cardiac Catheterization and Interventions</p>
+				</div>
+							<div class="col-12 col-md-4">
+					<p class="light">Cardiothoracic (CT) Surgery</p>
+				</div>
+							<div class="col-12 col-md-4">
+					<p class="light">Cardiovascular Imaging</p>
+				</div>
+							<div class="col-12 col-md-4">
+					<p class="light">Cardiovascular Medicine</p>
+				</div>
+							<div class="col-12 col-md-4">
+					<p class="light">Center for Advanced Surgery</p>
+				</div>
+							<div class="col-12 col-md-4">
+					<p class="light">Clinical Cardiology</p>
+				</div>
+							<div class="col-12 col-md-4">
+					<p class="light">Critical Care - Pediatric (PICU)</p>
+				</div>
+							<div class="col-12 col-md-4">
+					<p class="light">Diagnostic Imaging &amp; Echocardiography</p>
+				</div>
+							<div class="col-12 col-md-4">
+					<p class="light">Emergency Medicine</p>
+				</div>
+							<div class="col-12 col-md-4">
+					<p class="light">Endoscopy Center</p>
+				</div>
+							<div class="col-12 col-md-4">
+					<p class="light">Family &amp; Community Medicine</p>
+				</div>
+							<div class="col-12 col-md-4">
+					<p class="light">General Surgery</p>
+				</div>
+							<div class="col-12 col-md-4">
+					<p class="light">Heart Attack Emergency Care</p>
+				</div>
+							<div class="col-12 col-md-4">
+					<p class="light">Heart Failure, Assist Devices and Transplantation</p>
+				</div>
+							<div class="col-12 col-md-4">
+					<p class="light">Heart Transplant Program</p>
+				</div>
+							<div class="col-12 col-md-4">
+					<p class="light">Hospital Medicine</p>
+				</div>
+							<div class="col-12 col-md-4">
+					<p class="light">Labor &amp; Delivery</p>
+				</div>
+							<div class="col-12 col-md-4">
+					<p class="light">Lipid Management</p>
+				</div>
+							<div class="col-12 col-md-4">
+					<p class="light">Nephrology, Bone &amp; Mineral Metabolism</p>
+				</div>
+							<div class="col-12 col-md-4">
+					<p class="light">Palliative Care</p>
+				</div>
+							<div class="col-12 col-md-4">
+					<p class="light">Pathology &amp; Laboratory Medicine</p>
+				</div>
+							<div class="col-12 col-md-4">
+					<p class="light">Peripheral Arterial Disease</p>
+				</div>
+							<div class="col-12 col-md-4">
+					<p class="light">Pharmacy Locations</p>
+				</div>
+							<div class="col-12 col-md-4">
+					<p class="light">Physical and Occupational Therapy</p>
+				</div>
+							<div class="col-12 col-md-4">
+					<p class="light">Plastic Surgery - Pediatric</p>
+				</div>
+							<div class="col-12 col-md-4">
+					<p class="light">Pulmonary Hypertension</p>
+				</div>
+							<div class="col-12 col-md-4">
+					<p class="light">Pulmonary, Critical Care &amp; Sleep Medicine</p>
+				</div>
+							<div class="col-12 col-md-4">
+					<p class="light">Radiology</p>
+				</div>
+							<div class="col-12 col-md-4">
+					<p class="light">Radiology - Pediatric</p>
+				</div>
+							<div class="col-12 col-md-4">
+					<p class="light">Specialty Pharmacy</p>
+				</div>
+							<div class="col-12 col-md-4">
+					<p class="light">Structural Heart Program</p>
+				</div>
+							<div class="col-12 col-md-4">
+					<p class="light">Total Artificial Heart</p>
+				</div>
+							<div class="col-12 col-md-4">
+					<p class="light">Ventricular Assist Devices (VAD)</p>
+				</div>
+							<div class="col-12 col-md-4">
+					<p class="light">Gill Infusion Center</p>
+				</div>
+							<div class="col-12 col-md-4">
+					<p class="light">Women’s Health Services</p>
+				</div>
+					</div>
+		<div id="amenities" class="row hidden">
+							<div class="col-12 col-md-4">
+					<p class="light">Chapel</p>
+				</div>
+							<div class="col-12 col-md-4">
+					<p class="light">Chaplain</p>
+				</div>
+							<div class="col-12 col-md-4">
+					<p class="light">Communication Assistance</p>
+				</div>
+							<div class="col-12 col-md-4">
+					<p class="light">Dining</p>
+				</div>
+							<div class="col-12 col-md-4">
+					<p class="light">Fax and Copy Machines</p>
+				</div>
+							<div class="col-12 col-md-4">
+					<p class="light">Gift Shop</p>
+				</div>
+							<div class="col-12 col-md-4">
+					<p class="light">Health Education Center</p>
+				</div>
+							<div class="col-12 col-md-4">
+					<p class="light">Information Desk</p>
+				</div>
+							<div class="col-12 col-md-4">
+					<p class="light">Internet/Wi-Fi</p>
+				</div>
+							<div class="col-12 col-md-4">
+					<p class="light">Pharmacy Services</p>
+				</div>
+							<div class="col-12 col-md-4">
+					<p class="light">Post Office</p>
+				</div>
+							<div class="col-12 col-md-4">
+					<p class="light">Telephones</p>
+				</div>
+							<div class="col-12 col-md-4">
+					<p class="light">Wheelchairs, Wheelchair-Accessible parking and doors</p>
+				</div>
+							<div class="col-12 col-md-4">
+					<p class="light">Unisex Restrooms</p>
+				</div>
+					</div>
+		<div id="providers" class="row hidden">
+							<div class="col-12 col-md-4">
+											<p class="light">Richard A. Abney, CRNA</p>
+											<p class="light">Chad R. Adams, CRNA</p>
+											<p class="light">Juan Carlos B. Afable, CRNA</p>
+											<p class="light">Syed Z. Ali, MD</p>
+											<p class="light">Marshall E. Anderson, CRNA</p>
+											<p class="light">James D. Bacon, MD</p>
+											<p class="light">Matthew L. Baker, MD</p>
+											<p class="light">Kevin R. Bauereis, MD</p>
+											<p class="light">Jessica L. Bodenhamer, DNP, CRNA</p>
+											<p class="light">Michael B. Boling, DNP, APRN</p>
+											<p class="light">Edwin A. Bowe, MD</p>
+											<p class="light">Victoria A. Bradford, MD, MBA</p>
+											<p class="light">Raeford E. Brown Jr., MD, FAAP</p>
+											<p class="light">Nicole A. Brumfield, APRN</p>
+											<p class="light">Gregory L. Buckler, CRNA</p>
+											<p class="light">Katie L. Burns, CRNA</p>
+											<p class="light">Jonathan L. Bylund, MD</p>
+											<p class="light">Joseph S. Cassis, MD</p>
+											<p class="light">Zohn N. Centimole, CRNA</p>
+											<p class="light">Amanda B. Crafton, CRNA</p>
+											<p class="light">Robert J. Crafton, CRNA</p>
+											<p class="light">Kelli A. Curry, APRN</p>
+									</div>
+							<div class="col-12 col-md-4">
+											<p class="light">Ahmed K. Abdel-Latif, MD, MSc, PhD</p>
+											<p class="light">Vikas Bhalla, MD, MSc, MBA, FACC</p>
+											<p class="light">Adrian W. Messerli, MD</p>
+											<p class="light">Khaled M. Ziada, MD, FACC, FSCAI</p>
+									</div>
+							<div class="col-12 col-md-4">
+											<p class="light">Dee A. Abrams, PA-C</p>
+											<p class="light">Melina T. Aguinaga Meza, MD</p>
+											<p class="light">Meenakshi A. Bhalla, MD, FACC</p>
+											<p class="light">David C. Booth, MD</p>
+											<p class="light">Lacey T. Buckler, DNP, APRN, RN</p>
+											<p class="light">Tena S. Burke, APRN</p>
+											<p class="light">Amanda S. Carney, DNP, APRN</p>
+											<p class="light">Mary J. Cowherd, PA-C</p>
+											<p class="light">Mary M. Czarapata, APRN</p>
+											<p class="light">Anna A. Gerard, PA-C</p>
+											<p class="light">Vedant A. Gupta, MD, FACC</p>
+											<p class="light">John C. Gurley, MD</p>
+											<p class="light">Kimberly M. Hardin, APRN</p>
+											<p class="light">Aaron B. Hesselson, MD</p>
+											<p class="light">Tracy E. Macaulay, PharmD, AACC, BCPS</p>
+											<p class="light">Andrew R. Kolodziej, MD</p>
+											<p class="light">John R. Kotter, MD</p>
+											<p class="light">Julie M. Kuhl, APRN</p>
+											<p class="light">Chien-Suu Kuo, MD</p>
+											<p class="light">B. Seth Leeds, PA-C</p>
+											<p class="light">Steve W. Leung, MD</p>
+											<p class="light">Rana R. Lindsay-Rahman, APRN</p>
+											<p class="light">Katherine R. Moore, PA-C</p>
+											<p class="light">Heather F. Oaks, APRN</p>
+											<p class="light">Bridget G. Pagan, PA-C</p>
+											<p class="light">Mary A. Richardson, PA-C</p>
+											<p class="light">Ashley R. Schenk, PharmD, BCPS, BCCP</p>
+											<p class="light">Anna M. Sketch, APRN</p>
+											<p class="light">Vincent L. Sorrell, MD, FACC, FACP</p>
+											<p class="light">Kelly M. Weaver, APRN</p>
+											<p class="light">Paula A. Works, APRN</p>
+											<p class="light">Carla A. Zacher, APRN</p>
+									</div>
+					</div>
+	</div>
+</div></div>
+
+<!-- END OUTPUT from 'modules/custom/ukhc_plugins/templates/at-this-location.html.twig' -->
+
+
+    </div>
+  </div>
+
+<!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/block/block.html.twig' -->
+
+
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'block' -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--Map.html.twig
+   * block--ukhc-plugins.html.twig
+   x block.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/block/block.html.twig' -->
+<div class="block block-ukhc-plugins block-map">
+  
+    
+      <div class="content">
+      
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'map' -->
+<!-- BEGIN OUTPUT from 'modules/custom/ukhc_plugins/templates/map.html.twig' -->
+<div class="container-fluid py-5 lighter-gray-bg">
+	<div class="container">
+		<div class="h1 text-center">Map & Parking</div>
+		<p class="text-center light mt-3 mx-5 px-5">Kentucky Clinic is the primary UK HealthCare outpatient clinic. It is located next to UK Albert B. Chandler Hospital and contains a multitude of clinics, X-ray facilities, clinical laboratories and a pharmacy.</p>
+		<div class="my-5"><img src="/themes/custom/ukhc/images/kyclinic/map.png"></div>
+		<div class="row">
+			<div class="col-12 col-md-6 pr-5">
+				<h4>Parking & Fees</h4>
+				<p class="light">Patients may park in the Kentucky Clinic Parking Garage adjacent to the clinic or in the Hospital Parking Garage directly acress South Limestone from UK Chandler Hospital. From Level A of the Hospital Garage, you can ride a free shuttle to the Kentucky Clinic.</p>
+				<p class="light">There is a fee for parking; however, the rates are considerably lower for patients, so don't forget to have your parking ticket validated at your clinic appointment.</p>
+			</div>
+			<div class="col-12 col-md-6 pr-5">
+				<h4>Handicapped Parking</h4>
+				<p class="light">Handicapped parking is available on the ground level of the Kentucky Clinic Garage. Wheelchair assistance may be requested using the information phones found just inside each entrance, at the information desks or by calling 859-323-5581 from your car after you arrive at the clinic.</p>
+				<p class="light">For disabled patients who do not have a state-issued disable parking permit, special one-day passes are available at the information desks. This permit allows patients to park in the disabled parking area.</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- END OUTPUT from 'modules/custom/ukhc_plugins/templates/map.html.twig' -->
+
+
+    </div>
+  </div>
+
+<!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/block/block.html.twig' -->
+
+
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'block' -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--FAQ.html.twig
+   * block--ukhc-plugins.html.twig
+   x block.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/block/block.html.twig' -->
+<div class="block block-ukhc-plugins block-faq">
+  
+    
+      <div class="content">
+      
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'faq' -->
+<!-- BEGIN OUTPUT from 'modules/custom/ukhc_plugins/templates/faq.html.twig' -->
+<div class="container my-5">
+	<h2 class="text-center my-4">Frequently Asked Questions</h2>
+	<div id="accordion" class="faq col-9">
+					<div class="card">
+				<div class="card-header pl-5 pb-0" id="card-header-1">
+					<button class="btn btn-link pl-0" data-toggle="collapse" data-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1">Do you take my insurance?</button>
+				</div>
+				<div id="collapse-1" class="faq-card collapse pl-4" aria-labelledby="card-header-1" data-parent="#accordion">
+					<div class="light card-body pt-0 pl-4">
+						University Physicians contract with most major insurance companies. Please contact your employee benefits office or consult your insurance benefits manual for verification of coverage.
+					</div>
+				</div>
+			</div>
+					<div class="card">
+				<div class="card-header pl-5 pb-0" id="card-header-2">
+					<button class="btn btn-link pl-0" data-toggle="collapse" data-target="#collapse-2" aria-expanded="true" aria-controls="collapse-2">What about co-pays?</button>
+				</div>
+				<div id="collapse-2" class="faq-card collapse pl-4" aria-labelledby="card-header-2" data-parent="#accordion">
+					<div class="light card-body pt-0 pl-4">
+						Co-pays are expected at the time of service. Payment may be made by check, credit card or cash. For your convenience there are two ATM's located in the building - one in the deli on the third floor and the other in the first floor lobby at the main entrance
+					</div>
+				</div>
+			</div>
+					<div class="card">
+				<div class="card-header pl-5 pb-0" id="card-header-3">
+					<button class="btn btn-link pl-0" data-toggle="collapse" data-target="#collapse-3" aria-expanded="true" aria-controls="collapse-3">What about co-pays?</button>
+				</div>
+				<div id="collapse-3" class="faq-card collapse pl-4" aria-labelledby="card-header-3" data-parent="#accordion">
+					<div class="light card-body pt-0 pl-4">
+						Co-pays are expected at the time of service. Payment may be made by check, credit card or cash. For your convenience there are two ATM's located in the building - one in the deli on the third floor and the other in the first floor lobby at the main entrance
+					</div>
+				</div>
+			</div>
+					<div class="card">
+				<div class="card-header pl-5 pb-0" id="card-header-4">
+					<button class="btn btn-link pl-0" data-toggle="collapse" data-target="#collapse-4" aria-expanded="true" aria-controls="collapse-4">How early should I arrive?</button>
+				</div>
+				<div id="collapse-4" class="faq-card collapse pl-4" aria-labelledby="card-header-4" data-parent="#accordion">
+					<div class="light card-body pt-0 pl-4">
+						If you are a new patient, plan to arrive 30 minutes early. Registration for new patients is done at the first- or third-floor information desks. Return patients should arrive 15 minutes early and go directly to their individual department.
+					</div>
+				</div>
+			</div>
+					<div class="card">
+				<div class="card-header pl-5 pb-0" id="card-header-5">
+					<button class="btn btn-link pl-0" data-toggle="collapse" data-target="#collapse-5" aria-expanded="true" aria-controls="collapse-5">What should I bring?</button>
+				</div>
+				<div id="collapse-5" class="faq-card collapse pl-4" aria-labelledby="card-header-5" data-parent="#accordion">
+					<div class="light card-body pt-0 pl-4">
+						Please bring the following:<ul>
+                <li>current insurance card and any required insurance forms</li>
+                <li>lab, X-ray or test results</li>
+                <li>medications you are currently taking</li>
+                <li>referral from primary care physician</li>
+                <li>names and addresses of all of your physicians</li>
+                </ul>
+					</div>
+				</div>
+			</div>
+					<div class="card">
+				<div class="card-header pl-5 pb-0" id="card-header-6">
+					<button class="btn btn-link pl-0" data-toggle="collapse" data-target="#collapse-6" aria-expanded="true" aria-controls="collapse-6">Is there a place to eat?</button>
+				</div>
+				<div id="collapse-6" class="faq-card collapse pl-4" aria-labelledby="card-header-6" data-parent="#accordion">
+					<div class="light card-body pt-0 pl-4">
+						There is a deli located on the third floor of the clinic near the walkway to the hospital. Starbucks is located on the first floor in the atrium of Wing C. Vending machines are located in the basement of Wing D. Additionally, there is a cafeteria and a coffee shop located on the first floor of the hospital (across Rose Street).
+					</div>
+				</div>
+			</div>
+			</div>
+</div>
+
+<!-- END OUTPUT from 'modules/custom/ukhc_plugins/templates/faq.html.twig' -->
 
 
     </div>
@@ -307,7 +732,7 @@
                     </div>
                 <footer>
             <div class="footer pt-5">
-    <div class="ukhc-logo text-center pb-5"><img src="https://cornettims.github.io/themes/custom/ukhc/images/ukhc-logo.png"/></div>
+    <div class="ukhc-logo text-center pb-5"><img src="https://cornettims.github.io/ukhc-static-demo/themes/custom/ukhc/images/ukhc-logo.png"/></div>
     <div class="container">
         <div class="row mb-4">
             <div class="col-md-3 offset-md-1 mb-3">
@@ -363,9 +788,9 @@
                 </p>
                 <div class="mb-3 uppercase light text-white">Follow us</div>
                 <div class="social">
-                    <img class="facebook pr-3" src="https://cornettims.github.io/themes/custom/ukhc/images/social/facebook.svg"/>
-                    <img class="twitter pr-3" src="https://cornettims.github.io/themes/custom/ukhc/images/social/twitter.svg"/>
-                    <img class="youtube" src="https://cornettims.github.io/themes/custom/ukhc/images/social/youtube.svg"/>
+                    <img class="facebook pr-3" src="https://cornettims.github.io/ukhc-static-demo/themes/custom/ukhc/images/social/facebook.svg"/>
+                    <img class="twitter pr-3" src="https://cornettims.github.io/ukhc-static-demo/themes/custom/ukhc/images/social/twitter.svg"/>
+                    <img class="youtube" src="https://cornettims.github.io/ukhc-static-demo/themes/custom/ukhc/images/social/youtube.svg"/>
                 </div>
             </div>
         </div>
@@ -391,9 +816,9 @@
     
     <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"ky-clinic","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","user":{"uid":0,"permissionsHash":"89dd9a2ecfaee91cfdbbe3f79991d7386d3977b9679a9d6df9c88d29b14be152"}}</script>
 <script src="../sites/default/files/js/js_LJMFatyly59rv7tyEARCIdIRkVlv344f7lkNGaBxTSo.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-<script src="//stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-<script src="../sites/default/files/js/js_BCSuMHUb586AFZ6g4YgDpw3YnQ387UiYc4-KhAG5V8I.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="../sites/default/files/js/js_9YPRE3eoRaLpvZCRuQD32tUtUpKK9pKq5itn07oQ4AE.js"></script>
 
   </body>
 </html>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="55px" height="55px" viewBox="0 0 55 55" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>Slider Arrows</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Location-Details-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Location-Details-Page-Alt" transform="translate(-718.000000, -401.000000)">
+            <g id="Slider-Arrows" transform="translate(718.000000, 401.000000)">
+                <g id="Group-2">
+                    <circle id="Oval" fill="#FFFFFF" cx="27.5" cy="27.5" r="27.5"></circle>
+                    <polyline id="Path-3-Copy-4" stroke="#0033A0" stroke-width="4" transform="translate(26.000000, 27.500000) scale(-1, 1) translate(-26.000000, -27.500000) " points="22 17 30 27.5 22 38"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
