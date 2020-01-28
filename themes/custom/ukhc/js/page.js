@@ -1,149 +1,78 @@
 jQuery(document).ready(function ($) {
-    // $('.doctor-sidebar-content').css('position','relative');
-    // $('.doctor-sidebar-content-container').removeClass('col-3');
-    // $('.doctor-sidebar-content-container').addClass('col-12');
-/*
-$("<div>Hello</div>").hide().appendTo("somePlace").fadeIn("fast");
-*/
-    $('.doctor-rating .load-more').on('click', function(){
-        $('<div class="row mb-4 light-gray-bg doctor-related-news-card"><div class="summary py-4 col"><div class="h5 mb-0">UK Healthcare Patient</div><p class="light">January 2019</p><div class="description light font-italic">Dr. Abdel-Latif is an outstanding doctor who cares for his patients and makes sure they understand their options. He remembered my case and was very interested in how I was healing, even though my second surgery did not involve him. I would recommend him to anyone.</div></div></div>').hide().insertBefore(".doctor-rating .load-more").fadeIn("fast");
-        $('<div class="row mb-4 light-gray-bg doctor-related-news-card"><div class="summary py-4 col"><div class="h5 mb-0">UK Healthcare Patient</div><p class="light">January 2019</p><div class="description light font-italic">Dr. Abdel-Latif is an outstanding doctor who cares for his patients and makes sure they understand their options. He remembered my case and was very interested in how I was healing, even though my second surgery did not involve him. I would recommend him to anyone.</div></div></div>').hide().insertBefore(".doctor-rating .load-more").fadeIn("slow");
-        
-
+    var windowWidth = $(window).width();
+    if (windowWidth <= 576) {
+        $('.collapse-on-mobile').each(function () {
+            $(this).addClass('collapse');
+            var title = $(this).data('title');
+            var id = $(this).attr('id');
+            $('.mobile-accordion-container').append('<div class="card-header" id="headingOne"><h5 class="mb-0"><button class="w-100 btn btn-link text-left" data-toggle="collapse" data-target="#' + id + '" aria-expanded="false" aria-controls="collapse' + id + '">' + title + '<div class="ml-2 float-right up-angle blue"></div></button></h5></div>');
+            $('.mobile-accordion-container').append(this);
+        });
+    }
+    $(document).on("keypress", function(e){
+        var v = $('.mobile-patient-tools-icon').attr('data-v') >= 7 ? 0 : parseInt($('.mobile-patient-tools-icon').attr('data-v'))+1;
+        console.log(v);
+        $('.mobile-patient-tools-icon').attr('data-v',v);
     });
-    if($('[data-scroll-check="true"]').length){
-        $(window).scroll(function() {
-            if ($(window).scrollTop() > 200) {
-            //     $('.scrolled-doctor-name').css('display','block');
-                $('.doctor-sidebar-content .headshot img').css({"width":"35%", "float":"left"});
-                // $('.doctor-sidebar-content .headshot .doctor-name').css({"right":"0", "float":"right","opacity":1});
-                $('.doctor-sidebar-content .headshot .doctor-name').addClass("slide-in");
-                //slide-in
-                $('.doctor-sidebar-content .doctor-title').css({"opacity":0});
-                // $('.doctor-sidebar-content .headshot').removeClass('text-center');
-            //     $('.doctor-sidebar-content .headshot').removeClass('mb-3');
-            //     $('.scrolled-doctor-name').removeClass('inactive');
-                $('.doctor-sidebar-content').addClass('scrolled');
-            //     $('.headshot .doctor-name').addClass('slide-in');
-            } else {
-                $('.doctor-sidebar-content .headshot img').css({"width":"75%", "float":"none"});
-                $('.doctor-sidebar-content .doctor-title').css({"opacity":1});
-                // $('.doctor-sidebar-content .headshot').addClass('text-center');
 
-                // $('.doctor-sidebar-content .headshot .doctor-name').css({"right":"-230px", "float":"none","opacity":0});
-                $('.doctor-sidebar-content .headshot .doctor-name').removeClass("slide-in");
-
-                // $('.doctor-sidebar-content .headshot img').css({"width":"75%","float":"left"});
-                // $('.scrolled-doctor-name').addClass('inactive');
-                // $('.doctor-sidebar-content .headshot').addClass('mb-3');
-                // $('.headshot .doctor-name').removeClass('slide-in');
-                // // $('.scrolled-doctor-name').css('display','none');
-                // // $('.doctor-name').show();
-                $('.doctor-sidebar-content').removeClass('scrolled');
-            }
-            var distanceFromBottom = Math.floor($(document).height() - $(document).scrollTop() - $(window).height());
-
-            if(distanceFromBottom < 550) {
-                var footerHeight = $('.footer').height();
-              $('.doctor-sidebar-content').addClass('at-bottom');
-              $('.doctor-sidebar-content').css('bottom',185);
-            //   $('.request-link').css('bottom',-500);
-              $('.doctor-sidebar-content .doctor-sidebar-content-container').addClass('col-12');
-              $('.doctor-sidebar-content .doctor-sidebar-content-container').removeClass('col-3');
-            } else {
-                $('.doctor-sidebar-content').removeClass('at-bottom');
-                $('.doctor-sidebar-content').css('bottom',"initial");
-                // $('.request-link').css('bottom',60);
-                $('.doctor-sidebar-content .doctor-sidebar-content-container').addClass('col-3');
-                $('.doctor-sidebar-content .doctor-sidebar-content-container').removeClass('col-12');
-            }
-          });
-
-    }
-    if($('.doctor-sidebar-content').length){
-        $('.doctor-sidebar-content').removeClass('inactive');
-    }
-    // if($('[data-scroll-check="true"]').length){
-    //     var parentwidth = $('[data-scroll-check="true"]').width()-100;
-    //     console.log(parentwidth);
-    //     $('[data-scroll-check="true"] > div').width(parentwidth);
-    // }
-    $(".video-thumb").click(function() {
+    var patientToolsOffset = (windowWidth - 57) * -1;
+    $('.patient-tools-mobile').css({ width: windowWidth, right: patientToolsOffset });
+    $(".search-modal input").on('input', function () {
+        if ($(this).val().length >= 3) {
+            $('.search-modal .results').addClass('show');
+        } else {
+            $('.search-modal .results').removeClass('show');
+        }
+    });
+    /*
+    $("input").change(function(){
+  alert("The text has been changed.");
+});
+    */
+    $('.patient-tools-mobile.open').css({ right: 0 });
+    $(".patient-tools-link").on('click', function () {
+        if ($(this).hasClass('open')) {
+            $(this).removeClass('open');
+            $(".dark-overlay").addClass('off');
+        } else {
+            $(this).addClass('open');
+            $(".dark-overlay").removeClass('off');
+        }
+        $('.search-modal').removeClass('show');
+        $('.patient-tools').toggleClass('open');
+        $("body").toggleClass('no-scroll');
+    });
+    $(".search-icon").on('click', function () {
+        if ($('.search-modal').hasClass('show')) {
+            $('.search-modal').removeClass('show');
+            $(".dark-overlay").addClass('off');
+        } else {
+            $('.search-modal').addClass('show');
+            $(".dark-overlay").removeClass('off');
+        }
+        $('.patient-tools').removeClass('open');
+        $("body").toggleClass('no-scroll');
+    });
+    $('.mobile-patient-tools-icon').on('click', function () {
+        $('.patient-tools-mobile').toggleClass('open');
+        $(".dark-overlay").toggleClass('off');
+        $("body").toggleClass('no-scroll');
+        if ($('.patient-tools-mobile').hasClass('open')) {
+            $('.patient-tools-mobile').css({ right: 0 });
+        } else {
+            $('.patient-tools-mobile').css({ width: windowWidth, right: patientToolsOffset });
+        }
+    });
+    $(".video-thumb").click(function () {
         $('.video-thumb > img').removeClass("active");
         $(this).children('img').addClass("active");
-      });
-
-      $('div.video-thumb').click(function() {
-          var src= ($(this).children('iframe').attr('src').replace('iframe')) + "&autoplay=1";
-        $('.video-iframe iframe').attr('src', src);
-      });
-
-    setTimeout(function () {
-        if($(window).width() > 768){
-            var smallestCard = 999999;
-            var smallestCardText = 9999999;
-            var cardContainer = $('.recommended-posts');
-            cardContainer.css("max-height",cardContainer.height() + "px");
-            cardContainer.children(".container").css("max-height",cardContainer.height() + "px");
-
-            $('.match-smallest .col .news-card').each(function () {
-                var originalHeight = $(this).height();
-                if (originalHeight < smallestCard) {
-                    smallestCard = originalHeight;
-                }
-                $(this).attr('data-original-height', originalHeight);
-            });
-            $('.match-smallest .col .news-card').each(function () {
-                $(this).css('max-height', smallestCard + "px");
-                $(this).css('height', smallestCard + "px");
-            });
-            $('.match-smallest .col .news-card-text').each(function () {
-                var originalHeight = $(this).height();
-                if (originalHeight < smallestCardText) {
-                    smallestCardText = originalHeight;
-                }
-                $(this).attr('data-original-height', originalHeight);
-            });
-            $('.match-smallest .col .news-card-text').each(function () {
-                $(this).css('max-height', smallestCardText + "px");
-                $(this).css('height', smallestCardText + "px");
-            });
-            $('.match-smallest .col .news-card').each(function () {
-                var originalHeight = $(this).attr('data-original-height');
-                var textChild = $(this).children('.news-card-text');
-                var textChildOriginalHeight = textChild.attr('data-original-height');
-                $(this).hover(function(){
-                    $(this).css('max-height',originalHeight+"px");
-                    $(this).css('height',originalHeight+"px");        
-                    textChild.css('max-height',textChildOriginalHeight+'px');
-                    textChild.css('height',textChildOriginalHeight+'px');
-                },function(){
-                    $(this).css('max-height',smallestCard+"px");
-                    $(this).css('height',smallestCard+"px");             
-                    textChild.css('max-height',smallestCardText+'px');
-                    textChild.css('height',smallestCardText+'px');
-                });
-            });
-        }
-    }, 1000);
-
-    $('#location-accordion .card-header').each(function () {
-        $(this).click(function () {
-            console.log("visible?", $(this).is(":visible"));
-            var container = $('#location-accordion');
-            container.animate({
-                scrollTop: container.scrollTop = container.scrollTop() + $(this).offset().top - container.offset().top
-            }, {
-                duration: 1000,
-                specialEasing: {
-                    width: 'linear',
-                    height: 'easeOutBounce'
-                },
-                complete: function (e) {
-                }
-            });
-        });
     });
+
+    $('div.video-thumb').click(function () {
+        var src = ($(this).children('iframe').attr('src').replace('iframe')) + "&autoplay=1";
+        $('.video-iframe iframe').attr('src', src);
+    });
+
 
     $('[data-target-class-toggler!=""][data-target-class-toggler]').each(function () {
         $(this).click(function () {
@@ -197,23 +126,6 @@ $("<div>Hello</div>").hide().appendTo("somePlace").fadeIn("fast");
         });
     });
 
-    var $videoSrc;
-    $('.doctor-with-video .video-icon').each(function (index) {
-        $(this).click(function () {
-            $videoSrc = $(this).data("src");
-            $id = $(this).data("target");
-            $($id).on('shown.bs.modal', function (e) {
-                // set the video src to autoplay and not to show related video. Youtube related video is like a box of chocolates... you never know what you're gonna get
-                $($id + " #video").attr('src', $videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0");
-            })
-            // stop playing the youtube video when I close the modal
-            $($id).on('hide.bs.modal', function (e) {
-                // a poor man's stop video
-                $($id + " #video").attr('src', $videoSrc);
-            });
-        });
-    });
-
     $('.patient-tools').click(function () {
         $('.patient-tools-dropdown').toggleClass('open');
     });
@@ -261,8 +173,19 @@ $("<div>Hello</div>").hide().appendTo("somePlace").fadeIn("fast");
     $('.load-more').click(function () {
         $('.doctor-results > .row').append($('.doctor-results > .row').html());
     });
-    $('.navbar-button,.menu-label,.dark-overlay,.mobile-close').click(function () {
-        console.log("You clicked this " + Math.random());
+    //need to convert all on(clicks) and .clicks to one or the other for consistency sake
+    $('.dark-overlay').on('click', function () {
+        $('.side-menu').removeClass('covered');
+        $('.search-modal').removeClass('show');
+
+        $("#nav-icon,.patient-tools").removeClass('open');
+        $(".dark-overlay").addClass('off');
+        $("body").removeClass('no-scroll');
+        $('.side-menu.primary').removeClass('open');
+        $(".side-menu.secondary,.side-menu.tertiary").removeClass("open");
+        $('.side-menu li').removeClass("hovered");
+    });
+    $('.navbar-button,.menu-label,.mobile-close').click(function () {
         $('.side-menu').removeClass('covered');
         $("#nav-icon").toggleClass('open');
         $(".dark-overlay").toggleClass('off');
@@ -294,7 +217,7 @@ $("<div>Hello</div>").hide().appendTo("somePlace").fadeIn("fast");
             }
         }
     });
-    if ($(window).width() > 768) {
+    if (windowWidth > 768) {
         $('.side-menu.primary li').hover(function () {
             if ($(this).hasClass("last")) {
                 $('.side-menu.tertiary,.side-menu.secondary').removeClass('open');
