@@ -29,13 +29,27 @@
 <script src="../sites/default/files/js/js_VtafjXmRvoUgAzqzYTA3Wrjkx9wcWhjP0G4ZnnqRamA.js"></script>
 <![endif]-->
     <style>
-        .at-bottom .doctor-sidebar-content-container {
+        @media only screen and (max-width: 844px) and (min-width:600px) {
+            .patient-tools-link .down-angle {
+                margin-left: 5px;
+                margin-right: 5px;
+            }
+        }
 
+        .at-bottom .doctor-sidebar-content-container {
             -webkit-box-flex: 0;
             -webkit-flex: 0 0 100%;
             -ms-flex: 0 0 100%;
             flex: 0 0 100%;
             max-width: 100%;
+        }
+
+        .mobile-patient-tools-icon {
+            left: 5px;
+        }
+
+        .search-icon-mobile .search-icon {
+            margin-right: 10px;
         }
 
     </style>
@@ -173,7 +187,7 @@
                             <span class="light">Patient</span>
                             Tools</span>
                     </div>
-                    <div class="px-4 col-11 offset-1">
+                    <div class="px-5 col-11 offset-1">
 
                         <div class="mb-4">
                             <div class="light uppercase">Request an</div>
